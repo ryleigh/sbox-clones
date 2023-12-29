@@ -1,10 +1,12 @@
 using Sandbox;
 using Sandbox.Citizen;
 using Sandbox.UI;
+using System;
 using System.Drawing;
+using System.Numerics;
 using System.Runtime;
 
-public sealed class Clone : Component
+public sealed class Clone : Component, Component.ICollisionListener
 {
 	public Manager Manager { get; set; }
 
@@ -16,15 +18,30 @@ public sealed class Clone : Component
 	[Property] public GameObject Body { get; set; }
 	[Property] public CitizenAnimationHelper AnimationHelper { get; set; }
 
-	public float Height { get; set; } = 0.6f;
+	public float Height { get; set; } = 0.5f;
 
 	public Angles EyeAngles;
 	public bool IsRunning;
+
+	public Rigidbody Rigidbody { get; private set; }
+	public BoxCollider BoxCollider { get; private set; }
+
+	private float _targetYaw;
+
+	public bool IsGrounded { get; private set; }
+	public float StepHeight { get; set; } = 10.0f;
+	public float GroundAngle { get; set; } = 45.0f;
+	public BBox BoundingBox => BBox.FromPositionAndSize( BoxCollider.Center, BoxCollider.Scale );
+	[Property] public TagSet IgnoreTags { get; set; } = new();
 
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
 
+		Rigidbody = GameObject.Components.Get<Rigidbody>();
+		BoxCollider = GameObject.Components.Get<BoxCollider>();
+
+		_targetYaw = Game.Random.Int( 0, 1 ) == 0 ? -90f : 90f;
 	}
 
 	protected override void OnUpdate()
@@ -32,26 +49,44 @@ public sealed class Clone : Component
 		//var cc = GameObject.Components.Get<CharacterController>();
 		//if ( cc is null ) return;
 
-		float rotateDifference = 0;
+		//float rotateDifference = 0;
 
 		if ( Body is not null )
 		{
 			//float vel = cc.Velocity.Length;
-			if ( Velocity.Length > 1f)
+			if ( Velocity.Length > 0.5f)
 			{
-				Body.Transform.Rotation = Rotation.Lerp( Body.Transform.Rotation, Rotation.FromYaw( Velocity.y < 0f ? -90f : 90f ), Time.Delta * 15f );
+				_targetYaw = Velocity.y < 0f ? -90f : 90f;
+			}
+
+			Body.Transform.Rotation = Rotation.Lerp( Body.Transform.Rotation, Rotation.FromYaw( _targetYaw ), Time.Delta * 25f );
+
+			// ROTATE TOWARD CAMERA INSTEAD OF AWAY
+			float yaw = Body.Transform.Rotation.Yaw();
+			if ( yaw < 0f && yaw > -90f )
+			{
+				yaw = -90f + (-90f - yaw);
+				Body.Transform.Rotation = Rotation.FromYaw( yaw );
+			}
+			else if(yaw > 0f && yaw < 90f)
+			{
+				yaw = 90f + (90f - yaw);
+				Body.Transform.Rotation = Rotation.FromYaw( yaw );
 			}
 		}
+
+		//Log.Info( $"zVel: {Rigidbody.PhysicsBody.Velocity.z}" );
 
 		if ( AnimationHelper is not null )
 		{
 			//Vector3 lookDir = Input.Down( "Forward" ) ? Vector3.Up : (Input.Down( "Backward" ) ? Vector3.Down : Body.Transform.Rotation.Forward);
 
+			AnimationHelper.HeadWeight = 100f;
 			AnimationHelper.WithVelocity( Velocity * 100f);
 			AnimationHelper.WithWishVelocity( WishVelocity * 10f );
 			//AnimationHelper.IsGrounded = cc.IsOnGround;
-			AnimationHelper.IsGrounded = true;
-			AnimationHelper.FootShuffle = rotateDifference;
+			AnimationHelper.IsGrounded = MathF.Abs(Rigidbody.PhysicsBody.Velocity.z) < 1f;
+			//AnimationHelper.FootShuffle = rotateDifference;
 			//AnimationHelper.WithLook( lookDir );
 			AnimationHelper.MoveStyle = IsRunning ? CitizenAnimationHelper.MoveStyles.Run : CitizenAnimationHelper.MoveStyles.Walk;
 			AnimationHelper.Height = Height;
@@ -93,13 +128,27 @@ public sealed class Clone : Component
 
 		float dt = Time.Delta;
 
-		var rigidBody = GameObject.Components.Get<Rigidbody>();
-		rigidBody.AngularDamping = 99999999f;
-		rigidBody.AngularVelocity = Vector3.Zero;
-		//rigidBody.ClearForces();
+		Rigidbody.AngularDamping = 99999999f;
+		Rigidbody.AngularVelocity = Vector3.Zero;
+		//Rigidbody.ClearForces();
 
 		Transform.LocalRotation = Rotation.Identity;
 		Body.Transform.LocalRotation = Rotation.From( 0f, Body.Transform.LocalRotation.Yaw(), 0f );
+
+		if(Input.Pressed( "Jump" ) && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z) < 0.1f) // todo: you could jump at apex of jump, need proper IsGrounded check
+		{
+			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
+
+			OnJump();
+		}
+
+		//Log.Info( $"PhysicsBody Vel: {rigidBody.PhysicsBody.Velocity}, Velocity: {Velocity}" );
+
+		//var collider = GameObject.Components.Get<BoxCollider>();
+		//collider.KeyframeBody.
+
+		//Log.Info( $"{rigidBody.PhysicsBody.SpeculativeContactEnabled}" );
+		//rigidBody.PhysicsBody.Move( Transform, dt );
 
 		//var cc = GameObject.Components.Get<CharacterController>();
 		//if ( cc == null )
@@ -138,8 +187,11 @@ public sealed class Clone : Component
 		//	cc.Velocity = cc.Velocity.WithZ( 0 );
 		//}
 
-		Accelerate( WishVelocity, 1.5f );
-		Velocity *= (1f - dt * 8f);
+		Velocity = Velocity.WithAcceleration( WishVelocity, 1.5f * Time.Delta );
+
+		var damping = (1f - dt * 8f);
+		Velocity = new Vector3( Velocity.x * damping, Velocity.y * damping, Velocity.z );
+		//Velocity *= (1f - dt * 8f);
 		//ApplyFriction( 2f );
 
 		//rigidBody.Velocity = (Velocity * 50f).WithZ( rigidBody.Velocity.z );
@@ -147,12 +199,58 @@ public sealed class Clone : Component
 		Transform.Position += Velocity;
 		Transform.Position = Transform.Position.WithX( 0f );
 		//Log.Info( $"WishVelocity: {WishVelocity} Velocity: {Velocity}" );
+
+		CategorizePosition();
 	}
 
-	public void Accelerate( Vector3 vector, float speed )
+	void CategorizePosition()
 	{
-		Velocity = Velocity.WithAcceleration( vector, speed * Time.Delta );
+		var startPos = Transform.Position + Vector3.Down * 1f;
+		var endPos = startPos + Vector3.Down * 2f;
+		var wasOnGround = IsGrounded;
+
+		// We're flying upwards too fast, never land on ground
+		if ( !IsGrounded && Velocity.z > 50.0f )
+		{
+			IsGrounded = false;
+			return;
+		}
+
+		// trace down one step height if we're already on the ground "step down". If not, search for floor right below us
+		// because if we do StepHeight we'll snap that many units to the ground
+		endPos.z -= wasOnGround ? StepHeight : 0.1f;
+
+
+		SceneTraceResult tr = Scene.Trace.Ray( startPos, endPos ).Size( BoundingBox ).WithoutTags(IgnoreTags).Run();
+		//SceneTraceResult tr = Scene.Trace.Ray( startPos, endPos ).WithoutTags( IgnoreTags ).Run();
+
+		//if(tr.Hit)
+		//	Log.Info( $"{tr.Body.GetGameObject().Name}" );
+		//else
+		//	Log.Info( $"none" );
+
+		// we didn't hit - or the ground is too steep to be ground
+		if ( !tr.Hit || Vector3.GetAngle( Vector3.Up, tr.Normal ) > GroundAngle )
+		{
+			IsGrounded = false;
+			return;
+		}
+
+		// we are on ground
+		IsGrounded = true;
+
+		// move to this ground position, if we moved, and hit
+		if ( wasOnGround && !tr.StartedSolid && tr.Fraction > 0.0f && tr.Fraction < 1.0f )
+		{
+			Transform.Position = tr.EndPosition + tr.Normal * 0.01f;
+		}
+
+		//Log.Info( $"{IsGrounded}" );
 	}
+
+	//PhysicsTraceBuilder BuildTrace( Vector3 from, Vector3 to ) => BuildTrace( Scene.PhysicsWorld.Trace.Ray( from, to ) );
+
+	//PhysicsTraceBuilder BuildTrace( PhysicsTraceBuilder source ) => source.Size( BoundingBox ).WithoutTags( IgnoreTags );
 
 	//public void ApplyFriction( float frictionAmount, float stopSpeed = 140.0f )
 	//{
@@ -208,5 +306,20 @@ public sealed class Clone : Component
 		WishVelocity *= speed;
 		//if ( Input.Down( "Run" ) ) WishVelocity *= 320.0f;
 		//else WishVelocity *= 110.0f;
+	}
+
+	public void OnCollisionStart( Collision other )
+	{
+		
+	}
+
+	public void OnCollisionUpdate( Collision other )
+	{
+
+	}
+
+	public void OnCollisionStop( CollisionStop other )
+	{
+
 	}
 }

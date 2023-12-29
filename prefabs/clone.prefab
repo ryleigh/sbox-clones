@@ -35,16 +35,17 @@
         "__type": "Clone",
         "__enabled": true,
         "AnimationHelper": "6ab7e124-c14a-4288-aa54-a4a2c3f5f53e",
-        "Body": "93eab888-4242-4bd0-8c22-c41b7a0cb45c"
+        "Body": "93eab888-4242-4bd0-8c22-c41b7a0cb45c",
+        "IgnoreLayers": ""
       },
       {
         "__type": "BoxCollider",
         "__enabled": true,
-        "Center": "0,0,24",
+        "Center": "0,0,14",
         "IsTrigger": false,
-        "Scale": "20,20,48",
+        "Scale": "16,16,28",
         "Static": false,
-        "Surface": null
+        "Surface": "surfaces/clone.surface"
       },
       {
         "__type": "Rigidbody",
@@ -58,6 +59,7 @@
       {
         "Id": "93eab888-4242-4bd0-8c22-c41b7a0cb45c",
         "Name": "Body",
+        "Scale": "1.1,1.1,0.7",
         "Enabled": true,
         "Components": [
           {

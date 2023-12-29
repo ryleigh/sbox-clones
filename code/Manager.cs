@@ -16,13 +16,15 @@ public sealed class Manager : Component
 		SpawnClone( new Vector3( 0f, 0f, 175f ) );
 
 		_timeSinceClone = 0f;
+
+		Scene.PhysicsWorld.SubSteps = 24;
 	}
 
 	protected override void OnUpdate()
 	{
 		if( _timeSinceClone > 1f)
 		{
-			SpawnClone( new Vector3( 0f, 0f, 175f ) );
+			//SpawnClone( new Vector3( 0f, 0f, 175f ) );
 			_timeSinceClone = 0f;
 		}
 	}

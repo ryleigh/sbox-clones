@@ -29,8 +29,8 @@
           "ClearFlags": "All",
           "FieldOfView": 60,
           "IsMainCamera": true,
-          "Orthographic": false,
-          "OrthographicHeight": 1204,
+          "Orthographic": true,
+          "OrthographicHeight": 300,
           "Priority": 1,
           "RenderExcludeTags": "",
           "RenderTags": "",
@@ -65,7 +65,44 @@
           "IsTrigger": false,
           "Scale": "50,50,50",
           "Static": false,
-          "Surface": null
+          "Surface": "surfaces/floor.surface"
+        },
+        {
+          "__type": "Rigidbody",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0
+        }
+      ]
+    },
+    {
+      "Id": "b295d2b4-3d79-46bb-b13f-0b2e52063fd1",
+      "Name": "Cube (2)",
+      "Position": "0,214.7648,36.19211",
+      "Rotation": "0.1726963,0,0,0.9849758",
+      "Scale": "1,5,0.3",
+      "Tags": "default",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
         },
         {
           "__type": "Rigidbody",
@@ -112,9 +149,44 @@
           "IsTrigger": false,
           "Scale": "50,50,50",
           "Static": false,
-          "Surface": null
+          "Surface": "surfaces/floor.surface"
         }
       ]
+    },
+    {
+      "Id": "b8f28e1c-8efc-4cec-a335-a8663da870f2",
+      "Name": "Cube (1)",
+      "Position": "0,78.81023,85.17569",
+      "Scale": "4,1,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "43e24de0-5062-4894-9e7b-156fcf9cc54c",
+      "Name": "block",
+      "Position": "0,75.80523,65.77925",
+      "Scale": "0.5,0.5,0.5",
+      "__Prefab": "prefabs/block.prefab"
     }
   ],
   "SceneProperties": {
