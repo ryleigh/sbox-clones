@@ -1,0 +1,83 @@
+{
+  "RootObject": {
+    "Id": "6ab7e124-c14a-4288-aa54-a4a2c3f5f53e",
+    "Name": "clone",
+    "Tags": "default",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "CharacterController",
+        "__enabled": false,
+        "Acceleration": 10,
+        "GroundAngle": 45,
+        "Height": 100,
+        "IgnoreLayers": "solid,trigger,default",
+        "Radius": 10,
+        "StepHeight": 18
+      },
+      {
+        "__type": "CitizenAnimationHelper",
+        "__enabled": true,
+        "BodyWeight": 1,
+        "EyeSource": null,
+        "EyesWeight": 1,
+        "HeadWeight": 1,
+        "Height": 1,
+        "IkLeftFoot": null,
+        "IkLeftHand": null,
+        "IkRightFoot": null,
+        "IkRightHand": null,
+        "LookAt": null,
+        "LookAtEnabled": false,
+        "Target": "93eab888-4242-4bd0-8c22-c41b7a0cb45c"
+      },
+      {
+        "__type": "Clone",
+        "__enabled": true,
+        "AnimationHelper": "6ab7e124-c14a-4288-aa54-a4a2c3f5f53e",
+        "Body": "93eab888-4242-4bd0-8c22-c41b7a0cb45c"
+      },
+      {
+        "__type": "BoxCollider",
+        "__enabled": true,
+        "Center": "0,0,24",
+        "IsTrigger": false,
+        "Scale": "20,20,48",
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "Rigidbody",
+        "__enabled": true,
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0
+      }
+    ],
+    "Children": [
+      {
+        "Id": "93eab888-4242-4bd0-8c22-c41b7a0cb45c",
+        "Name": "Body",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "SkinnedModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "BoneMergeTarget": null,
+            "CreateBoneObjects": false,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/citizen/citizen.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}
