@@ -1,5 +1,6 @@
 using Sandbox;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 public sealed class Manager : Component
 {
@@ -12,14 +13,21 @@ public sealed class Manager : Component
 	{
 		base.OnEnabled();
 
-		for(int i = 0; i < 5; i++)
+		var spawnPoints = Scene.GetAllComponents<SpawnPoint>().ToList();
+		foreach( var spawnPoint in spawnPoints )
 		{
-			SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
+			SpawnClone( spawnPoint.Transform.Position );
 		}
+
+
+		//for(int i = 0; i < 5; i++)
+		//{
+		//	SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
+		//}
 
 		_timeSinceClone = 0f;
 
-		Scene.PhysicsWorld.SubSteps = 32;
+		Scene.PhysicsWorld.SubSteps = 1;
 	}
 
 	protected override void OnUpdate()
@@ -39,6 +47,6 @@ public sealed class Manager : Component
 
 	public void CloneDied(Clone clone)
 	{
-		SpawnClone( new Vector3( 0f, Game.Random.Float(-50f, 50f), 175f + Game.Random.Float( -50f, 50f ) ) );
+		SpawnClone( new Vector3( 0f, Game.Random.Float(-20f, 20f), 175f + Game.Random.Float( -20f, 20f ) ) );
 	}
 }

@@ -2,8 +2,8 @@
   "RootObject": {
     "Id": "43e24de0-5062-4894-9e7b-156fcf9cc54c",
     "Name": "block",
-    "Position": "0,75.80523,65.77925",
     "Scale": "0.5,0.5,0.5",
+    "Tags": "block",
     "Enabled": true,
     "Components": [
       {

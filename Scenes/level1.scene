@@ -1,0 +1,607 @@
+{
+  "GameObjects": [
+    {
+      "Id": "7d6f0dec-365e-4133-bf2a-289188767fbd",
+      "Name": "Manager",
+      "Position": "-619.007,-486.2662,556.2214",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Manager",
+          "__enabled": true,
+          "ClonePrefab": "prefabs/clone.prefab"
+        }
+      ]
+    },
+    {
+      "Id": "02752b33-84e6-4298-9538-2a63df65307f",
+      "Name": "Sun",
+      "Position": "-30.34852,14.1777,233.7865",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "1,1,1,1",
+          "Shadows": true,
+          "SkyColor": "0.20389,0.20792,0.1791,1"
+        }
+      ]
+    },
+    {
+      "Id": "00854b9e-9ce1-45a3-b1a6-a525f08e12e0",
+      "Name": "Camera",
+      "Position": "-507.3935,0,119.0326",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0,0,0,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": true,
+          "OrthographicHeight": 300,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Vignette",
+          "__enabled": true,
+          "Center": "0.5,0.5",
+          "Color": "0,0,0,1",
+          "Intensity": 1,
+          "Roundness": -0.30000007,
+          "Smoothness": 0.95
+        },
+        {
+          "__type": "FilmGrain",
+          "__enabled": true,
+          "Intensity": 0.025,
+          "Response": 0.5
+        },
+        {
+          "__type": "Pixelate",
+          "__enabled": false,
+          "Scale": 0.0025
+        },
+        {
+          "__type": "Sharpen",
+          "__enabled": false,
+          "Scale": 0.25
+        }
+      ]
+    },
+    {
+      "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
+      "Name": "SpawnPos",
+      "Position": "0,109.4831,146.3431",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SpawnPoint",
+          "__enabled": true
+        }
+      ]
+    },
+    {
+      "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
+      "Name": "SpawnPos (1)",
+      "Position": "0,70.73582,146.3432",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "SpawnPoint",
+          "__enabled": true
+        }
+      ]
+    },
+    {
+      "Id": "48fdf543-d3c7-422c-9a8d-676937a50d50",
+      "Name": "props",
+      "Enabled": true,
+      "Children": [
+        {
+          "Id": "62d986ce-2853-4a60-967d-70e526f7ad3d",
+          "Name": "chandelier_01",
+          "Position": "37.75022,12.58776,173.4837",
+          "Rotation": "-0.00000000000003564041,0.00000003191883,1,-0.000001116595",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/chandelier_01.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "17.08003,0,-20.70001",
+              "IsTrigger": false,
+              "Scale": "30.00003,27.60002,9.399985",
+              "Static": false,
+              "Surface": "surfaces/floor.surface"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "d596339c-dfe2-44f6-aa3e-563d475cc4a5",
+              "Name": "Point Light",
+              "Position": "0.000000000004259472,0.0000001424846,-27.64613",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "PointLight",
+                  "__enabled": true,
+                  "LightColor": "0.94505,1,0.4505,1",
+                  "Radius": 200
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "18e6129e-74c4-41b1-8b93-5e6ec3c3f774",
+          "Name": "wooden_door_frame_double_02b",
+          "Position": "16,-122.4417,71.25568",
+          "Scale": "0.35,0.35,0.35",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_02b.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0,0,1"
+            },
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "-95.80011,0,51.90006",
+              "IsTrigger": true,
+              "Scale": "135.6,73.59982,80",
+              "Static": false,
+              "Surface": null
+            },
+            {
+              "__type": "Door",
+              "__enabled": true
+            }
+          ],
+          "Children": [
+            {
+              "Id": "3c7c2692-8f2b-4498-b376-6cd5366d2962",
+              "Name": "door_left",
+              "Position": "21.83894,24.55963,108.6336",
+              "Rotation": "1,0.0000000000002287952,0.0000003576279,-0.0000006397578",
+              "Scale": "1.4,1.2,1.4",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/door.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "90da99cc-5279-4176-b260-7b76fa24165b",
+              "Name": "door_right",
+              "Position": "21.52557,-23.19534,-3.100828",
+              "Rotation": "0.0000000003458094,0.000000000001875833,0.005786672,0.9999834",
+              "Scale": "1.4,1.2,1.4",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/door.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "13b2508c-63a5-4885-b611-0049df00df74",
+          "Name": "floor",
+          "Position": "0,31.21417,25.68918",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,-25.10002,18.5",
+              "IsTrigger": false,
+              "Scale": "91.89985,450,53.49996",
+              "Static": false,
+              "Surface": "surfaces/floor.surface"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "8342dda2-fa86-4b99-962e-9907ec1992b7",
+              "Name": "block",
+              "Position": "7.672341,-77.16843,12.69523",
+              "Rotation": "-0.7726206,-0.000000004105318,0.6348674,-0.000000004105323",
+              "Scale": "15,15,15",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "72ffb4aa-aca5-44b7-8d1b-4dac58fdcb41",
+              "Name": "block",
+              "Position": "7.672341,-162.7739,12.69523",
+              "Rotation": "-0.9904144,-0.00000003363283,-0.1381319,-0.0000000336328",
+              "Scale": "15,15,15",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "0d45d934-ff05-4310-95f4-5ff5bd14a156",
+              "Name": "block",
+              "Position": "7.672341,102.6844,12.69523",
+              "Rotation": "-0.7410021,-0.000000002071219,0.6715026,-0.000000002071222",
+              "Scale": "15,15,15",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "2792e830-e74d-4828-baa6-8ad15729534e",
+          "Name": "ceiling",
+          "Position": "0,-28.64492,216.4766",
+          "Rotation": "1,0,0,-0.0000006397578",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,-25.10002,18.5",
+              "IsTrigger": false,
+              "Scale": "91.89985,450,53.49996",
+              "Static": false,
+              "Surface": "surfaces/floor.surface"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "0372c7d6-108f-433e-9ba7-5f3833aae7bf",
+              "Name": "block",
+              "Position": "7.672341,-77.16843,12.69523",
+              "Rotation": "-0.6738844,0.000000001935945,0.7388371,0.000000001935689",
+              "Scale": "15,15,15",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8ea9cf53-8665-4202-b5b0-983397bb53ff",
+              "Name": "block",
+              "Position": "7.672341,-162.7739,12.69523",
+              "Rotation": "-0.9999883,-0.00000002965456,0.00493067,-0.00000002965453",
+              "Scale": "15,15,15",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "bd1a7b20-142c-4e8a-9a03-2118a186e357",
+              "Name": "block",
+              "Position": "7.672341,102.6844,12.69523",
+              "Rotation": "-0.637351,0.000000003970342,0.7705733,0.000000003970399",
+              "Scale": "15,15,15",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "97c989f2-08a5-4e93-87cb-8048573f991c",
+          "Name": "wallclock",
+          "Position": "201.6901,76.11189,151.0115",
+          "Rotation": "0.000000417176,0.000000006627432,1,-0.0000006397578",
+          "Scale": "0.8,0.8,0.8",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/indoor/wall_clock/wallclock.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "a58834e2-4be8-4a3c-9b25-889e21064326",
+          "Name": "pillar",
+          "Position": "0,-85.40368,62.21152",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,-0.000000372529,30.80005",
+              "IsTrigger": false,
+              "Scale": "50,26.69997,72.49992",
+              "Static": false,
+              "Surface": "surfaces/floor.surface"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "0cf3df4e-9afc-41c7-97c1-d6b3536c88be",
+              "Name": "wall_plaster_125_pillar",
+              "Position": "0,0,0",
+              "Rotation": "0.0000002615791,0.0000002786164,0.6269396,0.7790685",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/rust_structures/fences_walls/wall_plaster_125_pillar.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "34a61b43-0a97-46bd-abf8-8bbf2a8216be",
+          "Name": "left_wall",
+          "Position": "0,204.7793,109.4018",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,6.099992,0",
+              "IsTrigger": false,
+              "Scale": "50,56.59988,203.5999",
+              "Static": false,
+              "Surface": null
+            }
+          ],
+          "Children": [
+            {
+              "Id": "a5682e43-534b-4e3a-ba58-777db7f17024",
+              "Name": "block (1)",
+              "Position": "4.208147,0.164139,9.389229",
+              "Rotation": "0.08597235,0.6994312,-0.7080504,-0.04550915",
+              "Scale": "15,18.2,11.70422",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "749a8190-b086-410d-b3e8-a3a1f0bc5510",
+          "Name": "right_wall",
+          "Position": "0,-208.3428,109.4018",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "BoxCollider",
+              "__enabled": true,
+              "Center": "0,-4.200003,0",
+              "IsTrigger": false,
+              "Scale": "50,56.59988,203.5999",
+              "Static": false,
+              "Surface": null
+            }
+          ],
+          "Children": [
+            {
+              "Id": "ed96ee8a-b510-4478-a934-cb418d5a0674",
+              "Name": "block (1)",
+              "Position": "4.208147,0.1641388,9.389229",
+              "Rotation": "-0.6963674,-0.04641051,-0.04685179,-0.7146528",
+              "Scale": "15,18.2,11.70422",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "00dba0a2-c012-4b64-8a7e-f2b264a62518",
+          "Name": "wallpaper",
+          "Position": "85.48574,107.6489,110.2022",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/interior/vintage_wallpaper_c/vintage_wallpaper_c.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "b4d81873-7194-46ac-a509-3f4728aff02e",
+          "Name": "wallpaper",
+          "Position": "71.35857,-23.05545,110.2022",
+          "Rotation": "-0.000001333214,-0.707107,-0.000001333214,0.7071065",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/interior/vintage_wallpaper_c/vintage_wallpaper_c.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "49b20a80-9c7d-4e73-97c6-c556ce01082e",
+          "Name": "wallpaper",
+          "Position": "92.63055,-157.9999,119.0366",
+          "Rotation": "0.707107,-0.0000002837898,-0.7071065,-0.0000002837896",
+          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/interior/vintage_wallpaper_c/vintage_wallpaper_c.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "main",
+  "Description": "",
+  "__references": [
+    "facepunch.brick_wall_debris_small_a",
+    "facepunch.wooden_door_frame_double_02b",
+    "frogpond.wallclock",
+    "ispersonal.simple_door",
+    "polyhaven.chandelier_01",
+    "rust.wall_plaster_125_pillar",
+    "rustextended.vintage_wallpaper_c"
+  ]
+}

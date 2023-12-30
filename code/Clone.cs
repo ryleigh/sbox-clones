@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Numerics;
 using System.Runtime;
 
-public sealed class Clone : Component, Component.ICollisionListener
+public sealed class Clone : Component, Component.ICollisionListener, Component.ITriggerListener
 {
 	public Manager Manager { get; set; }
 
@@ -49,7 +49,7 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 		TimeSinceSpawn = 0f;
 
-		SetConfused( Game.Random.Int( 0, 1 ) == 0 );
+		//SetConfused( Game.Random.Int( 0, 1 ) == 0 );
 	}
 
 	protected override void OnUpdate()
@@ -59,7 +59,7 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 		//float rotateDifference = 0;
 
-		Transform.Scale = Utils.Map( TimeSinceSpawn, 0f, 0.25f, 0f, 1f, EasingType.ExpoOut );
+		//Transform.Scale = Utils.Map( TimeSinceSpawn, 0f, 0.25f, 0f, 1f, EasingType.ExpoOut );
 
 		if ( Body is not null )
 		{
@@ -100,12 +100,12 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 			AnimationHelper.HeadWeight = 100f;
 			AnimationHelper.WithVelocity( Velocity * 100f);
-			AnimationHelper.WithWishVelocity( WishVelocity * 10f );
+			//AnimationHelper.WithWishVelocity( WishVelocity * 10f );
 			//AnimationHelper.IsGrounded = cc.IsOnGround;
-			AnimationHelper.IsGrounded = MathF.Abs(Rigidbody.PhysicsBody.Velocity.z) < 1f;
+			//AnimationHelper.IsGrounded = MathF.Abs(Rigidbody.PhysicsBody.Velocity.z) < 1f;
 			//AnimationHelper.FootShuffle = rotateDifference;
 			//AnimationHelper.WithLook( lookDir );
-			AnimationHelper.MoveStyle = IsRunning ? CitizenAnimationHelper.MoveStyles.Run : CitizenAnimationHelper.MoveStyles.Walk;
+			AnimationHelper.MoveStyle = CitizenAnimationHelper.MoveStyles.Walk;
 			AnimationHelper.Height = Height;
 			//AnimationHelper.DuckLevel = Input.Down( "Backward" ) ? 0.8f : 0f;
 		}
@@ -147,6 +147,8 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 		Rigidbody.AngularDamping = 99999999f;
 		Rigidbody.AngularVelocity = Vector3.Zero;
+		//Rigidbody.LinearDamping = 4f;
+		//Rigidbody.PhysicsBody.LinearDrag = 99999999f;
 		//Rigidbody.ClearForces();
 
 		Transform.LocalRotation = Rotation.Identity;
@@ -199,14 +201,18 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 		Velocity = Velocity.WithAcceleration( WishVelocity, 1.5f * Time.Delta );
 
-		var damping = (1f - dt * 8f);
+		var damping = (1f - dt * 7.5f);
 		Velocity = new Vector3( Velocity.x * damping, Velocity.y * damping, Velocity.z );
+		Rigidbody.PhysicsBody.Velocity = new Vector3( Rigidbody.PhysicsBody.Velocity.x * damping, Rigidbody.PhysicsBody.Velocity.y * damping, Rigidbody.PhysicsBody.Velocity.z );
+
 		//Velocity *= (1f - dt * 8f);
 		//ApplyFriction( 2f );
 
 		//rigidBody.Velocity = (Velocity * 50f).WithZ( rigidBody.Velocity.z );
 
-		Transform.Position += Velocity;
+		//Transform.Position += Velocity;
+		Rigidbody.PhysicsBody.ApplyImpulse( Velocity * 1600f );
+		//Rigidbody.PhysicsBody.ApplyForce( Velocity * 1000f );
 		Transform.Position = Transform.Position.WithX( 0f );
 		//Log.Info( $"WishVelocity: {WishVelocity} Velocity: {Velocity}" );
 
@@ -329,17 +335,41 @@ public sealed class Clone : Component, Component.ICollisionListener
 		//else WishVelocity *= 110.0f;
 	}
 
-	public void OnCollisionStart( Collision other )
+
+
+	public void OnCollisionStart( Collision collision )
 	{
 		
 	}
 
-	public void OnCollisionUpdate( Collision other )
+	public void OnCollisionUpdate( Collision collision )
+	{
+		//Log.Info( $"{collision.Other.Body.GetGameObject().Name}" );
+	}
+
+	public void OnCollisionStop( CollisionStop collision )
 	{
 
 	}
 
-	public void OnCollisionStop( CollisionStop other )
+	public void OnTriggerEnter(Collider collider)
+	{
+		////Log.Info( $"{other.GameObject.Name}, {other.GameObject.Tags}" );
+
+		//if (collider.GameObject.Tags.Has("block"))
+		//{
+		//	var boxCollider = collider as BoxCollider;
+		//	Log.Info( $"{boxCollider.Scale.z}" );
+		//	if (boxCollider.Center.z < Transform.Position.z)
+		//	{
+		//		Transform.Position = Transform.Position.WithZ( boxCollider.Center.z + boxCollider.Scale.z * collider.Transform.Scale.z * 0.5f );
+		//	}
+
+		//	//other.GameObject.Components.Get<BoxCollider>().
+		//}
+	}
+
+	public void OnTriggerExit( Collider collider )
 	{
 
 	}
