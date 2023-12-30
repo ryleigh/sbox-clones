@@ -1,7 +1,8 @@
 {
   "RootObject": {
-    "Id": "6ab7e124-c14a-4288-aa54-a4a2c3f5f53e",
+    "Id": "262c1ac6-a20d-4272-8aef-418670155c63",
     "Name": "clone",
+    "Scale": "0,0,0",
     "Tags": "default",
     "Enabled": true,
     "Components": [
@@ -29,14 +30,14 @@
         "IkRightHand": null,
         "LookAt": null,
         "LookAtEnabled": false,
-        "Target": "93eab888-4242-4bd0-8c22-c41b7a0cb45c"
+        "Target": "fd9cbe2a-9b19-4028-9f7c-8073a41acb44"
       },
       {
         "__type": "Clone",
         "__enabled": true,
-        "AnimationHelper": "6ab7e124-c14a-4288-aa54-a4a2c3f5f53e",
-        "Body": "93eab888-4242-4bd0-8c22-c41b7a0cb45c",
-        "IgnoreLayers": ""
+        "AnimationHelper": "262c1ac6-a20d-4272-8aef-418670155c63",
+        "Body": "fd9cbe2a-9b19-4028-9f7c-8073a41acb44",
+        "IgnoreTags": ""
       },
       {
         "__type": "BoxCollider",
@@ -57,7 +58,7 @@
     ],
     "Children": [
       {
-        "Id": "93eab888-4242-4bd0-8c22-c41b7a0cb45c",
+        "Id": "fd9cbe2a-9b19-4028-9f7c-8073a41acb44",
         "Name": "Body",
         "Scale": "1.1,1.1,0.7",
         "Enabled": true,

@@ -34,6 +34,10 @@ public sealed class Clone : Component, Component.ICollisionListener
 	public BBox BoundingBox => BBox.FromPositionAndSize( BoxCollider.Center, BoxCollider.Scale );
 	[Property] public TagSet IgnoreTags { get; set; } = new();
 
+	public TimeSince TimeSinceSpawn { get; set; }
+
+	public bool IsConfused { get; private set; }
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
@@ -42,6 +46,10 @@ public sealed class Clone : Component, Component.ICollisionListener
 		BoxCollider = GameObject.Components.Get<BoxCollider>();
 
 		_targetYaw = Game.Random.Int( 0, 1 ) == 0 ? -90f : 90f;
+
+		TimeSinceSpawn = 0f;
+
+		SetConfused( Game.Random.Int( 0, 1 ) == 0 );
 	}
 
 	protected override void OnUpdate()
@@ -50,6 +58,8 @@ public sealed class Clone : Component, Component.ICollisionListener
 		//if ( cc is null ) return;
 
 		//float rotateDifference = 0;
+
+		Transform.Scale = Utils.Map( TimeSinceSpawn, 0f, 0.25f, 0f, 1f, EasingType.ExpoOut );
 
 		if ( Body is not null )
 		{
@@ -73,6 +83,13 @@ public sealed class Clone : Component, Component.ICollisionListener
 				yaw = 90f + (90f - yaw);
 				Body.Transform.Rotation = Rotation.FromYaw( yaw );
 			}
+		}
+
+		if ( Input.Pressed( "Jump" ) && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.1f ) // todo: you could jump at apex of jump, need proper IsGrounded check
+		{
+			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
+
+			OnJump();
 		}
 
 		//Log.Info( $"zVel: {Rigidbody.PhysicsBody.Velocity.z}" );
@@ -134,13 +151,6 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 		Transform.LocalRotation = Rotation.Identity;
 		Body.Transform.LocalRotation = Rotation.From( 0f, Body.Transform.LocalRotation.Yaw(), 0f );
-
-		if(Input.Pressed( "Jump" ) && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z) < 0.1f) // todo: you could jump at apex of jump, need proper IsGrounded check
-		{
-			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
-
-			OnJump();
-		}
 
 		//Log.Info( $"PhysicsBody Vel: {rigidBody.PhysicsBody.Velocity}, Velocity: {Velocity}" );
 
@@ -209,6 +219,8 @@ public sealed class Clone : Component, Component.ICollisionListener
 		var endPos = startPos + Vector3.Down * 2f;
 		var wasOnGround = IsGrounded;
 
+		//Gizmo.Draw.Line( startPos, endPos );
+
 		// We're flying upwards too fast, never land on ground
 		if ( !IsGrounded && Velocity.z > 50.0f )
 		{
@@ -273,9 +285,18 @@ public sealed class Clone : Component, Component.ICollisionListener
 	//	Velocity *= newspeed;
 	//}
 
+	public void SetConfused(bool confused)
+	{
+		IsConfused = confused;
+
+		Body.Components.Get<SkinnedModelRenderer>().Tint = IsConfused ? new Color(0.3f, 0.1f, 0.9f) : Color.White;
+	}
+
 	public void BuildWishVelocity(float speed)
 	{
 		WishVelocity = 0;
+
+		float confusedFactor = IsConfused ? -1f : 1f;
 
 		if ( Input.Down( "Forward" ) )
 		{
@@ -289,13 +310,13 @@ public sealed class Clone : Component, Component.ICollisionListener
 
 		if ( Input.Down( "Left" ) )
 		{
-			WishVelocity += Vector3.Left;
+			WishVelocity += Vector3.Left * confusedFactor;
 			EyeAngles = new Angles( WishVelocity );
 		}
 
 		if ( Input.Down( "Right" ) )
 		{
-			WishVelocity += Vector3.Right;
+			WishVelocity += Vector3.Right * confusedFactor;
 			EyeAngles = new Angles( WishVelocity );
 		}
 

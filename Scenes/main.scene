@@ -77,43 +77,6 @@
       ]
     },
     {
-      "Id": "b295d2b4-3d79-46bb-b13f-0b2e52063fd1",
-      "Name": "Cube (2)",
-      "Position": "0,214.7648,36.19211",
-      "Rotation": "0.1726963,0,0,0.9849758",
-      "Scale": "1,5,0.3",
-      "Tags": "default",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        },
-        {
-          "__type": "Rigidbody",
-          "__enabled": false,
-          "AngularDamping": 0,
-          "Gravity": true,
-          "LinearDamping": 0
-        }
-      ]
-    },
-    {
       "Id": "7d6f0dec-365e-4133-bf2a-289188767fbd",
       "Name": "Manager",
       "Position": "-619.007,-486.2662,556.2214",

@@ -7,17 +7,19 @@ public sealed class Manager : Component
 
 	private TimeSince _timeSinceClone;
 
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
 
-		//SpawnClone( new Vector3( 0f, 0f, 25f ) );
-		//SpawnClone( new Vector3( 0f, 0f, 125f ) );
-		SpawnClone( new Vector3( 0f, 0f, 175f ) );
+		for(int i = 0; i < 5; i++)
+		{
+			SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
+		}
 
 		_timeSinceClone = 0f;
 
-		Scene.PhysicsWorld.SubSteps = 24;
+		Scene.PhysicsWorld.SubSteps = 32;
 	}
 
 	protected override void OnUpdate()
@@ -37,6 +39,6 @@ public sealed class Manager : Component
 
 	public void CloneDied(Clone clone)
 	{
-		//SpawnClone( new Vector3( 0f, Game.Random.Float(-50f, 50f), 175f + Game.Random.Float( -50f, 50f ) ) );
+		SpawnClone( new Vector3( 0f, Game.Random.Float(-50f, 50f), 175f + Game.Random.Float( -50f, 50f ) ) );
 	}
 }
