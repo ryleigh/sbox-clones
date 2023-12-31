@@ -155,8 +155,8 @@
         },
         {
           "Id": "18e6129e-74c4-41b1-8b93-5e6ec3c3f774",
-          "Name": "wooden_door_frame_double_02b",
-          "Position": "16,-122.4417,71.25568",
+          "Name": "door",
+          "Position": "16,-122.4417,70.06349",
           "Scale": "0.35,0.35,0.35",
           "Enabled": true,
           "Components": [
@@ -173,9 +173,9 @@
             {
               "__type": "BoxCollider",
               "__enabled": true,
-              "Center": "-95.80011,0,51.90006",
+              "Center": "-48.6002,0,51.90006",
               "IsTrigger": true,
-              "Scale": "135.6,73.59982,80",
+              "Scale": "124.9997,73.59982,80",
               "Static": false,
               "Surface": null
             },
@@ -188,8 +188,8 @@
             {
               "Id": "3c7c2692-8f2b-4498-b376-6cd5366d2962",
               "Name": "door_left",
-              "Position": "21.83894,24.55963,108.6336",
-              "Rotation": "1,0.0000000000002287952,0.0000003576279,-0.0000006397578",
+              "Position": "38.37995,24.55963,108.6336",
+              "Rotation": "1,0,0,-0.0000006397578",
               "Scale": "1.4,1.2,1.4",
               "Enabled": true,
               "Components": [
@@ -208,8 +208,7 @@
             {
               "Id": "90da99cc-5279-4176-b260-7b76fa24165b",
               "Name": "door_right",
-              "Position": "21.52557,-23.19534,-3.100828",
-              "Rotation": "0.0000000003458094,0.000000000001875833,0.005786672,0.9999834",
+              "Position": "38.06658,-23.19534,-3.309828",
               "Scale": "1.4,1.2,1.4",
               "Enabled": true,
               "Components": [
@@ -224,6 +223,25 @@
                   "Tint": "1,1,1,1"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "Id": "75dfee04-e30b-4458-bb94-f5f9bb93262c",
+          "Name": "door_bg",
+          "Position": "79.26552,-122.3227,87.53674",
+          "Scale": "0.05,0.6895697,0.8586234",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/tunnel1.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.03465,0.03465,0.03465,1"
             }
           ]
         },

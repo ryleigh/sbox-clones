@@ -1,4 +1,5 @@
 using Sandbox;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
@@ -7,6 +8,9 @@ public sealed class Manager : Component
 	[Property] public GameObject ClonePrefab { get; set; }
 
 	private TimeSince _timeSinceClone;
+
+	public List<Button> Buttons = new List<Button>();
+	public Door Door { get; private set; }
 
 
 	protected override void OnEnabled()
@@ -18,6 +22,9 @@ public sealed class Manager : Component
 		{
 			SpawnClone( spawnPoint.Transform.Position );
 		}
+
+		Buttons = Scene.GetAllComponents<Button>().ToList();
+		Door = Scene.GetAllComponents<Door>().FirstOrDefault();
 
 		//for(int i = 0; i < 5; i++)
 		//{
@@ -47,5 +54,30 @@ public sealed class Manager : Component
 	public void CloneDied(Clone clone)
 	{
 		SpawnClone( new Vector3( 0f, Game.Random.Float(-20f, 20f), 175f + Game.Random.Float( -20f, 20f ) ) );
+	}
+
+	public void ButtonPressed(Button button)
+	{
+		RefreshButtons();
+	}
+
+	public void ButtonReleased( Button button )
+	{
+		RefreshButtons();
+	}
+
+	void RefreshButtons()
+	{
+		bool allButtonsPressed = true;
+		foreach(var button in Buttons )
+		{
+			if(!button.IsPressed)
+			{
+				allButtonsPressed = false;
+				break;
+			}
+		}
+
+		Door.SetOpen( allButtonsPressed );
 	}
 }

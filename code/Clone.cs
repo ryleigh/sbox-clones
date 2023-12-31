@@ -354,31 +354,45 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	public void OnTriggerEnter(Collider collider)
 	{
+		//Log.Info( $"Enter: {collider.GameObject.Name}, {collider.GameObject.Tags}" );
+
 		if ( collider.GameObject.Tags.Has( "button" ) )
 		{
 			collider.GameObject.Components.Get<Button>().StartPressing( this );
 		}
 
+		if ( collider.GameObject.Tags.Has( "door" ) )
+		{
+			collider.GameObject.Components.Get<Door>().StartTouching( this );
+		}
+
 		//Log.Info( $"{collider.GameObject.Name}, {collider.GameObject.Tags}" );
 
-			//if (collider.GameObject.Tags.Has("block"))
-			//{
-			//	var boxCollider = collider as BoxCollider;
-			//	Log.Info( $"{boxCollider.Scale.z}" );
-			//	if (boxCollider.Center.z < Transform.Position.z)
-			//	{
-			//		Transform.Position = Transform.Position.WithZ( boxCollider.Center.z + boxCollider.Scale.z * collider.Transform.Scale.z * 0.5f );
-			//	}
+		//if (collider.GameObject.Tags.Has("block"))
+		//{
+		//	var boxCollider = collider as BoxCollider;
+		//	Log.Info( $"{boxCollider.Scale.z}" );
+		//	if (boxCollider.Center.z < Transform.Position.z)
+		//	{
+		//		Transform.Position = Transform.Position.WithZ( boxCollider.Center.z + boxCollider.Scale.z * collider.Transform.Scale.z * 0.5f );
+		//	}
 
-			//	//other.GameObject.Components.Get<BoxCollider>().
-			//}
+		//	//other.GameObject.Components.Get<BoxCollider>().
+		//}
 	}
 
 	public void OnTriggerExit( Collider collider )
 	{
+		//Log.Info( $"Exit: {collider.GameObject.Name}, {collider.GameObject.Tags}" );
+
 		if ( collider.GameObject.Tags.Has( "button" ) )
 		{
 			collider.GameObject.Components.Get<Button>().StopPressing( this );
+		}
+
+		if ( collider.GameObject.Tags.Has( "door" ) )
+		{
+			collider.GameObject.Components.Get<Door>().StopTouching( this );
 		}
 	}
 }

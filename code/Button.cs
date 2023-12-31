@@ -10,6 +10,7 @@ public sealed class Button : Component
 	private float _modelZPosUnpressed;
 	private float _modelTargetZPos;
 	public bool IsPressed { get; private set; }
+	public Manager Manager { get; private set; }
 
 	protected override void OnEnabled()
 	{
@@ -17,6 +18,7 @@ public sealed class Button : Component
 
 		_buttonModel = this.FindChild( "model" );
 		_modelZPosUnpressed = _modelTargetZPos = _buttonModel.Transform.LocalPosition.z;
+		Manager = Scene.GetAllComponents<Manager>().FirstOrDefault();
 	}
 
 	protected override void OnUpdate()
@@ -31,6 +33,8 @@ public sealed class Button : Component
 
 		_clonesPressing.Add( clone );
 		RefreshPressing();
+		
+		Manager.ButtonPressed( this );
 	}
 
 	public void StopPressing( Clone clone )
@@ -40,6 +44,8 @@ public sealed class Button : Component
 
 		_clonesPressing.Remove( clone );
 		RefreshPressing();
+		
+		Manager.ButtonReleased( this );
 	}
 
 	void RefreshPressing()
