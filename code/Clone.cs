@@ -141,7 +141,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	protected override void OnFixedUpdate()
 	{
-		BuildWishVelocity(20f);
+		BuildWishVelocity(28f);
 
 		float dt = Time.Delta;
 
@@ -201,7 +201,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		Velocity = Velocity.WithAcceleration( WishVelocity, 1.5f * Time.Delta );
 
-		var damping = (1f - dt * 7.5f);
+		var damping = (1f - dt * 8.5f);
 		Velocity = new Vector3( Velocity.x * damping, Velocity.y * damping, Velocity.z );
 		Rigidbody.PhysicsBody.Velocity = new Vector3( Rigidbody.PhysicsBody.Velocity.x * damping, Rigidbody.PhysicsBody.Velocity.y * damping, Rigidbody.PhysicsBody.Velocity.z );
 
@@ -354,23 +354,31 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	public void OnTriggerEnter(Collider collider)
 	{
-		////Log.Info( $"{other.GameObject.Name}, {other.GameObject.Tags}" );
+		if ( collider.GameObject.Tags.Has( "button" ) )
+		{
+			collider.GameObject.Components.Get<Button>().StartPressing( this );
+		}
 
-		//if (collider.GameObject.Tags.Has("block"))
-		//{
-		//	var boxCollider = collider as BoxCollider;
-		//	Log.Info( $"{boxCollider.Scale.z}" );
-		//	if (boxCollider.Center.z < Transform.Position.z)
-		//	{
-		//		Transform.Position = Transform.Position.WithZ( boxCollider.Center.z + boxCollider.Scale.z * collider.Transform.Scale.z * 0.5f );
-		//	}
+		//Log.Info( $"{collider.GameObject.Name}, {collider.GameObject.Tags}" );
 
-		//	//other.GameObject.Components.Get<BoxCollider>().
-		//}
+			//if (collider.GameObject.Tags.Has("block"))
+			//{
+			//	var boxCollider = collider as BoxCollider;
+			//	Log.Info( $"{boxCollider.Scale.z}" );
+			//	if (boxCollider.Center.z < Transform.Position.z)
+			//	{
+			//		Transform.Position = Transform.Position.WithZ( boxCollider.Center.z + boxCollider.Scale.z * collider.Transform.Scale.z * 0.5f );
+			//	}
+
+			//	//other.GameObject.Components.Get<BoxCollider>().
+			//}
 	}
 
 	public void OnTriggerExit( Collider collider )
 	{
-
+		if ( collider.GameObject.Tags.Has( "button" ) )
+		{
+			collider.GameObject.Components.Get<Button>().StopPressing( this );
+		}
 	}
 }

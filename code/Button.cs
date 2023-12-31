@@ -1,0 +1,51 @@
+using Sandbox;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public sealed class Button : Component
+{
+	private GameObject _buttonModel;
+	private List<Clone> _clonesPressing = new();
+	private float _modelZPosUnpressed;
+	private float _modelTargetZPos;
+	public bool IsPressed { get; private set; }
+
+	protected override void OnEnabled()
+	{
+		base.OnEnabled();
+
+		_buttonModel = this.FindChild( "model" );
+		_modelZPosUnpressed = _modelTargetZPos = _buttonModel.Transform.LocalPosition.z;
+	}
+
+	protected override void OnUpdate()
+	{
+		_buttonModel.Transform.LocalPosition = _buttonModel.Transform.LocalPosition.WithZ( Utils.DynamicEaseTo( _buttonModel.Transform.LocalPosition.z, _modelTargetZPos, 0.45f, Time.Delta) );
+	}
+
+	public void StartPressing(Clone clone)
+	{
+		if ( _clonesPressing.Contains( clone ) )
+			return;
+
+		_clonesPressing.Add( clone );
+		RefreshPressing();
+	}
+
+	public void StopPressing( Clone clone )
+	{
+		if ( !_clonesPressing.Contains( clone ) )
+			return;
+
+		_clonesPressing.Remove( clone );
+		RefreshPressing();
+	}
+
+	void RefreshPressing()
+	{
+		IsPressed = _clonesPressing.Count > 0;
+		_modelTargetZPos = _modelZPosUnpressed + (IsPressed ? -1.5f : 0f);
+		//_buttonModel.Transform.LocalPosition = _buttonModel.Transform.LocalPosition.WithZ( _modelZPosUnpressed + (IsPressed ? -1.5f : 0f) );
+	}
+}

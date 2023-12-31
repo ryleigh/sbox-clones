@@ -44,6 +44,11 @@ public struct AStarEdge<T>
 
 public static class Utils
 {
+	public static GameObject FindChild(this Component component, string name)
+	{
+		return component.GameObject.Children.Where( x => x.Name == name ).FirstOrDefault();
+	}
+
 	public static Color GetRandomColor( float total = 1.5f )
 	{
 		float r = Game.Random.Float( 0f, 1f );

@@ -19,7 +19,6 @@ public sealed class Manager : Component
 			SpawnClone( spawnPoint.Transform.Position );
 		}
 
-
 		//for(int i = 0; i < 5; i++)
 		//{
 		//	SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
