@@ -5,6 +5,8 @@ using System.Linq;
 
 public sealed class Door : Component
 {
+	public Manager Manager { get; private set; }
+
 	private GameObject _doorLeft;
 	private GameObject _doorRight;
 
@@ -25,6 +27,8 @@ public sealed class Door : Component
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
+
+		Manager = Scene.GetAllComponents<Manager>().FirstOrDefault();
 
 		_doorLeft = this.FindChild( "door_left" );
 		_doorRight = this.FindChild( "door_right" );
@@ -84,7 +88,7 @@ public sealed class Door : Component
 
 		if(_clonesTouching.Count > 0 )
 		{
-			_clonesTouching.FirstOrDefault().GameObject.Destroy();
+			Manager.CloneEnteredDoor( _clonesTouching.FirstOrDefault(), this );
 		}
 	}
 }

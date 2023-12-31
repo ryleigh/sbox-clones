@@ -156,8 +156,9 @@
         {
           "Id": "18e6129e-74c4-41b1-8b93-5e6ec3c3f774",
           "Name": "door",
-          "Position": "16,-122.4417,70.06349",
+          "Position": "16,-115.4081,70",
           "Scale": "0.35,0.35,0.35",
+          "Tags": "door",
           "Enabled": true,
           "Components": [
             {
@@ -191,6 +192,7 @@
               "Position": "38.37995,24.55963,108.6336",
               "Rotation": "1,0,0,-0.0000006397578",
               "Scale": "1.4,1.2,1.4",
+              "Tags": "door",
               "Enabled": true,
               "Components": [
                 {
@@ -210,6 +212,7 @@
               "Name": "door_right",
               "Position": "38.06658,-23.19534,-3.309828",
               "Scale": "1.4,1.2,1.4",
+              "Tags": "door",
               "Enabled": true,
               "Components": [
                 {
@@ -229,7 +232,7 @@
         {
           "Id": "75dfee04-e30b-4458-bb94-f5f9bb93262c",
           "Name": "door_bg",
-          "Position": "79.26552,-122.3227,87.53674",
+          "Position": "79.26552,-115.2891,87.53674",
           "Scale": "0.05,0.6895697,0.8586234",
           "Enabled": true,
           "Components": [

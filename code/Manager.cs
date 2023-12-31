@@ -80,4 +80,9 @@ public sealed class Manager : Component
 
 		Door.SetOpen( allButtonsPressed );
 	}
+
+	public void CloneEnteredDoor(Clone clone, Door door)
+	{
+		clone.EnterDoor( door );
+	}
 }

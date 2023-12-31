@@ -38,12 +38,19 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	public bool IsConfused { get; private set; }
 
+	public bool IsEnteringDoor { get; private set; }
+	public Door DoorEntering { get; private set; }
+	private float _enterDoorTimer;
+
+	public SkinnedModelRenderer Renderer { get; private set; }
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
 
 		Rigidbody = GameObject.Components.Get<Rigidbody>();
 		BoxCollider = GameObject.Components.Get<BoxCollider>();
+		Renderer = Body.Components.Get<SkinnedModelRenderer>();
 
 		_targetYaw = Game.Random.Int( 0, 1 ) == 0 ? -90f : 90f;
 
@@ -60,6 +67,27 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		//float rotateDifference = 0;
 
 		//Transform.Scale = Utils.Map( TimeSinceSpawn, 0f, 0.25f, 0f, 1f, EasingType.ExpoOut );
+
+		if ( IsEnteringDoor )
+		{
+			_enterDoorTimer += Time.Delta;
+			float ENTER_TIME = 1f;
+			if ( _enterDoorTimer > ENTER_TIME )
+			{
+				GameObject.Destroy();
+			}
+			else
+			{
+				float progress = Utils.Map( _enterDoorTimer, 0f, ENTER_TIME, 0f, 1f );
+				float heightAdjust = Utils.Map( progress, 0f, 1f, 2f, 14f );
+				Transform.Position = Vector3.Lerp( Transform.Position, DoorEntering.Transform.Position.WithX( 0f ) + Vector3.Up * heightAdjust, progress );
+				Transform.Scale = Vector3.One * Utils.Map( progress, 0f, 1f, 1f, 0.1f );
+				Renderer.Tint = Renderer.Tint.WithAlpha( Utils.Map( progress, 0f, 1f, 1f, 0f, EasingType.SineIn ) );
+				Body.Transform.Rotation = Rotation.Lerp( Body.Transform.Rotation, Rotation.FromYaw( 0f ), 10f * Time.Delta);
+			}
+
+			return;
+		}
 
 		if ( Body is not null )
 		{
@@ -141,6 +169,9 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	protected override void OnFixedUpdate()
 	{
+		if ( IsEnteringDoor || !Rigidbody.Enabled )
+			return;
+
 		BuildWishVelocity(28f);
 
 		float dt = Time.Delta;
@@ -295,7 +326,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	{
 		IsConfused = confused;
 
-		Body.Components.Get<SkinnedModelRenderer>().Tint = IsConfused ? new Color(0.3f, 0.1f, 0.9f) : Color.White;
+		Renderer.Tint = IsConfused ? new Color(0.3f, 0.1f, 0.9f) : Color.White;
 	}
 
 	public void BuildWishVelocity(float speed)
@@ -394,5 +425,19 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		{
 			collider.GameObject.Components.Get<Door>().StopTouching( this );
 		}
+	}
+
+	public void EnterDoor(Door door)
+	{
+		if ( IsEnteringDoor )
+			return;
+
+		IsEnteringDoor = true;
+		DoorEntering = door;
+		//Components.Get<BoxCollider>().Enabled = false;
+		Rigidbody.Enabled = false;
+		_enterDoorTimer = 0f;
+		AnimationHelper.WithVelocity( Vector2.Right * 40f * 100f );
+		AnimationHelper.MoveStyle = CitizenAnimationHelper.MoveStyles.Run;
 	}
 }
