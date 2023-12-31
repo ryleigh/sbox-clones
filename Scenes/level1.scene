@@ -82,7 +82,7 @@
     {
       "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
       "Name": "SpawnPos",
-      "Position": "0,109.4831,146.3431",
+      "Position": "0,109.4831,72",
       "Enabled": true,
       "Components": [
         {
@@ -94,7 +94,7 @@
     {
       "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
       "Name": "SpawnPos (1)",
-      "Position": "0,70.73582,146.3432",
+      "Position": "0,70.73582,72",
       "Enabled": true,
       "Components": [
         {

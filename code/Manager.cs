@@ -68,17 +68,22 @@ public sealed class Manager : Component
 
 	void RefreshButtons()
 	{
+		Door.SetOpen( ShouldDoorBeOpen() );
+	}
+
+	public bool ShouldDoorBeOpen()
+	{
 		bool allButtonsPressed = true;
-		foreach(var button in Buttons )
+		foreach ( var button in Buttons )
 		{
-			if(!button.IsPressed)
+			if ( !button.IsPressed )
 			{
 				allButtonsPressed = false;
 				break;
 			}
 		}
 
-		Door.SetOpen( allButtonsPressed );
+		return allButtonsPressed;
 	}
 
 	public void CloneEnteredDoor(Clone clone, Door door)

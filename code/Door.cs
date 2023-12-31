@@ -24,6 +24,9 @@ public sealed class Door : Component
 
 	private List<Clone> _clonesTouching = new();
 
+	private bool _isCloneLeaving;
+	private Clone _cloneLeaving;
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
@@ -47,6 +50,15 @@ public sealed class Door : Component
 
 		_doorLeft.Transform.LocalRotation = Rotation.Lerp( _doorLeft.Transform.LocalRotation, _doorLeftTargetRot, lerpSpeed );
 		_doorRight.Transform.LocalRotation = Rotation.Lerp( _doorRight.Transform.LocalRotation, _doorRightTargetRot, lerpSpeed );
+
+		if ( _isCloneLeaving )
+		{
+			if ( !_cloneLeaving.IsValid() )
+			{
+				_isCloneLeaving = false;
+				SetOpen( Manager.ShouldDoorBeOpen() );
+			}
+		}
 	}
 
 	public void StartTouching( Clone clone )
@@ -69,6 +81,9 @@ public sealed class Door : Component
 
 	public void SetOpen(bool open)
 	{
+		if ( _isCloneLeaving )
+			return;
+
 		_doorLeftTargetPos = _doorLeftStartPos + (open ? Vector3.Left * 20f : Vector3.Zero);
 		_doorLeftTargetRot = open ? Rotation.From(0f, 80f, 180f) : _doorLeftStartRot;
 
@@ -88,7 +103,11 @@ public sealed class Door : Component
 
 		if(_clonesTouching.Count > 0 )
 		{
-			Manager.CloneEnteredDoor( _clonesTouching.FirstOrDefault(), this );
+			_cloneLeaving = _clonesTouching.FirstOrDefault();
+			Manager.CloneEnteredDoor( _cloneLeaving, this );
+
+			_clonesTouching.Remove( _cloneLeaving );
+			_isCloneLeaving = true;
 		}
 	}
 }
