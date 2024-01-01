@@ -80,26 +80,43 @@
       ]
     },
     {
-      "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
-      "Name": "SpawnPos",
-      "Position": "0,109.4831,72",
+      "Id": "ee62dc58-dd4c-48ef-8542-b9c811b85a0f",
+      "Name": "SpawnPositions",
       "Enabled": true,
-      "Components": [
+      "Children": [
         {
-          "__type": "SpawnPoint",
-          "__enabled": true
-        }
-      ]
-    },
-    {
-      "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
-      "Name": "SpawnPos (1)",
-      "Position": "0,70.73582,72",
-      "Enabled": true,
-      "Components": [
+          "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
+          "Name": "SpawnPos (1)",
+          "Position": "0,70.73582,72",
+          "Components": [
+            {
+              "__type": "SpawnPoint",
+              "__enabled": true
+            }
+          ]
+        },
         {
-          "__type": "SpawnPoint",
-          "__enabled": true
+          "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
+          "Name": "SpawnPos",
+          "Position": "0,109.4831,72",
+          "Components": [
+            {
+              "__type": "SpawnPoint",
+              "__enabled": true
+            }
+          ]
+        },
+        {
+          "Id": "06c1cb3d-d3d5-4410-91d3-0004b449caf1",
+          "Name": "SpawnPos",
+          "Position": "0,-87.51857,140.8712",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "SpawnPoint",
+              "__enabled": true
+            }
+          ]
         }
       ]
     },
@@ -662,7 +679,6 @@
   "Title": "main",
   "Description": "",
   "__references": [
-    "facepunch.access_button",
     "facepunch.brick_wall_debris_small_a",
     "facepunch.wooden_door_frame_double_02b",
     "frogpond.wallclock",

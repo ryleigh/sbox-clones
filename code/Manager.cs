@@ -1,6 +1,5 @@
 using Sandbox;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 public sealed class Manager : Component
@@ -12,6 +11,7 @@ public sealed class Manager : Component
 	public List<Button> Buttons = new List<Button>();
 	public Door Door { get; private set; }
 
+	public List<Clone> Clones = new List<Clone>();
 
 	protected override void OnEnabled()
 	{
@@ -33,7 +33,7 @@ public sealed class Manager : Component
 
 		_timeSinceClone = 0f;
 
-		Scene.PhysicsWorld.SubSteps = 1;
+		//Scene.PhysicsWorld.SubSteps = 12;
 	}
 
 	protected override void OnUpdate()
@@ -48,12 +48,20 @@ public sealed class Manager : Component
 	public void SpawnClone(Vector3 pos)
 	{
 		var cloneObj = SceneUtility.Instantiate( ClonePrefab, pos );
-		cloneObj.Components.Get<Clone>().Manager = this;
+		var clone = cloneObj.Components.Get<Clone>();
+		clone.Manager = this;
+		Clones.Add( clone );
 	}
 
 	public void CloneDied(Clone clone)
 	{
+		RemoveClone( clone );
 		SpawnClone( new Vector3( 0f, Game.Random.Float(-20f, 20f), 175f + Game.Random.Float( -20f, 20f ) ) );
+	}
+
+	public void RemoveClone(Clone clone)
+	{
+		Clones.Remove( clone );
 	}
 
 	public void ButtonPressed(Button button)

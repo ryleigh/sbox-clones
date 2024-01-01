@@ -22,16 +22,17 @@ public sealed class Door : Component
 
 	public bool IsOpen { get; private set; }
 
-	private List<Clone> _clonesTouching = new();
-
 	private bool _isCloneLeaving;
 	private Clone _cloneLeaving;
+
+	public BoxCollider BoxCollider { get; private set; }
 
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
 
 		Manager = Scene.GetAllComponents<Manager>().FirstOrDefault();
+		BoxCollider = GameObject.Components.Get<BoxCollider>();
 
 		_doorLeft = this.FindChild( "door_left" );
 		_doorRight = this.FindChild( "door_right" );
@@ -63,19 +64,11 @@ public sealed class Door : Component
 
 	public void StartTouching( Clone clone )
 	{
-		if ( _clonesTouching.Contains( clone ) )
-			return;
-
-		_clonesTouching.Add( clone );
 		RefreshTouching();
 	}
 
 	public void StopTouching( Clone clone )
 	{
-		if ( !_clonesTouching.Contains( clone ) )
-			return;
-
-		_clonesTouching.Remove( clone );
 		RefreshTouching();
 	}
 
@@ -94,20 +87,23 @@ public sealed class Door : Component
 
 		RefreshTouching();
 	}
+
 	void RefreshTouching()
 	{
 		//Log.Info( $"RefreshTouching: {_clonesTouching.Count()}" );
 
-		if ( !IsOpen )
+		if ( !IsOpen || _isCloneLeaving )
 			return;
 
-		if(_clonesTouching.Count > 0 )
+		if(BoxCollider.Touching.Count() > 0 )
 		{
-			_cloneLeaving = _clonesTouching.FirstOrDefault();
-			Manager.CloneEnteredDoor( _cloneLeaving, this );
-
-			_clonesTouching.Remove( _cloneLeaving );
-			_isCloneLeaving = true;
+			var cloneCollider = BoxCollider.Touching.Where( x => x.Tags.Has( "clone" )).ToList().FirstOrDefault();
+			if(cloneCollider != null)
+			{
+				_cloneLeaving = cloneCollider.Components.Get<Clone>();
+				Manager.CloneEnteredDoor( _cloneLeaving, this );
+				_isCloneLeaving = true;
+			}
 		}
 	}
 }

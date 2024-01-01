@@ -50,9 +50,15 @@
       {
         "__type": "Rigidbody",
         "__enabled": true,
-        "AngularDamping": 0,
+        "AngularDamping": 9999999,
         "Gravity": true,
-        "LinearDamping": 0
+        "LinearDamping": 0,
+        "Locking": {
+          "X": true,
+          "Pitch": true,
+          "Yaw": true,
+          "Roll": true
+        }
       }
     ],
     "Children": [

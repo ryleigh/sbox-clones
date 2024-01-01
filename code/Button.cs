@@ -23,7 +23,7 @@ public sealed class Button : Component
 
 	protected override void OnUpdate()
 	{
-		_buttonModel.Transform.LocalPosition = _buttonModel.Transform.LocalPosition.WithZ( Utils.DynamicEaseTo( _buttonModel.Transform.LocalPosition.z, _modelTargetZPos, 0.45f, Time.Delta) );
+		_buttonModel.Transform.LocalPosition = _buttonModel.Transform.LocalPosition.WithZ( Utils.DynamicEaseTo( _buttonModel.Transform.LocalPosition.z, _modelTargetZPos, 0.55f, Time.Delta) );
 	}
 
 	public void StartPressing(Clone clone)

@@ -44,6 +44,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	public SkinnedModelRenderer Renderer { get; private set; }
 
+	private float _lastZPos;
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
@@ -56,6 +58,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		TimeSinceSpawn = 0f;
 
+		_lastZPos = Transform.Position.z;
 		//SetConfused( Game.Random.Int( 0, 1 ) == 0 );
 	}
 
@@ -83,7 +86,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 				Transform.Position = Vector3.Lerp( Transform.Position, DoorEntering.Transform.Position.WithX( 0f ) + Vector3.Up * heightAdjust, progress );
 				Transform.Scale = Vector3.One * Utils.Map( progress, 0f, 1f, 1f, 0.1f );
 				Renderer.Tint = Renderer.Tint.WithAlpha( Utils.Map( progress, 0f, 1f, 1f, 0f, EasingType.SineIn ) );
-				Body.Transform.Rotation = Rotation.Lerp( Body.Transform.Rotation, Rotation.FromYaw( 0f ), 10f * Time.Delta);
+				Body.Transform.LocalRotation = Rotation.Lerp( Body.Transform.LocalRotation, Rotation.FromYaw( 0f ), 10f * Time.Delta);
 			}
 
 			return;
@@ -97,27 +100,32 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 				_targetYaw = Velocity.y < 0f ? -90f : 90f;
 			}
 
-			Body.Transform.Rotation = Rotation.Lerp( Body.Transform.Rotation, Rotation.FromYaw( _targetYaw ), Time.Delta * 25f );
+			Body.Transform.LocalRotation = Rotation.Lerp( Body.Transform.LocalRotation, Rotation.FromYaw( _targetYaw ), Time.Delta * 25f );
 
 			// ROTATE TOWARD CAMERA INSTEAD OF AWAY
 			float yaw = Body.Transform.Rotation.Yaw();
 			if ( yaw < 0f && yaw > -90f )
 			{
 				yaw = -90f + (-90f - yaw);
-				Body.Transform.Rotation = Rotation.FromYaw( yaw );
+				Body.Transform.LocalRotation = Rotation.FromYaw( yaw );
 			}
 			else if(yaw > 0f && yaw < 90f)
 			{
 				yaw = 90f + (90f - yaw);
-				Body.Transform.Rotation = Rotation.FromYaw( yaw );
+				Body.Transform.LocalRotation = Rotation.FromYaw( yaw );
 			}
 		}
 
-		if ( Input.Pressed( "Jump" ) && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.1f ) // todo: you could jump at apex of jump, need proper IsGrounded check
+		//Log.Info( $"Velocity.z: {Rigidbody.PhysicsBody.Velocity.z} _lastZPos: {_lastZPos} z: {Transform.Position.z}" );
+		//if ( Input.Pressed( "Jump" ) && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.1f ) // todo: you can jump at apex of jump, need proper IsGrounded check
+		if ( Input.Pressed( "Jump" ) ) // todo: you can jump at apex of jump, need proper IsGrounded check
 		{
-			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
+			if( MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 1f )
+			{
+				Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
 
-			OnJump();
+				OnJump();
+			}
 		}
 
 		//Log.Info( $"zVel: {Rigidbody.PhysicsBody.Velocity.z}" );
@@ -145,6 +153,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			Manager.CloneDied( this );
 			GameObject.Destroy();
 		}
+
+		_lastZPos = Transform.Position.z;
 	}
 
 	public void OnJump()
@@ -182,8 +192,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		//Rigidbody.PhysicsBody.LinearDrag = 99999999f;
 		//Rigidbody.ClearForces();
 
-		Transform.LocalRotation = Rotation.Identity;
-		Body.Transform.LocalRotation = Rotation.From( 0f, Body.Transform.LocalRotation.Yaw(), 0f );
+		//Transform.LocalRotation = Rotation.Identity;
+		//Body.Transform.LocalRotation = Rotation.From( 0f, Body.Transform.LocalRotation.Yaw(), 0f );
 
 		//Log.Info( $"PhysicsBody Vel: {rigidBody.PhysicsBody.Velocity}, Velocity: {Velocity}" );
 
@@ -244,7 +254,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		//Transform.Position += Velocity;
 		Rigidbody.PhysicsBody.ApplyImpulse( Velocity * 1600f );
 		//Rigidbody.PhysicsBody.ApplyForce( Velocity * 1000f );
-		Transform.Position = Transform.Position.WithX( 0f );
+		//Transform.Position = Transform.Position.WithX( 0f );
 		//Log.Info( $"WishVelocity: {WishVelocity} Velocity: {Velocity}" );
 
 		CategorizePosition();
@@ -268,7 +278,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		// trace down one step height if we're already on the ground "step down". If not, search for floor right below us
 		// because if we do StepHeight we'll snap that many units to the ground
 		endPos.z -= wasOnGround ? StepHeight : 0.1f;
-
 
 		SceneTraceResult tr = Scene.Trace.Ray( startPos, endPos ).Size( BoundingBox ).WithoutTags(IgnoreTags).Run();
 		//SceneTraceResult tr = Scene.Trace.Ray( startPos, endPos ).WithoutTags( IgnoreTags ).Run();
@@ -439,5 +448,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		_enterDoorTimer = 0f;
 		AnimationHelper.WithVelocity( Vector2.Right * 40f * 100f );
 		AnimationHelper.MoveStyle = CitizenAnimationHelper.MoveStyles.Run;
+		Manager.RemoveClone( this );
 	}
 }
