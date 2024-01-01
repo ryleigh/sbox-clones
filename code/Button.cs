@@ -52,6 +52,5 @@ public sealed class Button : Component
 	{
 		IsPressed = _clonesPressing.Count > 0;
 		_modelTargetZPos = _modelZPosUnpressed + (IsPressed ? -1.5f : 0f);
-		//_buttonModel.Transform.LocalPosition = _buttonModel.Transform.LocalPosition.WithZ( _modelZPosUnpressed + (IsPressed ? -1.5f : 0f) );
 	}
 }

@@ -5,13 +5,11 @@ using System.Linq;
 public sealed class Manager : Component
 {
 	[Property] public GameObject ClonePrefab { get; set; }
-
-	private TimeSince _timeSinceClone;
-
-	public List<Button> Buttons = new List<Button>();
-	public Door Door { get; private set; }
+	[Property] public float DeathHeight { get; set; } = -100f;
 
 	public List<Clone> Clones = new List<Clone>();
+	public List<Button> Buttons = new List<Button>();
+	public Door Door { get; private set; }
 
 	protected override void OnEnabled()
 	{
@@ -31,25 +29,12 @@ public sealed class Manager : Component
 		//	SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
 		//}
 
-		_timeSinceClone = 0f;
-
 		Scene.PhysicsWorld.SubSteps = 4;
 	}
 
 	protected override void OnUpdate()
 	{
-		if( _timeSinceClone > 1f)
-		{
-			//SpawnClone( new Vector3( 0f, 0f, 175f ) );
-			_timeSinceClone = 0f;
-		}
 
-		//foreach( var clone in Clones ) 
-		//{
-		//	//Log.Info( $"{clone.Transform.Position}" );
-		//	Gizmo.Draw.Line( clone.Transform.Position, Vector3.Zero );
-		//	Gizmo.Draw.Text( $"Clone", new Transform( clone.Transform.Position ));
-		//}
 	}
 
 	public void SpawnClone(Vector3 pos)

@@ -90,8 +90,6 @@ public sealed class Door : Component
 
 	void RefreshTouching()
 	{
-		//Log.Info( $"RefreshTouching: {_clonesTouching.Count()}" );
-
 		if ( !IsOpen || _isCloneLeaving )
 			return;
 

@@ -9,7 +9,8 @@
         {
           "__type": "Manager",
           "__enabled": true,
-          "ClonePrefab": "prefabs/clone.prefab"
+          "ClonePrefab": "prefabs/clone.prefab",
+          "DeathHeight": -100
         }
       ]
     },
