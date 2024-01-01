@@ -33,7 +33,7 @@ public sealed class Manager : Component
 
 		_timeSinceClone = 0f;
 
-		//Scene.PhysicsWorld.SubSteps = 12;
+		Scene.PhysicsWorld.SubSteps = 4;
 	}
 
 	protected override void OnUpdate()
@@ -43,6 +43,13 @@ public sealed class Manager : Component
 			//SpawnClone( new Vector3( 0f, 0f, 175f ) );
 			_timeSinceClone = 0f;
 		}
+
+		//foreach( var clone in Clones ) 
+		//{
+		//	//Log.Info( $"{clone.Transform.Position}" );
+		//	Gizmo.Draw.Line( clone.Transform.Position, Vector3.Zero );
+		//	Gizmo.Draw.Text( $"Clone", new Transform( clone.Transform.Position ));
+		//}
 	}
 
 	public void SpawnClone(Vector3 pos)

@@ -85,9 +85,10 @@
       "Enabled": true,
       "Children": [
         {
-          "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
-          "Name": "SpawnPos (1)",
-          "Position": "0,70.73582,72",
+          "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
+          "Name": "1",
+          "Position": "0,109.4831,72",
+          "Enabled": true,
           "Components": [
             {
               "__type": "SpawnPoint",
@@ -96,9 +97,10 @@
           ]
         },
         {
-          "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
-          "Name": "SpawnPos",
-          "Position": "0,109.4831,72",
+          "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
+          "Name": "2",
+          "Position": "0,70.73582,72",
+          "Enabled": true,
           "Components": [
             {
               "__type": "SpawnPoint",
@@ -108,9 +110,8 @@
         },
         {
           "Id": "06c1cb3d-d3d5-4410-91d3-0004b449caf1",
-          "Name": "SpawnPos",
+          "Name": "pillar debug",
           "Position": "0,-87.51857,140.8712",
-          "Enabled": true,
           "Components": [
             {
               "__type": "SpawnPoint",
@@ -175,7 +176,7 @@
           "Name": "door",
           "Position": "16,-115.4081,70",
           "Scale": "0.35,0.35,0.35",
-          "Tags": "door",
+          "Tags": "door,trigger",
           "Enabled": true,
           "Components": [
             {
@@ -209,7 +210,7 @@
               "Position": "38.37995,24.55963,108.6336",
               "Rotation": "1,0,0,-0.0000006397578",
               "Scale": "1.4,1.2,1.4",
-              "Tags": "door",
+              "Tags": "door,trigger",
               "Enabled": true,
               "Components": [
                 {
@@ -229,7 +230,7 @@
               "Name": "door_right",
               "Position": "38.06658,-23.19534,-3.309828",
               "Scale": "1.4,1.2,1.4",
-              "Tags": "door",
+              "Tags": "door,trigger",
               "Enabled": true,
               "Components": [
                 {
@@ -624,7 +625,7 @@
           "Name": "button",
           "Position": "0,160.8417,72.76475",
           "Scale": "4,4,4",
-          "Tags": "button",
+          "Tags": "button,trigger",
           "Enabled": true,
           "Components": [
             {
@@ -647,7 +648,7 @@
               "Name": "model",
               "Position": "1.281333,0,-2.049122",
               "Rotation": "0.0000004172343,0.00000000007518609,1,-0.0000006397578",
-              "Tags": "button",
+              "Tags": "button,trigger",
               "Enabled": true,
               "Components": [
                 {

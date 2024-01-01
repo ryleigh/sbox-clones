@@ -2,6 +2,7 @@ using Sandbox;
 using Sandbox.Citizen;
 using Sandbox.UI;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Numerics;
 using System.Runtime;
@@ -31,8 +32,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	public bool IsGrounded { get; private set; }
 	public float StepHeight { get; set; } = 10.0f;
 	public float GroundAngle { get; set; } = 45.0f;
-	public BBox BoundingBox => BBox.FromPositionAndSize( BoxCollider.Center, BoxCollider.Scale );
-	[Property] public TagSet IgnoreTags { get; set; } = new();
+	//[Property] public TagSet IgnoreTags { get; set; } = new();
 
 	public TimeSince TimeSinceSpawn { get; set; }
 
@@ -44,7 +44,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	public SkinnedModelRenderer Renderer { get; private set; }
 
-	private float _lastZPos;
+	//private float _lastZPos;
 
 	protected override void OnEnabled()
 	{
@@ -58,18 +58,15 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		TimeSinceSpawn = 0f;
 
-		_lastZPos = Transform.Position.z;
+		//_lastZPos = Transform.Position.z;
 		//SetConfused( Game.Random.Int( 0, 1 ) == 0 );
 	}
 
 	protected override void OnUpdate()
 	{
-		//var cc = GameObject.Components.Get<CharacterController>();
-		//if ( cc is null ) return;
-
-		//float rotateDifference = 0;
-
-		//Transform.Scale = Utils.Map( TimeSinceSpawn, 0f, 0.25f, 0f, 1f, EasingType.ExpoOut );
+		//Log.Info( $"{Transform.Position}" );
+		Gizmo.Draw.Color = Color.Yellow;
+		//Gizmo.Draw.Text( $"test{1}", new Transform( new Vector3( 0f, -100f, 320f) ), "Poppins", 18 );
 
 		if ( IsEnteringDoor )
 		{
@@ -118,14 +115,10 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		//Log.Info( $"Velocity.z: {Rigidbody.PhysicsBody.Velocity.z} _lastZPos: {_lastZPos} z: {Transform.Position.z}" );
 		//if ( Input.Pressed( "Jump" ) && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.1f ) // todo: you can jump at apex of jump, need proper IsGrounded check
-		if ( Input.Pressed( "Jump" ) ) // todo: you can jump at apex of jump, need proper IsGrounded check
+		if ( Input.Pressed( "Jump" ) && IsGrounded)//&& MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.01f )
 		{
-			if( MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 1f )
-			{
-				Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
-
-				OnJump();
-			}
+			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
+			OnJump();
 		}
 
 		//Log.Info( $"zVel: {Rigidbody.PhysicsBody.Velocity.z}" );
@@ -154,7 +147,12 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			GameObject.Destroy();
 		}
 
-		_lastZPos = Transform.Position.z;
+		//_lastZPos = Transform.Position.z;
+
+		//CategorizePosition();
+		////Rigidbody.Gravity = !IsGrounded;
+		//if ( IsGrounded && Rigidbody.PhysicsBody.Velocity.z < 0f )
+		//	Rigidbody.PhysicsBody.Velocity = Rigidbody.PhysicsBody.Velocity.WithZ( 0f );
 	}
 
 	public void OnJump()
@@ -162,111 +160,51 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		AnimationHelper?.TriggerJump();
 	}
 
-	//public static void PreStep() // Lock the Y axis
-	//{
-	//	if ( Game.IsClient ) return;
-
-	//	foreach ( var entity in AxisLockedEntities.Where( entity => entity.PhysicsBody.IsValid() )
-	//				 .Where( entity => !entity.PhysicsBody.Sleeping ) )
-	//	{
-	//		entity.Position = entity.Position.WithY( 0f );
-	//		entity.Rotation = Rotation.FromAxis( Vector3.Right, entity.Rotation.Roll() )
-	//			.RotateAroundAxis( Vector3.Up, -90f );
-	//		entity.AngularVelocity = entity.AngularVelocity.WithRoll( 0 );
-	//		entity.PhysicsBody.AngularDrag = 10f;
-	//	}
-	//}
-
 	protected override void OnFixedUpdate()
 	{
 		if ( IsEnteringDoor || !Rigidbody.Enabled )
 			return;
 
-		BuildWishVelocity(28f);
+		CategorizePosition();
+		//Rigidbody.Gravity = !IsGrounded;
+		if ( IsGrounded && Rigidbody.PhysicsBody.Velocity.z < 0f )
+			Rigidbody.PhysicsBody.Velocity = Rigidbody.PhysicsBody.Velocity.WithZ( 0f );
 
-		float dt = Time.Delta;
+		BuildWishVelocity(28f);
 
 		Rigidbody.AngularDamping = 99999999f;
 		Rigidbody.AngularVelocity = Vector3.Zero;
-		//Rigidbody.LinearDamping = 4f;
-		//Rigidbody.PhysicsBody.LinearDrag = 99999999f;
-		//Rigidbody.ClearForces();
-
-		//Transform.LocalRotation = Rotation.Identity;
-		//Body.Transform.LocalRotation = Rotation.From( 0f, Body.Transform.LocalRotation.Yaw(), 0f );
-
-		//Log.Info( $"PhysicsBody Vel: {rigidBody.PhysicsBody.Velocity}, Velocity: {Velocity}" );
-
-		//var collider = GameObject.Components.Get<BoxCollider>();
-		//collider.KeyframeBody.
-
-		//Log.Info( $"{rigidBody.PhysicsBody.SpeculativeContactEnabled}" );
-		//rigidBody.PhysicsBody.Move( Transform, dt );
-
-		//var cc = GameObject.Components.Get<CharacterController>();
-		//if ( cc == null )
-		//	return;
-
-		//if ( cc.IsOnGround && Input.Pressed( "Jump" ) )
-		//{
-		//	cc.Punch( Vector3.Up * 300f );
-		//	cc.IsOnGround = false;
-
-		//	OnJump();
-		//}
-
-		//if ( cc.IsOnGround )
-		//{
-		//	cc.Velocity = cc.Velocity.WithZ( 0 );
-		//	cc.Accelerate( WishVelocity );
-		//	cc.ApplyFriction( 4.0f );
-		//}
-		//else
-		//{
-		//	cc.Velocity -= Gravity * Time.Delta * 0.5f;
-		//	cc.Accelerate( WishVelocity );
-		//	//cc.Accelerate( WishVelocity.ClampLength( 50 ) );
-		//	cc.ApplyFriction( 0.1f );
-		//}
-
-		//cc.Move();
-
-		//if ( !cc.IsOnGround )
-		//{
-		//	cc.Velocity -= Gravity * Time.Delta * 0.5f;
-		//}
-		//else
-		//{
-		//	cc.Velocity = cc.Velocity.WithZ( 0 );
-		//}
 
 		Velocity = Velocity.WithAcceleration( WishVelocity, 1.5f * Time.Delta );
 
-		var damping = (1f - dt * 8.5f);
+		var damping = (1f - Time.Delta * 8.5f);
 		Velocity = new Vector3( Velocity.x * damping, Velocity.y * damping, Velocity.z );
 		Rigidbody.PhysicsBody.Velocity = new Vector3( Rigidbody.PhysicsBody.Velocity.x * damping, Rigidbody.PhysicsBody.Velocity.y * damping, Rigidbody.PhysicsBody.Velocity.z );
-
-		//Velocity *= (1f - dt * 8f);
-		//ApplyFriction( 2f );
-
-		//rigidBody.Velocity = (Velocity * 50f).WithZ( rigidBody.Velocity.z );
-
-		//Transform.Position += Velocity;
 		Rigidbody.PhysicsBody.ApplyImpulse( Velocity * 1600f );
-		//Rigidbody.PhysicsBody.ApplyForce( Velocity * 1000f );
-		//Transform.Position = Transform.Position.WithX( 0f );
-		//Log.Info( $"WishVelocity: {WishVelocity} Velocity: {Velocity}" );
-
-		CategorizePosition();
 	}
 
 	void CategorizePosition()
 	{
-		var startPos = Transform.Position + Vector3.Down * 1f;
-		var endPos = startPos + Vector3.Down * 2f;
-		var wasOnGround = IsGrounded;
 
+		var startPos = Transform.Position;
+
+		//startPos *= 0.7f;
+		var endPos = Transform.Position + Vector3.Down * 1f;
+		//var endPos = Vector3.Zero;
+		//var wasOnGround = IsGrounded;
+
+		//Gizmo.Draw.IgnoreDepth = true;
 		//Gizmo.Draw.Line( startPos, endPos );
+
+		//Gizmo.Draw.Line( Transform.Position + BoxCollider.Center, Transform.Position + BoxCollider.Center + Vector3.Up * 50f );
+
+		//var boxCenter = Transform.Position + BoxCollider.Center;
+		//var mins = boxCenter - BoxCollider.Scale * 0.5f;
+		//var maxs = boxCenter + BoxCollider.Scale * 0.5f;
+
+		//Gizmo.Draw.Color = Color.Red;
+		//Gizmo.Draw.Line( mins, maxs );
+		//Gizmo.Draw.LineBBox( new BBox( mins, maxs ) );
 
 		// We're flying upwards too fast, never land on ground
 		if ( !IsGrounded && Velocity.z > 50.0f )
@@ -275,33 +213,63 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			return;
 		}
 
+		//Log.Info( $"my guid: {GameObject.Id}" );
 		// trace down one step height if we're already on the ground "step down". If not, search for floor right below us
 		// because if we do StepHeight we'll snap that many units to the ground
-		endPos.z -= wasOnGround ? StepHeight : 0.1f;
+		//endPos.z -= wasOnGround ? StepHeight : 0.1f;
 
-		SceneTraceResult tr = Scene.Trace.Ray( startPos, endPos ).Size( BoundingBox ).WithoutTags(IgnoreTags).Run();
-		//SceneTraceResult tr = Scene.Trace.Ray( startPos, endPos ).WithoutTags( IgnoreTags ).Run();
+		//var tr = Scene.Trace.Ray( startPos, endPos ).Size( BoundingBox ).WithoutTags(IgnoreTags);
+		//var tr = Scene.Trace.Ray( startPos, endPos ).Size( BoxCollider.Scale * 0.5f);
 
-		//if(tr.Hit)
-		//	Log.Info( $"{tr.Body.GetGameObject().Name}" );
+
+		// does ignore self
+		var tr = Scene.Trace.Ray( startPos, endPos ).Size( (BoxCollider.Scale * 0.99f).WithZ(0.1f) ).WithoutTags("trigger");
+		tr = tr.IgnoreGameObject( GameObject );
+		var r = tr.Run();
+
+		//// DOESN'T ignore self
+		//var tr2 = Scene.Trace.Ray( startPos, endPos ).Radius( 1f );
+		//tr2.IgnoreGameObject( GameObject );
+		//var r2 = tr2.Run();
+
+		//// DOESN'T ignore self
+		//var tr3 = Scene.Trace.Ray( startPos, endPos ).Size( BoxCollider.Scale * 0.5f );
+		//tr3.IgnoreGameObject( GameObject );
+		//var r3 = tr3.Run();
+
+		//if ( r.Hit )
+		//{
+		//	Gizmo.Draw.Color = Color.Blue;
+		//	Gizmo.Draw.SolidSphere( r.HitPosition, 3f );
+		//	Log.Info( $"{r.Body.GetGameObject().Name}" );
+		//}
 		//else
+		//{
 		//	Log.Info( $"none" );
+		//}
+
+		Gizmo.Draw.Color = Color.White;
+		//Gizmo.Draw.Text( $"Test", new Transform( Transform.Position ) );
 
 		// we didn't hit - or the ground is too steep to be ground
-		if ( !tr.Hit || Vector3.GetAngle( Vector3.Up, tr.Normal ) > GroundAngle )
-		{
-			IsGrounded = false;
-			return;
-		}
+		//if ( !r.Hit || Vector3.GetAngle( Vector3.Up, r.Normal ) > GroundAngle )
+		//if ( !r.Hit)
+		//{
+		//	IsGrounded = false;
+		//	//Gizmo.Draw.Text( $"NOT on ground", new Transform( Transform.Position ) );
+		//	return;
+		//}
 
 		// we are on ground
-		IsGrounded = true;
+		IsGrounded = r.Hit;
 
-		// move to this ground position, if we moved, and hit
-		if ( wasOnGround && !tr.StartedSolid && tr.Fraction > 0.0f && tr.Fraction < 1.0f )
-		{
-			Transform.Position = tr.EndPosition + tr.Normal * 0.01f;
-		}
+		//// move to this ground position, if we moved, and hit
+		//if ( wasOnGround && !r.StartedSolid && r.Fraction > 0.0f && r.Fraction < 1.0f )
+		//{
+		//	Transform.Position = r.EndPosition + r.Normal * 0.01f;
+		//}
+
+		//Gizmo.Draw.Text( $"{Rigidbody.PhysicsBody.Velocity.z}", new Transform( Transform.Position ) );
 
 		//Log.Info( $"{IsGrounded}" );
 	}
@@ -309,27 +277,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	//PhysicsTraceBuilder BuildTrace( Vector3 from, Vector3 to ) => BuildTrace( Scene.PhysicsWorld.Trace.Ray( from, to ) );
 
 	//PhysicsTraceBuilder BuildTrace( PhysicsTraceBuilder source ) => source.Size( BoundingBox ).WithoutTags( IgnoreTags );
-
-	//public void ApplyFriction( float frictionAmount, float stopSpeed = 140.0f )
-	//{
-	//	var speed = Velocity.Length;
-	//	if ( speed < 0.01f ) return;
-
-	//	// Bleed off some speed, but if we have less than the bleed
-	//	//  threshold, bleed the threshold amount.
-	//	float control = (speed < stopSpeed) ? stopSpeed : speed;
-
-	//	// Add the amount to the drop amount.
-	//	var drop = control * Time.Delta * frictionAmount;
-
-	//	// scale the velocity
-	//	float newspeed = speed - drop;
-	//	if ( newspeed < 0 ) newspeed = 0;
-	//	if ( newspeed == speed ) return;
-
-	//	newspeed /= speed;
-	//	Velocity *= newspeed;
-	//}
 
 	public void SetConfused(bool confused)
 	{
@@ -371,8 +318,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		if ( !WishVelocity.IsNearZeroLength ) WishVelocity = WishVelocity.Normal;
 
 		WishVelocity *= speed;
-		//if ( Input.Down( "Run" ) ) WishVelocity *= 320.0f;
-		//else WishVelocity *= 110.0f;
 	}
 
 
@@ -405,20 +350,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		{
 			collider.GameObject.Components.Get<Door>().StartTouching( this );
 		}
-
-		//Log.Info( $"{collider.GameObject.Name}, {collider.GameObject.Tags}" );
-
-		//if (collider.GameObject.Tags.Has("block"))
-		//{
-		//	var boxCollider = collider as BoxCollider;
-		//	Log.Info( $"{boxCollider.Scale.z}" );
-		//	if (boxCollider.Center.z < Transform.Position.z)
-		//	{
-		//		Transform.Position = Transform.Position.WithZ( boxCollider.Center.z + boxCollider.Scale.z * collider.Transform.Scale.z * 0.5f );
-		//	}
-
-		//	//other.GameObject.Components.Get<BoxCollider>().
-		//}
 	}
 
 	public void OnTriggerExit( Collider collider )
@@ -443,7 +374,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		IsEnteringDoor = true;
 		DoorEntering = door;
-		//Components.Get<BoxCollider>().Enabled = false;
 		Rigidbody.Enabled = false;
 		_enterDoorTimer = 0f;
 		AnimationHelper.WithVelocity( Vector2.Right * 40f * 100f );
