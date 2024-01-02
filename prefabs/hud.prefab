@@ -1,0 +1,36 @@
+{
+  "RootObject": {
+    "Id": "7f86f6fa-ed7d-4343-b7e8-f75504bb4006",
+    "Name": "Screen",
+    "Position": "12.9483,-8.059677,139.9077",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "ScreenPanel",
+        "__enabled": true,
+        "AutoScreenScale": true,
+        "Opacity": 1,
+        "Scale": 1,
+        "ZIndex": 100
+      }
+    ],
+    "Children": [
+      {
+        "Id": "aa7a7a84-d4b2-4af9-9530-749875508f01",
+        "Name": "Hud",
+        "Position": "0,0,0",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "Hud",
+            "__enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

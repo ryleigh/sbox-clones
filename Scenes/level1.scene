@@ -11,7 +11,10 @@
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -100,
-          "NextScene": "scenes/level2.scene"
+          "HudPrefab": "prefabs/hud.prefab",
+          "LevelName": "Level 1: The Foyer",
+          "NextScene": "scenes/level2.scene",
+          "PrevScene": null
         }
       ]
     },

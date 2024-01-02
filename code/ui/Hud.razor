@@ -1,0 +1,43 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System.Collections.Generic;
+@using System.Linq;
+
+@inherits PanelComponent
+
+<root>
+	<div class="button_container">
+		<div class="button" style="opacity:@(Manager.PrevScene == null ? 0.2f : 1f);" onclick="@( () => PrevLevelClicked() )">@("<")</div>
+		<div class="level_name">@(Manager.LevelName)</div>
+		<div class="button" style="opacity:@(Manager.NextScene == null ? 0.2f : 1f);" onclick="@( () => NextLevelClicked() )">@(">")</div>
+	</div>
+
+	<div class="pointer"></div>
+</root>
+
+@code
+{
+	public Manager Manager { get; set; }
+
+	protected override void OnEnabled()
+	{
+		base.OnEnabled();
+
+		Manager = Scene.GetAllComponents<Manager>().FirstOrDefault();
+	}
+
+	void PrevLevelClicked()
+	{
+		Manager.LoadPrevLevel();
+	}
+
+	void NextLevelClicked()
+	{
+		Manager.LoadNextLevel();
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( Time.Now );
+}

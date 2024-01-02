@@ -1,0 +1,52 @@
+Hud {
+	position: absolute;
+	//bottom: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	//background-color: #ff000011;
+	flex-direction: row;
+
+	.level_name {
+		padding: 8px;
+		font-size: 20px;
+		font-weight: 700;
+		color: #ffffff55;
+	}
+
+	.button_container {
+		//bottom: 16px;
+		top: 16px;
+		width: 60%;
+		height: 100%;
+		//background-color: #0000ff11;
+		justify-content: center;
+		align-items: center;
+		gap: 20%;
+	}
+
+	.button {
+		width: 100px;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #333333;
+		background-color: #0000ff11;
+		color: #ffffff77;
+		pointer-events: all;
+		border-radius: 1px;
+
+		&:hover {
+			color: #ffffffee;
+			background-color: #0000ff22;
+		}
+
+		&:active {
+			color: #ffffffff;
+			background-color: #0000ff33;
+		}
+	}
+}

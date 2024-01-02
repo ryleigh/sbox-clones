@@ -11,7 +11,10 @@
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -100,
-          "NextScene": null
+          "HudPrefab": "prefabs/hud.prefab",
+          "LevelName": "Level 2: The Courtyard",
+          "NextScene": null,
+          "PrevScene": "scenes/level1.scene"
         }
       ]
     },
@@ -90,7 +93,6 @@
           "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
           "Name": "1",
           "Position": "0,109.4831,72",
-          "Enabled": true,
           "Components": [
             {
               "__type": "SpawnPoint",
@@ -102,7 +104,6 @@
           "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
           "Name": "2",
           "Position": "0,70.73582,72",
-          "Enabled": true,
           "Components": [
             {
               "__type": "SpawnPoint",

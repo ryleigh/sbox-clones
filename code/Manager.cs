@@ -1,11 +1,15 @@
 using Sandbox;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 
 public sealed class Manager : Component
 {
+	[Property] public string LevelName { get; set; }
+	[Property] public SceneFile PrevScene { get; set; }
 	[Property] public SceneFile NextScene { get; set; }
 	[Property] public GameObject ClonePrefab { get; set; }
+	[Property] public GameObject HudPrefab { get; set; }
 	[Property] public float DeathHeight { get; set; } = -100f;
 
 	public List<Clone> Clones = new List<Clone>();
@@ -17,6 +21,8 @@ public sealed class Manager : Component
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
+
+		SceneUtility.Instantiate( HudPrefab );
 
 		var spawnPoints = Scene.GetAllComponents<SpawnPoint>().ToList();
 		foreach( var spawnPoint in spawnPoints )
@@ -97,6 +103,30 @@ public sealed class Manager : Component
 
 	public void FinishLevel()
 	{
+		LoadNextLevel();
+	}
+
+	public void LoadPrevLevel()
+	{
+		if(PrevScene == null)
+		{
+			Log.Info( "No previous level!" );
+			return;
+		}
+
+		GameManager.ActiveScene.Clear();
+		GameManager.ActiveScene.Load( PrevScene );
+	}
+
+	public void LoadNextLevel()
+	{
+		if ( NextScene == null )
+		{
+			Log.Info( "No next level!" );
+			return;
+		}
+
+		GameManager.ActiveScene.Clear();
 		GameManager.ActiveScene.Load( NextScene );
 	}
 }

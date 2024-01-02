@@ -65,7 +65,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			if ( _enterDoorTimer > ENTER_TIME )
 			{
 				Manager.FinishLevel();
-				GameObject.Destroy();
+				return;
 			}
 			else
 			{
