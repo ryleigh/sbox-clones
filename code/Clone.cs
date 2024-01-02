@@ -61,9 +61,10 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		if ( IsEnteringDoor )
 		{
 			_enterDoorTimer += Time.Delta;
-			float ENTER_TIME = 1f;
+			float ENTER_TIME = 1.5f;
 			if ( _enterDoorTimer > ENTER_TIME )
 			{
+				Manager.FinishLevel();
 				GameObject.Destroy();
 			}
 			else
@@ -97,7 +98,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			Body.Transform.LocalRotation = Rotation.FromYaw( yaw );
 		}
 
-		if ( Input.Pressed( "Jump" ) && IsGrounded && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.3f )
+		if ( Input.Pressed( "Jump" ) && IsGrounded && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.3f && !Manager.IsCloneLeavingLevel )
 		{
 			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
 			OnJump();
@@ -165,12 +166,15 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		float confusedFactor = IsConfused ? -1f : 1f;
 
-		if ( Input.Down( "Left" ) )
-			WishVelocity += Vector3.Left * confusedFactor;
+		if( !Manager.IsCloneLeavingLevel )
+		{
+			if ( Input.Down( "Left" ) )
+				WishVelocity += Vector3.Left * confusedFactor;
 
-		if ( Input.Down( "Right" ) )
-			WishVelocity += Vector3.Right * confusedFactor;
-
+			if ( Input.Down( "Right" ) )
+				WishVelocity += Vector3.Right * confusedFactor;
+		}
+		
 		if ( !WishVelocity.IsNearZeroLength ) 
 			WishVelocity = WishVelocity.Normal;
 

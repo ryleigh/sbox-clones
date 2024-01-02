@@ -4,12 +4,15 @@ using System.Linq;
 
 public sealed class Manager : Component
 {
+	[Property] public SceneFile NextScene { get; set; }
 	[Property] public GameObject ClonePrefab { get; set; }
 	[Property] public float DeathHeight { get; set; } = -100f;
 
 	public List<Clone> Clones = new List<Clone>();
 	public List<Button> Buttons = new List<Button>();
 	public Door Door { get; private set; }
+
+	public bool IsCloneLeavingLevel { get; private set; }
 
 	protected override void OnEnabled()
 	{
@@ -89,5 +92,11 @@ public sealed class Manager : Component
 	public void CloneEnteredDoor(Clone clone, Door door)
 	{
 		clone.EnterDoor( door );
+		IsCloneLeavingLevel = true;
+	}
+
+	public void FinishLevel()
+	{
+		GameManager.ActiveScene.Load( NextScene );
 	}
 }

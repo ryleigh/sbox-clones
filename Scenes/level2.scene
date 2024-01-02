@@ -11,7 +11,7 @@
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -100,
-          "NextScene": "scenes/level2.scene"
+          "NextScene": null
         }
       ]
     },
@@ -428,25 +428,6 @@
           ]
         },
         {
-          "Id": "97c989f2-08a5-4e93-87cb-8048573f991c",
-          "Name": "wallclock",
-          "Position": "38.06834,76.11169,151.0116",
-          "Rotation": "0.0000005534134,-0.98339,-0.1815056,0.0000005263669",
-          "Scale": "0.8,0.8,0.8",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/indoor/wall_clock/wallclock.vmdl",
-              "RenderType": "On",
-              "Tint": "0.45545,0.45545,0.45545,1"
-            }
-          ]
-        },
-        {
           "Id": "a58834e2-4be8-4a3c-9b25-889e21064326",
           "Name": "pillar",
           "Position": "0,-85.40368,62.21152",
@@ -568,7 +549,6 @@
           "Position": "85.48574,107.6489,110.2022",
           "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
           "Scale": "1.5,1.5,1.5",
-          "Enabled": true,
           "Components": [
             {
               "__type": "ModelRenderer",
@@ -588,7 +568,6 @@
           "Position": "71.35857,-23.05545,110.2022",
           "Rotation": "-0.000001333214,-0.707107,-0.000001333214,0.7071065",
           "Scale": "1.5,1.5,1.5",
-          "Enabled": true,
           "Components": [
             {
               "__type": "ModelRenderer",
@@ -608,7 +587,6 @@
           "Position": "92.63055,-157.9999,119.0366",
           "Rotation": "0.707107,-0.0000002837898,-0.7071065,-0.0000002837896",
           "Scale": "1.5,1.5,1.5",
-          "Enabled": true,
           "Components": [
             {
               "__type": "ModelRenderer",
@@ -666,100 +644,6 @@
               ]
             }
           ]
-        },
-        {
-          "Id": "5cc2cdca-d1f4-4257-b3c1-9628d6ce2a0f",
-          "Name": "brick_wall_debris_big_b",
-          "Position": "5.873022,-180.1788,163.4109",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/walls/elements/brick_wall_debris_big_b.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "379a47bf-a270-4f2f-a58e-93e10b8c8f9d",
-          "Name": "brick_wall_broken_a",
-          "Position": "4.486175,169.359,145.7563",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/walls/elements/brick_wall_broken_a.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "c64c49be-cb88-45bd-9a4e-9e6e1dff90a6",
-          "Name": "industrial_wall_lamp",
-          "Position": "-2.387141,187.5196,162.9596",
-          "Rotation": "1,-0.0000000000001115567,-0.0000003576287,-0.0000006397578",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/city_props/light/industrial_wall_lamp.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "1d84e17c-33cb-4dd8-abde-3e1d31eeb93d",
-          "Name": "sconce_wall_light",
-          "Position": "1.106303,-181.1176,160.0796",
-          "Rotation": "-0.0000004523773,0.707107,0.7071065,-0.000000452377",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/props/sconce_wall_light/sconce_wall_light.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "033d72d5-565d-4ecb-a174-6ea2f061d6b7",
-          "Name": "wall_socket",
-          "Position": "1.505256,-181.0619,162.5966",
-          "Rotation": "0,0,-1,-0.000001116595",
-          "Scale": "1.6,1.6,1.6",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/wall_socket/wall_socket.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
         }
       ]
     }
@@ -776,16 +660,11 @@
   "Title": "main",
   "Description": "",
   "__references": [
-    "facepunch.brick_wall_broken_a",
     "facepunch.brick_wall_debris_small_a",
-    "facepunch.sconce_wall_light",
     "facepunch.wooden_door_frame_double_02b",
-    "frogpond.wallclock",
     "ispersonal.simple_door",
     "polyhaven.chandelier_01",
     "rust.wall_plaster_125_pillar",
-    "rustextended.vintage_wallpaper_c",
-    "saandy.wall_socket",
-    "svin.industrial_wall_lamp"
+    "rustextended.vintage_wallpaper_c"
   ]
 }
