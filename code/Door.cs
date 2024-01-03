@@ -34,8 +34,8 @@ public sealed class Door : Component
 		Manager = Scene.GetAllComponents<Manager>().FirstOrDefault();
 		BoxCollider = GameObject.Components.Get<BoxCollider>();
 
-		_doorLeft = this.FindChild( "door_left" );
-		_doorRight = this.FindChild( "door_right" );
+		_doorLeft = GameObject.Children.ToList().FirstOrDefault().Children.Where( x => x.Name == "door_left" ).FirstOrDefault();
+		_doorRight = GameObject.Children.ToList().FirstOrDefault().Children.Where( x => x.Name == "door_right" ).FirstOrDefault();
 		_doorLeftStartPos = _doorLeftTargetPos = _doorLeft.Transform.LocalPosition;
 		_doorRightStartPos = _doorRightTargetPos = _doorRight.Transform.LocalPosition;
 		_doorLeftStartRot = _doorLeftTargetRot = Rotation.From(0f, 0f, 180f);

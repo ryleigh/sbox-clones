@@ -1,0 +1,51 @@
+{
+  "RootObject": {
+    "Id": "cd49cfcb-e413-47b0-a616-05090f9dd45b",
+    "Name": "button",
+    "Position": "0,160.8417,72.76475",
+    "Scale": "4,4,4",
+    "Tags": "button,trigger",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "BoxCollider",
+        "__enabled": true,
+        "Center": "1.3,0,-0.6",
+        "IsTrigger": true,
+        "Scale": "9.9,7.299994,3.199995",
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "Button",
+        "__enabled": true
+      }
+    ],
+    "Children": [
+      {
+        "Id": "f95ee19c-2587-42aa-b2d7-856870a36aa5",
+        "Name": "model",
+        "Position": "1.281333,0,-2.049122",
+        "Rotation": "0.0000004172343,0.00000000007518609,1,-0.0000006397578",
+        "Tags": "button,trigger",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/props/access_button/access_button.vmdl",
+            "RenderType": "On",
+            "Tint": "0.1698,0.03465,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

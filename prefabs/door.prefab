@@ -1,0 +1,112 @@
+{
+  "RootObject": {
+    "Id": "d30e4d2c-2de0-4d77-92ee-e8ec3150b00f",
+    "Name": "door",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "BoxCollider",
+        "__enabled": true,
+        "Center": "-24.50001,0,19.4",
+        "IsTrigger": true,
+        "Scale": "43.7,24.7002,26.80003",
+        "Static": false,
+        "Surface": null
+      },
+      {
+        "__type": "Door",
+        "__enabled": true
+      }
+    ],
+    "Children": [
+      {
+        "Id": "7a4617d3-8e14-4836-89f6-900633b808f3",
+        "Name": "door_body",
+        "Scale": "0.35,0.35,0.35",
+        "Tags": "door,trigger",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/props/trim_sheets/doors/wooden_door_frame/wooden_door_frame_double_02b.vmdl",
+            "RenderType": "On",
+            "Tint": "0,0,0,1"
+          }
+        ],
+        "Children": [
+          {
+            "Id": "0f2c4b32-fe6e-4e3b-8a9c-a07e10fda243",
+            "Name": "door_left",
+            "Position": "38.37995,24.55963,108.6336",
+            "Rotation": "1,0,0,-0.0000006397578",
+            "Scale": "1.4,1.2,1.4",
+            "Tags": "door,trigger",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/door.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          },
+          {
+            "Id": "1834c59f-7e4a-4f66-8e7b-6a7a9174e878",
+            "Name": "door_right",
+            "Position": "38.06658,-23.19534,-3.309828",
+            "Scale": "1.4,1.2,1.4",
+            "Tags": "door,trigger",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/door.vmdl",
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "605b8b15-0286-449b-9c3c-6548f517d183",
+        "Name": "door_bg",
+        "Position": "70.26552,0,17.7088",
+        "Scale": "0.05,0.6895697,0.8586234",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": "materials/tunnel1.vmat",
+            "Model": "models/dev/box.vmdl",
+            "RenderType": "On",
+            "Tint": "0.03465,0.03465,0.03465,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": [
+    "facepunch.wooden_door_frame_double_02b",
+    "ispersonal.simple_door"
+  ]
+}
