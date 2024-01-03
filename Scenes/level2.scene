@@ -12,7 +12,7 @@
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -100,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 2: The Courtyard",
+          "LevelName": "Level 2: The Corridor",
           "NextScene": null,
           "PrevScene": "scenes/level1.scene"
         }
@@ -48,7 +48,7 @@
           "FieldOfView": 60,
           "IsMainCamera": true,
           "Orthographic": true,
-          "OrthographicHeight": 400,
+          "OrthographicHeight": 350,
           "Priority": 1,
           "RenderExcludeTags": "",
           "RenderTags": "",
@@ -62,7 +62,7 @@
           "__enabled": true,
           "Center": "0.5,0.5",
           "Color": "0,0,0,1",
-          "Intensity": 1,
+          "Intensity": 0.9,
           "Roundness": -0.30000007,
           "Smoothness": 0.95
         },
@@ -92,7 +92,7 @@
         {
           "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
           "Name": "1",
-          "Position": "0,109.4831,72",
+          "Position": "0,257.577,144.4671",
           "Enabled": true,
           "Components": [
             {
@@ -104,7 +104,7 @@
         {
           "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
           "Name": "2",
-          "Position": "0,78.84547,72",
+          "Position": "0,234.0368,144.4671",
           "Enabled": true,
           "Components": [
             {
@@ -116,7 +116,7 @@
         {
           "Id": "5260ff72-bc0e-4108-9d62-92d5049d7456",
           "Name": "3",
-          "Position": "0,41.33854,72",
+          "Position": "0,209.4204,144.4671",
           "Enabled": true,
           "Components": [
             {
@@ -126,9 +126,31 @@
           ]
         },
         {
-          "Id": "06c1cb3d-d3d5-4410-91d3-0004b449caf1",
-          "Name": "pillar debug",
-          "Position": "0,-87.51857,140.8712",
+          "Id": "3d103423-42e3-4a34-ab69-bf1906c43593",
+          "Name": "test",
+          "Position": "0,-91.04161,70.23743",
+          "Components": [
+            {
+              "__type": "SpawnPoint",
+              "__enabled": true
+            }
+          ]
+        },
+        {
+          "Id": "7593cd04-52a2-4635-9b3a-74e39fdab2ec",
+          "Name": "test",
+          "Position": "0,-91.04161,108.9731",
+          "Components": [
+            {
+              "__type": "SpawnPoint",
+              "__enabled": true
+            }
+          ]
+        },
+        {
+          "Id": "98e9c80a-50d0-42a1-bd4a-6ace0f960d42",
+          "Name": "test",
+          "Position": "0,-91.04161,149.8261",
           "Components": [
             {
               "__type": "SpawnPoint",
@@ -144,55 +166,10 @@
       "Enabled": true,
       "Children": [
         {
-          "Id": "62d986ce-2853-4a60-967d-70e526f7ad3d",
-          "Name": "chandelier_01",
-          "Position": "37.75022,12.58776,173.4837",
-          "Rotation": "-0.00000000000003564041,0.00000003191883,1,-0.000001116595",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/chandelier_01.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__enabled": true,
-              "Center": "17.08003,0,-20.70001",
-              "IsTrigger": false,
-              "Scale": "30.00003,27.60002,9.399985",
-              "Static": false,
-              "Surface": "surfaces/floor.surface"
-            }
-          ],
-          "Children": [
-            {
-              "Id": "d596339c-dfe2-44f6-aa3e-563d475cc4a5",
-              "Name": "Point Light",
-              "Position": "0.000000000004259472,0.0000001424846,-27.64613",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "PointLight",
-                  "__enabled": true,
-                  "LightColor": "0.94505,1,0.4505,1",
-                  "Radius": 200
-                }
-              ]
-            }
-          ]
-        },
-        {
           "Id": "13b2508c-63a5-4885-b611-0049df00df74",
           "Name": "floor",
-          "Position": "0,31.21417,25.68918",
-          "Enabled": true,
+          "Position": "0,31.21417,-76.02153",
+          "Scale": "1,1.8,1",
           "Components": [
             {
               "__type": "BoxCollider",
@@ -270,9 +247,9 @@
         {
           "Id": "2792e830-e74d-4828-baa6-8ad15729534e",
           "Name": "ceiling",
-          "Position": "0,-28.64492,216.4766",
+          "Position": "0,-28.64498,262.0508",
           "Rotation": "1,0,0,-0.0000006397578",
-          "Enabled": true,
+          "Scale": "0.4362294,1.607517,0.8557566",
           "Components": [
             {
               "__type": "BoxCollider",
@@ -351,7 +328,6 @@
           "Id": "a58834e2-4be8-4a3c-9b25-889e21064326",
           "Name": "pillar",
           "Position": "0,-85.40368,62.21152",
-          "Enabled": true,
           "Components": [
             {
               "__type": "BoxCollider",
@@ -388,8 +364,8 @@
         {
           "Id": "34a61b43-0a97-46bd-abf8-8bbf2a8216be",
           "Name": "left_wall",
-          "Position": "0,204.7793,109.4018",
-          "Enabled": true,
+          "Position": "0,318.6189,109.4018",
+          "Scale": "1,1.5,1.5",
           "Components": [
             {
               "__type": "BoxCollider",
@@ -427,8 +403,8 @@
         {
           "Id": "749a8190-b086-410d-b3e8-a3a1f0bc5510",
           "Name": "right_wall",
-          "Position": "0,-208.3428,109.4018",
-          "Enabled": true,
+          "Position": "0,-310.353,109.4018",
+          "Scale": "1,1.3,0.9",
           "Components": [
             {
               "__type": "BoxCollider",
@@ -444,8 +420,8 @@
             {
               "Id": "ed96ee8a-b510-4478-a934-cb418d5a0674",
               "Name": "block (1)",
-              "Position": "4.208147,0.1641388,9.389229",
-              "Rotation": "-0.6963674,-0.04641051,-0.04685179,-0.7146528",
+              "Position": "4.208147,0.1641376,9.389234",
+              "Rotation": "-0.7084081,-0.04719978,-0.04605656,-0.7027189",
               "Scale": "15,18.2,11.70422",
               "Enabled": true,
               "Components": [
@@ -521,6 +497,666 @@
           ]
         }
       ]
+    },
+    {
+      "Id": "3bd22928-5da0-49ce-a9ef-0b8471bc58fa",
+      "Name": "vent_system_straight_512",
+      "Position": "29.91119,116.5528,-140.4021",
+      "Rotation": "0.6658224,-0.2380791,-0.2380798,0.665822",
+      "Scale": "0.2,0.2,0.2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/props_spytech/vent_system_straight_512.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "c843f56f-c7ae-4842-b137-64e51a781f1e",
+      "Name": "vent_c",
+      "Position": "22.15708,-44.43139,-27.68767",
+      "Rotation": "-0,0,1,-0.0000007589671",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_props/industrial_fixtures/vent_c.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "d7a237d8-43af-4d51-a5b1-f2b32066982b",
+      "Name": "modular_airduct_rectangular_01_vent1",
+      "Position": "30.97952,-1.922707,-23.55267",
+      "Rotation": "0,-0,-1,-0.000001116595",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/modular_airduct_01/modular_airduct_rectangular_01_vent1.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b45e04c0-42ff-478b-a18a-256616a48d42",
+      "Name": "untitled_96",
+      "Position": "48.08193,82.8742,-75.51816",
+      "Rotation": "0.03468405,-0.05319508,-0.7162972,0.6949009",
+      "Scale": "0.3,0.5,0.3",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "model/27/untitled_96.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "2982d86d-fac3-4eba-99ce-311fe963058c",
+      "Name": "Cube",
+      "Position": "0,0,-7.104105",
+      "Scale": "1,11.87255,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "b25d96b9-b95a-4da8-b750-5f603dd072a3",
+      "Name": "Cube (2)",
+      "Position": "0,-282.0759,111.0804",
+      "Scale": "1,0.5037024,4.279356",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "83c24e65-e0e7-4988-9385-b1312d495331",
+      "Name": "Cube (3)",
+      "Position": "0,284.2419,111.0804",
+      "Scale": "1,0.5037024,4.279356",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "e052c7ef-bd02-4987-9efa-931a8f3a9c53",
+      "Name": "Cube (4)",
+      "Position": "0,245.2005,276.7166",
+      "Scale": "1,1.300262,0.3472429",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "39b3fd75-717c-4ab2-b033-938e5c886ee5",
+      "Name": "Cube (7)",
+      "Position": "0,245.2005,116.4691",
+      "Scale": "1,2.073314,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "2e4c7919-b990-47c8-a83a-aaee8236c09b",
+      "Name": "Cube (8)",
+      "Position": "0,139.8985,116.4691",
+      "Scale": "1,0.7409144,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "d9be7af3-9924-488d-bca5-264792ae1df3",
+      "Name": "Cube (14)",
+      "Position": "0,54.88657,135.4075",
+      "Scale": "1,0.3409144,0.2811872",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "8c39d367-f9b4-4503-a562-15f3018afa64",
+      "Name": "Cube (13)",
+      "Position": "0,222.0167,29.13344",
+      "Scale": "1,0.4170242,1.551657",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "1c729891-00fd-4977-8be4-46c1a304f2c7",
+      "Name": "Cube (9)",
+      "Position": "0,56.04681,116.4691",
+      "Scale": "1,0.7409144,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "5690f9cc-568a-4ad6-99aa-f2404dc7ec78",
+      "Name": "Cube (10)",
+      "Position": "0,-36.54296,116.4691",
+      "Scale": "1,0.7409144,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "e1d132a4-3c8b-4a52-ba9d-46acf03b97ab",
+      "Name": "Cube (11)",
+      "Position": "0,-157.0664,116.4691",
+      "Scale": "1,0.5818997,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "4e46cced-cd98-4e7f-9337-1c1f3ae54427",
+      "Name": "Cube (12)",
+      "Position": "0,-246.6065,116.3102",
+      "Scale": "1,1.637655,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "1a4a2ffc-3bfe-4f29-b155-a27df9faf705",
+      "Name": "Cube (5)",
+      "Position": "0,212.1877,256.9299",
+      "Scale": "1,0.5037024,1.055578",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "ea461c4b-1904-4983-997b-ef5874aaf628",
+      "Name": "Cube (6)",
+      "Position": "0,286.0129,246.3478",
+      "Scale": "1,0.4482805,1.363202",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "4c5a507a-e0f4-4895-8cf6-84387b13aef4",
+      "Name": "Cube (1)",
+      "Position": "0,-39.55767,228.1589",
+      "Scale": "1,10.57669,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "6dba6e1c-42a0-48c8-a2c3-487b8eadcf19",
+      "Name": "spawner",
+      "Position": "140.9945,248.8759,245.0979",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Spawner",
+          "__enabled": true
+        }
+      ],
+      "Children": [
+        {
+          "Id": "d2ccda0b-6616-4c99-9769-71c07dd9614d",
+          "Name": "gutter_wall_pipe_hole_a",
+          "Position": "13.74561,0.00003051758,-0.00001525879",
+          "Rotation": "-0.0000009047542,0.7071065,-0.0000009047542,-0.707107",
+          "Scale": "7,7,5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/sbox_props/gutters/gutter_wall_pipe_hole_a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "9089345a-8d3a-40b1-b3c7-37972c19b645",
+          "Name": "scaffolding_ringlock_a",
+          "Position": "51.3988,0.00001525879,0",
+          "Scale": "1.500001,4.499999,4.5",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/sbox_props/scaffolding/scaffolding_ringlock_a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "108fcea5-7021-436a-8d64-2b845cda671d",
+      "Name": "door",
+      "Position": "22.20943,-251.2576,133.1564",
+      "Enabled": true,
+      "__Prefab": "prefabs/door.prefab"
+    },
+    {
+      "Id": "a0656325-654b-4868-991b-42529e885aa6",
+      "Name": "button",
+      "Position": "-10.05542,253.4037,12.45898",
+      "Scale": "4,4,4",
+      "Tags": "button,trigger",
+      "Enabled": true,
+      "__Prefab": "prefabs/button.prefab"
+    },
+    {
+      "Id": "cbe0989e-0d77-4bd0-bb70-2d928fb07743",
+      "Name": "button",
+      "Position": "0.8674216,-246.4819,12.08199",
+      "Scale": "4,4,4",
+      "Tags": "button,trigger",
+      "Enabled": true,
+      "__Prefab": "prefabs/button.prefab"
+    },
+    {
+      "Id": "4428182f-94ee-4fe1-8652-a54e2296326b",
+      "Name": "spike_block",
+      "Position": "-0.738945,197.7511,20.31408",
+      "Scale": "0.6,0.5,0.5",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Horizontal",
+          "Increasing": true,
+          "Max": 198.005,
+          "Min": -256.278,
+          "Speed": 75
+        }
+      ],
+      "Children": [
+        {
+          "Id": "e13fbe89-332e-4bc8-ae5e-c9789d497dff",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "a32e9a5f-5ecf-48bc-96f2-3cd922c9e9fb",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -535,9 +1171,15 @@
   "Title": "main",
   "Description": "",
   "__references": [
+    "degg.f_trap_spikes",
     "facepunch.brick_wall_debris_small_a",
-    "polyhaven.chandelier_01",
+    "facepunch.gutter_wall_pipe_hole_a",
+    "facepunch.scaffolding_ringlock_a",
+    "polyhaven.modular_airduc_01_vent1",
+    "rust.vent_c",
     "rust.wall_plaster_125_pillar",
-    "rustextended.vintage_wallpaper_c"
+    "rustextended.vintage_wallpaper_c",
+    "tesssssssssst.untitled_894178155",
+    "tfassets.vent_system_straight_512"
   ]
 }

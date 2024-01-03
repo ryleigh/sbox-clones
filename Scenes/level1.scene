@@ -112,17 +112,6 @@
               "__enabled": true
             }
           ]
-        },
-        {
-          "Id": "06c1cb3d-d3d5-4410-91d3-0004b449caf1",
-          "Name": "pillar debug",
-          "Position": "0,-87.51857,140.8712",
-          "Components": [
-            {
-              "__type": "SpawnPoint",
-              "__enabled": true
-            }
-          ]
         }
       ]
     },

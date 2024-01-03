@@ -15,6 +15,9 @@ public sealed class Manager : Component
 	public List<Clone> Clones = new List<Clone>();
 	public List<Button> Buttons = new List<Button>();
 	public Door Door { get; private set; }
+	public Spawner Spawner { get; private set; }
+	private int _numClonesToSpawn;
+	private TimeSince _timeSinceSpawnClone;
 
 	public bool IsCloneLeavingLevel { get; private set; }
 
@@ -32,6 +35,9 @@ public sealed class Manager : Component
 
 		Buttons = Scene.GetAllComponents<Button>().ToList();
 		Door = Scene.GetAllComponents<Door>().FirstOrDefault();
+		Spawner = Scene.GetAllComponents<Spawner>().FirstOrDefault();
+
+		_timeSinceSpawnClone = 0f;
 
 		//for(int i = 0; i < 5; i++)
 		//{
@@ -43,7 +49,19 @@ public sealed class Manager : Component
 
 	protected override void OnUpdate()
 	{
+		if(_numClonesToSpawn > 0 && _timeSinceSpawnClone > 0.2f && Spawner != null )
+		{
+			SpawnClone( Spawner.Transform.Position.WithX( 0f ) );
+			_timeSinceSpawnClone = 0f;
+			_numClonesToSpawn--;
+		}
+	}
 
+	protected override void OnFixedUpdate()
+	{
+		base.OnFixedUpdate();
+
+		//Scene.PhysicsWorld.Gravity = Vector3.Down * (Input.Down( "Jump" ) ? 700f : 850f);
 	}
 
 	public void SpawnClone(Vector3 pos)
@@ -57,7 +75,8 @@ public sealed class Manager : Component
 	public void CloneDied(Clone clone)
 	{
 		RemoveClone( clone );
-		SpawnClone( new Vector3( 0f, Game.Random.Float(-20f, 20f), 175f + Game.Random.Float( -20f, 20f ) ) );
+
+		_numClonesToSpawn++;
 	}
 
 	public void RemoveClone(Clone clone)

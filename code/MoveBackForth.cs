@@ -1,25 +1,50 @@
 using Sandbox;
 
+public enum MoveDirection { Horizontal, Vertical }
+
 public sealed class MoveBackForth : Component
 {
-	private TimeSince _timeSinceChange;
-	private bool _left;
+	[Property] MoveDirection Direction { get; set; }
+	[Property] float Min { get; set; }
+	[Property] float Max { get; set; }
+	[Property] float Speed { get; set; } = 100f;
+	[Property] bool Increasing { get; set; }
 
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
 
-		_timeSinceChange = 0f;
 	}
 
 	protected override void OnUpdate()
 	{
-		if(_timeSinceChange > 3f)
+		if ( Direction == MoveDirection.Horizontal )
 		{
-			_timeSinceChange = 0f;
-			_left = !_left;
+			Transform.Position += Vector3.Right * Speed * Time.Delta * (Increasing ? 1f : -1f);
+			if(Transform.Position.y > Max)
+			{
+				Transform.Position = Transform.Position.WithY( Max );
+				Increasing = !Increasing; 
+			}
+			else if ( Transform.Position.y < Min )
+			{
+				Transform.Position = Transform.Position.WithY( Min );
+				Increasing = !Increasing;
+			}
 		}
-
-		Transform.Position += (_left ? Vector3.Left : Vector3.Right) * 50f * Time.Delta;
+		else
+		{
+			Transform.Position += Vector3.Up * Speed * Time.Delta * (Increasing ? 1f : -1f);
+			if ( Transform.Position.z > Max )
+			{
+				Transform.Position = Transform.Position.WithZ( Max );
+				Increasing = !Increasing;
+			}
+			else if ( Transform.Position.z < Min )
+			{
+				Transform.Position = Transform.Position.WithZ( Min );
+				Increasing = !Increasing;
+			}
+		}
 	}
 }

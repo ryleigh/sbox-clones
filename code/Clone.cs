@@ -11,8 +11,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 {
 	public Manager Manager { get; set; }
 
-	public Vector3 Gravity { get; set; } = new Vector3( 0, 0, 1000 );
-
 	public Vector3 Velocity { get; set; }
 	public Vector3 WishVelocity { get; private set; }
 
@@ -47,7 +45,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		BoxCollider = GameObject.Components.Get<BoxCollider>();
 		Renderer = Body.Components.Get<SkinnedModelRenderer>();
 
-		_targetYaw = Game.Random.Int( 0, 1 ) == 0 ? -90f : 90f;
+		_targetYaw = -90f;
+		Body.Transform.LocalRotation = Rotation.FromYaw( _targetYaw );
 
 		TimeSinceSpawn = 0f;
 
@@ -108,8 +107,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 		if (Transform.Position.z < Manager.DeathHeight)
 		{
-			Manager.CloneDied( this );
-			GameObject.Destroy();
+			Die();
 		}
 	}
 
@@ -131,6 +129,9 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		BuildWishVelocity(28f);
 
 		Velocity = Velocity.WithAcceleration( WishVelocity, 1.5f * Time.Delta );
+
+		//if(!IsGrounded && Input.Down( "Jump" ) )
+		//	Rigidbody.PhysicsBody.Velocity = Rigidbody.PhysicsBody.Velocity.WithZ( Rigidbody.PhysicsBody.Velocity.z + 200f * Time.Delta );
 
 		var damping = (1f - Time.Delta * 8.5f);
 		Velocity = new Vector3( Velocity.x * damping, Velocity.y * damping, Velocity.z );
@@ -215,9 +216,18 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			collider.GameObject.Components.Get<Door>().StopTouching( this );
 	}
 
+	public void Die()
+	{
+		Manager.CloneDied( this );
+		GameObject.Destroy();
+	}
+
 	public void OnCollisionStart( Collision collision )
 	{
-
+		if ( collision.Other.GameObject.Tags.Has( "spike_block" ) )
+		{
+			Die();
+		}
 	}
 
 	public void OnCollisionUpdate( Collision collision )
