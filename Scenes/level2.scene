@@ -36,7 +36,7 @@
     {
       "Id": "00854b9e-9ce1-45a3-b1a6-a525f08e12e0",
       "Name": "Camera",
-      "Position": "-507.3935,0,119.0326",
+      "Position": "-507.3935,-4.268752,119.0326",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
@@ -166,362 +166,658 @@
       "Enabled": true,
       "Children": [
         {
-          "Id": "13b2508c-63a5-4885-b611-0049df00df74",
-          "Name": "floor",
-          "Position": "0,31.21417,-76.02153",
-          "Scale": "1,1.8,1",
-          "Components": [
-            {
-              "__type": "BoxCollider",
-              "__enabled": true,
-              "Center": "0,-25.10002,18.5",
-              "IsTrigger": false,
-              "Scale": "91.89985,450,53.49996",
-              "Static": false,
-              "Surface": "surfaces/floor.surface"
-            }
-          ],
-          "Children": [
-            {
-              "Id": "8342dda2-fa86-4b99-962e-9907ec1992b7",
-              "Name": "block",
-              "Position": "7.672341,-77.16843,12.69523",
-              "Rotation": "-0.7726206,-0.000000004105318,0.6348674,-0.000000004105323",
-              "Scale": "15,15,15",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            },
-            {
-              "Id": "72ffb4aa-aca5-44b7-8d1b-4dac58fdcb41",
-              "Name": "block",
-              "Position": "7.672341,-162.7739,12.69523",
-              "Rotation": "-0.9904144,-0.00000003363283,-0.1381319,-0.0000000336328",
-              "Scale": "15,15,15",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            },
-            {
-              "Id": "0d45d934-ff05-4310-95f4-5ff5bd14a156",
-              "Name": "block",
-              "Position": "7.672341,102.6844,12.69523",
-              "Rotation": "-0.7410021,-0.000000002071219,0.6715026,-0.000000002071222",
-              "Scale": "15,15,15",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Id": "2792e830-e74d-4828-baa6-8ad15729534e",
-          "Name": "ceiling",
-          "Position": "0,-28.64498,262.0508",
-          "Rotation": "1,0,0,-0.0000006397578",
-          "Scale": "0.4362294,1.607517,0.8557566",
-          "Components": [
-            {
-              "__type": "BoxCollider",
-              "__enabled": true,
-              "Center": "0,-25.10002,18.5",
-              "IsTrigger": false,
-              "Scale": "91.89985,450,53.49996",
-              "Static": false,
-              "Surface": "surfaces/floor.surface"
-            }
-          ],
-          "Children": [
-            {
-              "Id": "0372c7d6-108f-433e-9ba7-5f3833aae7bf",
-              "Name": "block",
-              "Position": "7.672341,-77.16843,12.69523",
-              "Rotation": "-0.6738844,0.000000001935945,0.7388371,0.000000001935689",
-              "Scale": "15,15,15",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            },
-            {
-              "Id": "8ea9cf53-8665-4202-b5b0-983397bb53ff",
-              "Name": "block",
-              "Position": "7.672341,-162.7739,12.69523",
-              "Rotation": "-0.9999883,-0.00000002965456,0.00493067,-0.00000002965453",
-              "Scale": "15,15,15",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            },
-            {
-              "Id": "bd1a7b20-142c-4e8a-9a03-2118a186e357",
-              "Name": "block",
-              "Position": "7.672341,102.6844,12.69523",
-              "Rotation": "-0.637351,0.000000003970342,0.7705733,0.000000003970399",
-              "Scale": "15,15,15",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Id": "a58834e2-4be8-4a3c-9b25-889e21064326",
-          "Name": "pillar",
-          "Position": "0,-85.40368,62.21152",
-          "Components": [
-            {
-              "__type": "BoxCollider",
-              "__enabled": true,
-              "Center": "0,-0.000000372529,30.80005",
-              "IsTrigger": false,
-              "Scale": "50,26.69997,72.49992",
-              "Static": false,
-              "Surface": "surfaces/floor.surface"
-            }
-          ],
-          "Children": [
-            {
-              "Id": "0cf3df4e-9afc-41c7-97c1-d6b3536c88be",
-              "Name": "wall_plaster_125_pillar",
-              "Position": "0,0,0",
-              "Rotation": "0.0000002615791,0.0000002786164,0.6269396,0.7790685",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/rust_structures/fences_walls/wall_plaster_125_pillar.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Id": "34a61b43-0a97-46bd-abf8-8bbf2a8216be",
-          "Name": "left_wall",
-          "Position": "0,318.6189,109.4018",
-          "Scale": "1,1.5,1.5",
-          "Components": [
-            {
-              "__type": "BoxCollider",
-              "__enabled": true,
-              "Center": "0,6.099992,0",
-              "IsTrigger": false,
-              "Scale": "50,56.59988,203.5999",
-              "Static": false,
-              "Surface": null
-            }
-          ],
-          "Children": [
-            {
-              "Id": "a5682e43-534b-4e3a-ba58-777db7f17024",
-              "Name": "block (1)",
-              "Position": "4.208147,0.164139,9.389229",
-              "Rotation": "0.08597235,0.6994312,-0.7080504,-0.04550915",
-              "Scale": "15,18.2,11.70422",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "Id": "749a8190-b086-410d-b3e8-a3a1f0bc5510",
-          "Name": "right_wall",
-          "Position": "0,-310.353,109.4018",
-          "Scale": "1,1.3,0.9",
-          "Components": [
-            {
-              "__type": "BoxCollider",
-              "__enabled": true,
-              "Center": "0,-4.200003,0",
-              "IsTrigger": false,
-              "Scale": "50,56.59988,203.5999",
-              "Static": false,
-              "Surface": null
-            }
-          ],
-          "Children": [
-            {
-              "Id": "ed96ee8a-b510-4478-a934-cb418d5a0674",
-              "Name": "block (1)",
-              "Position": "4.208147,0.1641376,9.389234",
-              "Rotation": "-0.7084081,-0.04719978,-0.04605656,-0.7027189",
-              "Scale": "15,18.2,11.70422",
-              "Enabled": true,
-              "Components": [
-                {
-                  "__type": "ModelRenderer",
-                  "__enabled": true,
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialGroup": null,
-                  "MaterialOverride": null,
-                  "Model": "models/walls/elements/brick_wall_debris_small_a.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "Id": "00dba0a2-c012-4b64-8a7e-f2b264a62518",
           "Name": "wallpaper",
-          "Position": "85.48574,107.6489,110.2022",
+          "Position": "218.1415,248.9976,233.7881",
           "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
-          "Scale": "1.5,1.5,1.5",
+          "Enabled": true,
           "Components": [
             {
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": "materials/interior/vintage_wallpaper_c/vintage_wallpaper_c.vmat",
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
               "Model": "models/dev/plane.vmdl",
               "RenderType": "Off",
-              "Tint": "1,1,1,1"
+              "Tint": "0.05941,0.05941,0.05941,1"
             }
           ]
         },
         {
-          "Id": "b4d81873-7194-46ac-a509-3f4728aff02e",
+          "Id": "c5975855-4a83-4d64-aa57-0f7aaec26f5c",
           "Name": "wallpaper",
-          "Position": "71.35857,-23.05545,110.2022",
-          "Rotation": "-0.000001333214,-0.707107,-0.000001333214,0.7071065",
-          "Scale": "1.5,1.5,1.5",
+          "Position": "218.1418,149.5596,233.788",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
           "Components": [
             {
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": "materials/interior/vintage_wallpaper_c/vintage_wallpaper_c.vmat",
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
               "Model": "models/dev/plane.vmdl",
               "RenderType": "Off",
-              "Tint": "1,1,1,1"
+              "Tint": "0.05941,0.05941,0.05941,1"
             }
           ]
         },
         {
-          "Id": "49b20a80-9c7d-4e73-97c6-c556ce01082e",
+          "Id": "675d4762-d5c0-4d64-8511-f219052e36bb",
           "Name": "wallpaper",
-          "Position": "92.63055,-157.9999,119.0366",
-          "Rotation": "0.707107,-0.0000002837898,-0.7071065,-0.0000002837896",
-          "Scale": "1.5,1.5,1.5",
+          "Position": "218.1423,5.657578,233.7879",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
           "Components": [
             {
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": "materials/interior/vintage_wallpaper_c/vintage_wallpaper_c.vmat",
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
               "Model": "models/dev/plane.vmdl",
               "RenderType": "Off",
-              "Tint": "1,1,1,1"
+              "Tint": "0.05941,0.05941,0.05941,1"
             }
           ]
-        }
-      ]
-    },
-    {
-      "Id": "3bd22928-5da0-49ce-a9ef-0b8471bc58fa",
-      "Name": "vent_system_straight_512",
-      "Position": "29.91119,116.5528,-140.4021",
-      "Rotation": "0.6658224,-0.2380791,-0.2380798,0.665822",
-      "Scale": "0.2,0.2,0.2",
-      "Enabled": true,
-      "Components": [
+        },
         {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/props_spytech/vent_system_straight_512.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Id": "da355d7d-42c5-4096-aadc-3f4bad86b990",
+          "Name": "wallpaper",
+          "Position": "218.1421,49.88717,233.7879",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "d54ff4bc-1ac8-4ad0-b606-111c2a9036ce",
+          "Name": "wallpaper",
+          "Position": "218.1426,-94.01485,233.7878",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "d187b646-f22c-46fc-9d77-35e21f51f084",
+          "Name": "wallpaper",
+          "Position": "218.1429,-192.6112,233.7877",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "3474dfd7-7290-477c-914b-7ff22aab10ef",
+          "Name": "wallpaper",
+          "Position": "218.1432,-290.7206,233.7876",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "d43a6b5d-453e-49f7-b12a-2d6ae6a95953",
+          "Name": "wallpaper",
+          "Position": "218.1415,248.9977,134.2892",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "339da39f-87c4-4712-b47f-a4fe5f580e2e",
+          "Name": "wallpaper",
+          "Position": "218.1418,149.5597,134.2891",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "c5a2b84f-0fa1-4102-8417-ecb9b7e4bfef",
+          "Name": "wallpaper",
+          "Position": "218.1423,5.657669,134.289",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "5a399d3b-09e8-473e-870c-8511fd3fb102",
+          "Name": "wallpaper",
+          "Position": "218.1421,49.88726,134.289",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "0ee3f6d2-c415-48d8-8ec1-1b1ea16fdae2",
+          "Name": "wallpaper",
+          "Position": "218.1426,-94.01476,134.2889",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "25401cc6-de68-4e2e-9660-c761511f5d30",
+          "Name": "wallpaper",
+          "Position": "218.1429,-192.6112,134.2888",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "5f6cbf72-617f-4eca-8f0d-d6b388998572",
+          "Name": "wallpaper",
+          "Position": "218.1432,-290.7206,134.2887",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "e7230df7-2a74-42d7-9c1d-122449d8ea65",
+          "Name": "wallpaper",
+          "Position": "218.1415,248.9978,34.67964",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "4e417ac5-9bd7-4e8f-8065-c6cb85558030",
+          "Name": "wallpaper",
+          "Position": "218.1418,149.5598,34.67957",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "dcc4b76d-fe14-47ba-bc42-e771c046dfce",
+          "Name": "wallpaper",
+          "Position": "218.1423,5.657776,34.67947",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "7f90de86-5b41-4ab5-b46f-a113f81f7e49",
+          "Name": "wallpaper",
+          "Position": "218.1421,49.88737,34.6795",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "c015efc6-905e-4cf7-a122-675acf32d5c1",
+          "Name": "wallpaper",
+          "Position": "218.1426,-94.01465,34.67941",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "3d60e5cc-e3c8-42a3-9224-8fc9b450db5c",
+          "Name": "wallpaper",
+          "Position": "218.1429,-192.6111,34.67934",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "e546d24f-493c-4f6c-b9d0-779af6ecf914",
+          "Name": "wallpaper",
+          "Position": "218.1432,-290.7205,34.67928",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.05941,0.05941,0.05941,1"
+            }
+          ]
+        },
+        {
+          "Id": "fe146e86-0812-4beb-9507-16ccbf78b75a",
+          "Name": "wallpaper cover",
+          "Position": "134.6221,-132.1851,297.6003",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Scale": "1,7.682622,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0,0,0,1"
+            }
+          ]
+        },
+        {
+          "Id": "24690f15-7a44-4e00-b401-e16f50731819",
+          "Name": "wallpaper cover",
+          "Position": "134.6228,-353.6025,98.42963",
+          "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
+          "Scale": "4.744845,1.154005,2.308312",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/ambientcg/bricks073c_1k-png/bricks073.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "Off",
+              "Tint": "0,0,0,1"
+            }
+          ]
+        },
+        {
+          "Id": "b45e04c0-42ff-478b-a18a-256616a48d42",
+          "Name": "tube 1",
+          "Position": "48.08193,136.85,94.31773",
+          "Rotation": "0.02464386,-0.0449275,-0.7314913,0.6799223",
+          "Scale": "0.35,0.5,0.35",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "model/27/untitled_96.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "2e4c7919-b990-47c8-a83a-aaee8236c09b",
+              "Name": "Cube (8)",
+              "Position": "4.780345,-91.48629,75.22473",
+              "Rotation": "-0.02464387,0.04492752,0.7314915,0.6799226",
+              "Scale": "2.857143,1.322224,1.902328",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": false,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/box.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__enabled": true,
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "50,50,50",
+                  "Static": false,
+                  "Surface": "surfaces/floor.surface"
+                }
+              ]
+            },
+            {
+              "Id": "84085e3f-9b8c-4bb3-8295-6164e079bf7e",
+              "Name": "Sphere",
+              "Position": "0.4284977,-109.7646,66.39548",
+              "Rotation": "-0.02464387,0.04492752,0.7314915,0.6799226",
+              "Scale": "2,1.399998,2",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": false,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/sphere.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "SphereCollider",
+                  "__enabled": true,
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Radius": 30,
+                  "Static": false,
+                  "Surface": "surfaces/floor.surface"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "f80408e6-567e-4dcf-8ae3-91c9c0e99ad6",
+          "Name": "tube 2",
+          "Position": "39.78317,78.85534,122.8049",
+          "Rotation": "-0.507549,0.5489104,-0.49831,-0.43908",
+          "Scale": "0.35,0.5,0.35",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "model/27/untitled_96.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "f99fd5a1-0749-406b-950c-f4a06fad96c4",
+              "Name": "Sphere",
+              "Position": "-3.887242,82.04417,67.92635",
+              "Rotation": "-0.02464364,0.04492745,0.7314912,0.6799228",
+              "Scale": "2,1.399998,2",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/sphere.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "SphereCollider",
+                  "__enabled": true,
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Radius": 30,
+                  "Static": false,
+                  "Surface": "surfaces/floor.surface"
+                }
+              ]
+            },
+            {
+              "Id": "1c729891-00fd-4977-8be4-46c1a304f2c7",
+              "Name": "Cube (9)",
+              "Position": "1.18788,80.97308,64.12084",
+              "Rotation": "0.5075425,-0.5489035,0.4983037,-0.4390744",
+              "Scale": "2.857143,1.481829,1.902328",
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/box.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__enabled": true,
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "50,50,50",
+                  "Static": false,
+                  "Surface": "surfaces/floor.surface"
+                }
+              ]
+            },
+            {
+              "Id": "d9be7af3-9924-488d-bca5-264792ae1df3",
+              "Name": "Cube (14)",
+              "Position": "67.21542,76.26308,59.89795",
+              "Rotation": "0.5075417,-0.5489038,0.498304,-0.4390745",
+              "Scale": "2.286024,0.536763,0.5688847",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": false,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/dev/box.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__enabled": true,
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "66.29991,50,50",
+                  "Static": false,
+                  "Surface": "surfaces/floor.surface"
+                }
+              ]
+            },
+            {
+              "Id": "b4bd023a-73f0-4cee-87a6-7095f4cdd49c",
+              "Name": "planter_box_01",
+              "Position": "79.9174,101.2132,58.30888",
+              "Rotation": "-0.6637375,0.005891532,0.7479267,0.006028187",
+              "Scale": "2.240758,2.612497,2.609689",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": null,
+                  "Model": "models/planter_box_01.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "Id": "c843f56f-c7ae-4842-b137-64e51a781f1e",
       "Name": "vent_c",
-      "Position": "22.15708,-44.43139,-27.68767",
+      "Position": "22.15739,-250.324,204.4602",
       "Rotation": "-0,0,1,-0.0000007589671",
       "Enabled": true,
       "Components": [
@@ -533,7 +829,7 @@
           "MaterialOverride": null,
           "Model": "models/rust_props/industrial_fixtures/vent_c.vmdl",
           "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "0.20792,0.20792,0.20792,1"
         }
       ]
     },
@@ -557,35 +853,15 @@
       ]
     },
     {
-      "Id": "b45e04c0-42ff-478b-a18a-256616a48d42",
-      "Name": "untitled_96",
-      "Position": "48.08193,82.8742,-75.51816",
-      "Rotation": "0.03468405,-0.05319508,-0.7162972,0.6949009",
-      "Scale": "0.3,0.5,0.3",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "model/27/untitled_96.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        }
-      ]
-    },
-    {
       "Id": "2982d86d-fac3-4eba-99ce-311fe963058c",
-      "Name": "Cube",
+      "Name": "Cube - floor",
       "Position": "0,0,-7.104105",
       "Scale": "1,11.87255,0.5478496",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -606,14 +882,14 @@
     },
     {
       "Id": "b25d96b9-b95a-4da8-b750-5f603dd072a3",
-      "Name": "Cube (2)",
+      "Name": "Cube - right wall",
       "Position": "0,-282.0759,111.0804",
       "Scale": "1,0.5037024,4.279356",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -641,7 +917,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -689,99 +965,15 @@
       ]
     },
     {
-      "Id": "39b3fd75-717c-4ab2-b033-938e5c886ee5",
-      "Name": "Cube (7)",
-      "Position": "0,245.2005,116.4691",
-      "Scale": "1,2.073314,0.6658149",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "2e4c7919-b990-47c8-a83a-aaee8236c09b",
-      "Name": "Cube (8)",
-      "Position": "0,139.8985,116.4691",
-      "Scale": "1,0.7409144,0.6658149",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "d9be7af3-9924-488d-bca5-264792ae1df3",
-      "Name": "Cube (14)",
-      "Position": "0,54.88657,135.4075",
-      "Scale": "1,0.3409144,0.2811872",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
       "Id": "8c39d367-f9b4-4503-a562-15f3018afa64",
-      "Name": "Cube (13)",
-      "Position": "0,222.0167,29.13344",
-      "Scale": "1,0.4170242,1.551657",
+      "Name": "Cube - left hook",
+      "Position": "0,219.5828,29.13344",
+      "Scale": "1,0.65,1.551657",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -801,105 +993,22 @@
       ]
     },
     {
-      "Id": "1c729891-00fd-4977-8be4-46c1a304f2c7",
-      "Name": "Cube (9)",
-      "Position": "0,56.04681,116.4691",
-      "Scale": "1,0.7409144,0.6658149",
+      "Id": "a64ade44-5daf-4e3a-b0e6-e35d8989fc4a",
+      "Name": "Cube - under left button",
+      "Position": "-0.7399992,253.414,1.91799",
+      "Rotation": "-0.000000000982608,0.01648549,0.0000000000000003079103,0.9998643",
+      "Scale": "1.218936,0.65,0.4539616",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
           "Model": "models/dev/box.vmdl",
           "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "5690f9cc-568a-4ad6-99aa-f2404dc7ec78",
-      "Name": "Cube (10)",
-      "Position": "0,-36.54296,116.4691",
-      "Scale": "1,0.7409144,0.6658149",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "e1d132a4-3c8b-4a52-ba9d-46acf03b97ab",
-      "Name": "Cube (11)",
-      "Position": "0,-157.0664,116.4691",
-      "Scale": "1,0.5818997,0.6658149",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "4e46cced-cd98-4e7f-9337-1c1f3ae54427",
-      "Name": "Cube (12)",
-      "Position": "0,-246.6065,116.3102",
-      "Scale": "1,1.637655,0.6658149",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "0.28218,0.28218,0.28218,1"
         },
         {
           "__type": "BoxCollider",
@@ -915,7 +1024,7 @@
     {
       "Id": "1a4a2ffc-3bfe-4f29-b155-a27df9faf705",
       "Name": "Cube (5)",
-      "Position": "0,212.1877,256.9299",
+      "Position": "0,208.9658,256.9299",
       "Scale": "1,0.5037024,1.055578",
       "Enabled": true,
       "Components": [
@@ -949,7 +1058,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -970,14 +1079,14 @@
     },
     {
       "Id": "4c5a507a-e0f4-4895-8cf6-84387b13aef4",
-      "Name": "Cube (1)",
+      "Name": "Cube - ceiling",
       "Position": "0,-39.55767,228.1589",
       "Scale": "1,10.57669,0.5478496",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -997,69 +1106,24 @@
       ]
     },
     {
-      "Id": "6dba6e1c-42a0-48c8-a2c3-487b8eadcf19",
+      "Id": "18b07467-ee04-420b-9484-44ce65927ece",
       "Name": "spawner",
-      "Position": "140.9945,248.8759,245.0979",
+      "Position": "82.39859,249.0603,245.1541",
       "Enabled": true,
-      "Components": [
-        {
-          "__type": "Spawner",
-          "__enabled": true
-        }
-      ],
-      "Children": [
-        {
-          "Id": "d2ccda0b-6616-4c99-9769-71c07dd9614d",
-          "Name": "gutter_wall_pipe_hole_a",
-          "Position": "13.74561,0.00003051758,-0.00001525879",
-          "Rotation": "-0.0000009047542,0.7071065,-0.0000009047542,-0.707107",
-          "Scale": "7,7,5",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/sbox_props/gutters/gutter_wall_pipe_hole_a.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "9089345a-8d3a-40b1-b3c7-37972c19b645",
-          "Name": "scaffolding_ringlock_a",
-          "Position": "51.3988,0.00001525879,0",
-          "Scale": "1.500001,4.499999,4.5",
-          "Enabled": true,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "models/sbox_props/scaffolding/scaffolding_ringlock_a.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        }
-      ]
+      "__Prefab": "prefabs/spawner.prefab"
     },
     {
       "Id": "108fcea5-7021-436a-8d64-2b845cda671d",
       "Name": "door",
       "Position": "22.20943,-251.2576,133.1564",
+      "Tags": "door,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/door.prefab"
     },
     {
       "Id": "a0656325-654b-4868-991b-42529e885aa6",
       "Name": "button",
-      "Position": "-10.05542,253.4037,12.45898",
+      "Position": "-10.05542,253.4037,13.24323",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
@@ -1068,7 +1132,7 @@
     {
       "Id": "cbe0989e-0d77-4bd0-bb70-2d928fb07743",
       "Name": "button",
-      "Position": "0.8674216,-246.4819,12.08199",
+      "Position": "1.802526,-246.4819,8.311936",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
@@ -1077,7 +1141,7 @@
     {
       "Id": "4428182f-94ee-4fe1-8652-a54e2296326b",
       "Name": "spike_block",
-      "Position": "-0.738945,197.7511,20.31408",
+      "Position": "-0.738945,160.4624,20.31408",
       "Scale": "0.6,0.5,0.5",
       "Tags": "spike_block",
       "Enabled": true,
@@ -1157,6 +1221,515 @@
           ]
         }
       ]
+    },
+    {
+      "Id": "c6b7345c-5d5c-428b-810a-a30d981c6f5c",
+      "Name": "trim_metal_roof_ledge_corner",
+      "Position": "48.72038,135.2206,-26.762",
+      "Rotation": "0.04805845,-0.04805851,-0.7054719,0.7054715",
+      "Scale": "10.10253,4.486018,5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/trims/trim_metal_roof_ledge_corner.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b41fcce4-96b1-49ed-9bee-295f77a14594",
+      "Name": "trim_metal_roof_border_corner",
+      "Position": "29.12314,55.97543,-27.25855",
+      "Rotation": "0.000000007315022,-0.1227257,0.000000000000000008219669,0.9924406",
+      "Scale": "10,32.26668,10",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/trims/trim_metal_roof_border_corner.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "531bbfab-4a63-4b22-a987-1dc2d6aff9a7",
+      "Name": "trim_metal_roof_ledge_cap",
+      "Position": "27.27196,-160.8295,-25.88707",
+      "Rotation": "-0.1329399,-0.1258014,0.6925223,0.6977926",
+      "Scale": "17.8902,8.156104,4.86268",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/trims/trim_metal_roof_ledge_cap.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "39b3fd75-717c-4ab2-b033-938e5c886ee5",
+      "Name": "Cube - left ledge",
+      "Position": "0,245.2005,116.4691",
+      "Scale": "1,2.073314,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "534a643d-0273-4993-92c4-789335c26457",
+      "Name": "wood_box_03a",
+      "Position": "-0.03941739,234.4144,98.1897",
+      "Rotation": "0.03926129,-0.03926079,-0.7060161,0.7060156",
+      "Scale": "1.40716,1.581492,1.302207",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/reizer_props/srsp/random_stuff/wood_box/03a/wood_box_03a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b23e1ff9-da8e-4fa1-ab14-3cf336ee682c",
+      "Name": "awning_06",
+      "Position": "-59.79805,128.0812,231.0614",
+      "Rotation": "0.1868896,0.00001708418,-0.9823325,0.009765926",
+      "Scale": "0.5,0.3973914,0.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/japan_props_001/awning_06.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "c909cbcf-85c1-4962-9198-4ecb918f109b",
+      "Name": "awning_06 (1)",
+      "Position": "-57.09322,-12.8187,231.5711",
+      "Rotation": "0.1868896,0.00001708418,-0.9823325,0.009765926",
+      "Scale": "0.5,0.397,0.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/japan_props_001/awning_06.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9554a079-fe7d-47bf-a9de-325814ab6fe7",
+      "Name": "awning_06 (2)",
+      "Position": "-55.79528,-80.43099,231.8157",
+      "Rotation": "0.1868896,0.00001708418,-0.9823325,0.009765926",
+      "Scale": "0.5,0.397,0.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/japan_props_001/awning_06.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b23e042e-69e5-412b-9596-e89188827bba",
+      "Name": "awning_06 (3)",
+      "Position": "-121.2528,-197.2321,232.2382",
+      "Rotation": "0.1868896,0.00001708418,-0.9823325,0.009765926",
+      "Scale": "0.5,0.397,0.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/japan_props_001/awning_06.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "5690f9cc-568a-4ad6-99aa-f2404dc7ec78",
+      "Name": "Cube - box mid",
+      "Position": "0,-36.54296,116.292",
+      "Scale": "1,0.7409144,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "7b3bad6c-7d18-4545-80f3-9ee7e59b59a1",
+      "Name": "wood_box_03a",
+      "Position": "24.9827,-39.04426,98.73146",
+      "Rotation": "0.00002425822,-0.01516082,-0.01871385,0.9997099",
+      "Scale": "2.033044,1.430373,1.260503",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/reizer_props/srsp/random_stuff/wood_box/03a/wood_box_03a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e1d132a4-3c8b-4a52-ba9d-46acf03b97ab",
+      "Name": "Cube - box right",
+      "Position": "0,-157.0664,116.7811",
+      "Scale": "1,0.5818997,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "73434e07-ca7d-4ed7-ba2c-1384c749b733",
+      "Name": "wood_box_03a (1)",
+      "Position": "24.9827,-171.5017,114.6173",
+      "Rotation": "-0.7041355,-0.02659274,-0.005295993,0.7095477",
+      "Scale": "2.158058,1.422216,1.184696",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/reizer_props/srsp/random_stuff/wood_box/03a/wood_box_03a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "4e46cced-cd98-4e7f-9337-1c1f3ae54427",
+      "Name": "Cube - right ledge",
+      "Position": "0,-246.6065,116.3102",
+      "Scale": "1,1.637655,0.6658149",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "7d35213c-2772-4792-89ef-a68e5749a5d1",
+      "Name": "wood_box_03a (2)",
+      "Position": "5.691475,-237.0483,97.58917",
+      "Rotation": "0.02426611,-0.02426561,-0.7066902,0.7066895",
+      "Scale": "1.105802,3.273456,1.284079",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/reizer_props/srsp/random_stuff/wood_box/03a/wood_box_03a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6d3fa2ec-eef1-4aed-b65b-99d2f609e59f",
+      "Name": "gutter_roof_pipe_corner_a",
+      "Position": "-84.52589,287.5177,-9.150493",
+      "Rotation": "-0.0000000000004547474,0.7071065,-0.0000000000004547474,0.707107",
+      "Scale": "4,4.3,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/gutters/gutter_roof_pipe_corner_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "cfb71b86-71a8-4b11-9f84-92934ccc0f5e",
+      "Name": "gutter_roof_pipe_corner_a (1)",
+      "Position": "-84.99953,219.0495,-9.150498",
+      "Rotation": "-0.4999996,0.4999972,-0.5000005,0.5000029",
+      "Scale": "4.3,4,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/gutters/gutter_roof_pipe_corner_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "44d5ec96-1787-4ca3-9543-941ec023e3b0",
+      "Name": "plastic_tube",
+      "Position": "-46.02234,288.143,6.592179",
+      "Scale": "1,0.7591691,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/plastic_tube/plastic_tube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "dbb78550-ad9e-408b-a09a-9ef3b1ca8723",
+      "Name": "plastic_tube (1)",
+      "Position": "-46.02234,288.0612,142.9754",
+      "Scale": "1,0.7591691,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/plastic_tube/plastic_tube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "a3db2292-4a9b-45e0-89d4-90b79f675419",
+      "Name": "plastic_tube (4)",
+      "Position": "-10.8905,-286.1705,109.2237",
+      "Scale": "1,0.7591691,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/plastic_tube/plastic_tube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "967d1cb9-fa98-4659-ac44-6d15e78bcefe",
+      "Name": "plastic_tube (5)",
+      "Position": "14.00747,-286.1705,-28.75206",
+      "Rotation": "0.00000000742719,-0.1246076,0.00000000000000001329873,0.9922067",
+      "Scale": "0.8359994,0.7407474,1.061867",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/plastic_tube/plastic_tube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "0391caf3-873a-42bc-bc41-513e65fddecf",
+      "Name": "plastic_tube (2)",
+      "Position": "-46.02234,211.0582,287.0334",
+      "Rotation": "1,0,0,-0.0000006397578",
+      "Scale": "1,0.7591691,0.5510237",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/plastic_tube/plastic_tube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "8b528cd4-ed6b-4f69-a266-79d073804460",
+      "Name": "plastic_tube (3)",
+      "Position": "-57.93042,294.9117,284.0461",
+      "Rotation": "0.707107,0,0,0.7071065",
+      "Scale": "0.9470694,0.770549,0.7311509",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/plastic_tube/plastic_tube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "88f3cc3d-6b95-4fe1-aa2d-6c40dcdea4c8",
+      "Name": "pipeline_100x300",
+      "Position": "-2.494418,219.4006,65.97449",
+      "Rotation": "0.7371018,0.000000001827801,-0.675782,0.000000001827562",
+      "Scale": "0.671265,0.7030504,1.156981",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_props/pipelines/pipeline_100x300.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1171,15 +1744,19 @@
   "Title": "main",
   "Description": "",
   "__references": [
+    "andiq.bricks073",
+    "baik.plastic_tube",
     "degg.f_trap_spikes",
-    "facepunch.brick_wall_debris_small_a",
-    "facepunch.gutter_wall_pipe_hole_a",
-    "facepunch.scaffolding_ringlock_a",
+    "facepunch.gutter_roof_pipe_corner_a",
+    "facepunch.trim_metal_roof_border_corner",
+    "facepunch.trim_metal_roof_ledge_cap",
+    "facepunch.trim_metal_roof_ledge_corner",
+    "japancitymodels.awning_06",
     "polyhaven.modular_airduc_01_vent1",
+    "polyhaven.planter_box_01",
+    "reizer.wood_box_03a",
+    "rust.pipeline_100x300",
     "rust.vent_c",
-    "rust.wall_plaster_125_pillar",
-    "rustextended.vintage_wallpaper_c",
-    "tesssssssssst.untitled_894178155",
-    "tfassets.vent_system_straight_512"
+    "tesssssssssst.untitled_894178155"
   ]
 }

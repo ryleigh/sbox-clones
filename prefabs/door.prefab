@@ -2,6 +2,7 @@
   "RootObject": {
     "Id": "d30e4d2c-2de0-4d77-92ee-e8ec3150b00f",
     "Name": "door",
+    "Tags": "trigger,door",
     "Enabled": true,
     "Components": [
       {
@@ -23,7 +24,6 @@
         "Id": "7a4617d3-8e14-4836-89f6-900633b808f3",
         "Name": "door_body",
         "Scale": "0.35,0.35,0.35",
-        "Tags": "door,trigger",
         "Enabled": true,
         "Components": [
           {
@@ -44,7 +44,6 @@
             "Position": "38.37995,24.55963,108.6336",
             "Rotation": "1,0,0,-0.0000006397578",
             "Scale": "1.4,1.2,1.4",
-            "Tags": "door,trigger",
             "Enabled": true,
             "Components": [
               {
@@ -64,7 +63,6 @@
             "Name": "door_right",
             "Position": "38.06658,-23.19534,-3.309828",
             "Scale": "1.4,1.2,1.4",
-            "Tags": "door,trigger",
             "Enabled": true,
             "Components": [
               {

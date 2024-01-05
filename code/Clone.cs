@@ -2,6 +2,7 @@ using Sandbox;
 using Sandbox.Citizen;
 using Sandbox.UI;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Numerics;
@@ -30,6 +31,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	public TimeSince TimeSinceSpawn { get; set; }
 
 	public bool IsConfused { get; private set; }
+
+	private List<Button> _touchingButtons = new();
 
 	public bool IsEnteringDoor { get; private set; }
 	public Door DoorEntering { get; private set; }
@@ -148,9 +151,12 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		var startPos = Transform.Position;
 		var endPos = Transform.Position + Vector3.Down * 1f;
 
-		var tr = Scene.Trace.Ray( startPos, endPos ).Size( (BoxCollider.Scale * 0.99f).WithZ(0.1f) ).WithoutTags("trigger");
+		var tr = Scene.Trace.Ray( startPos, endPos ).Size( (BoxCollider.Scale * 0.99f).WithZ( 0.1f ) ).WithoutTags("trigger");
 		tr = tr.IgnoreGameObject( GameObject );
 		var r = tr.Run();
+
+		//if(r.Hit)
+		//	Log.Info( $"{r.Body.GetGameObject().Name}" );
 
 		IsGrounded = r.Hit;
 	}
@@ -201,23 +207,42 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		//Log.Info( $"Enter: {collider.GameObject.Name}, {collider.GameObject.Tags}" );
 
 		if ( collider.GameObject.Tags.Has( "button" ) )
-			collider.GameObject.Components.Get<Button>().StartPressing( this );
-
+		{
+			var button = collider.GameObject.Components.Get<Button>();
+			_touchingButtons.Add( button );
+			button.StartPressing( this );
+		}
+			
 		if ( collider.GameObject.Tags.Has( "door" ) )
-			collider.GameObject.Components.Get<Door>().StartTouching( this );
+		{
+			var door = collider.GameObject.Components.Get<Door>();
+			door.StartTouching( this );
+		}
 	}
 
 	public void OnTriggerExit( Collider collider )
 	{
 		if ( collider.GameObject.Tags.Has( "button" ) )
-			collider.GameObject.Components.Get<Button>().StopPressing( this );
+		{
+			var button = collider.GameObject.Components.Get<Button>();
+			if ( _touchingButtons.Contains( button ) )
+				_touchingButtons.Remove( button );
+
+			button.StopPressing( this );
+		}
 
 		if ( collider.GameObject.Tags.Has( "door" ) )
-			collider.GameObject.Components.Get<Door>().StopTouching( this );
+		{
+			var door = collider.GameObject.Components.Get<Door>();
+			door.StopTouching( this );
+		}
 	}
 
 	public void Die()
 	{
+		foreach ( var button in _touchingButtons )
+			button.StopPressing( this );
+
 		Manager.CloneDied( this );
 		GameObject.Destroy();
 	}

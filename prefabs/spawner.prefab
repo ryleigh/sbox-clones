@@ -1,0 +1,62 @@
+{
+  "RootObject": {
+    "Id": "6dba6e1c-42a0-48c8-a2c3-487b8eadcf19",
+    "Name": "spawner",
+    "Position": "140.9945,248.8759,245.0979",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Spawner",
+        "__enabled": true
+      }
+    ],
+    "Children": [
+      {
+        "Id": "d2ccda0b-6616-4c99-9769-71c07dd9614d",
+        "Name": "gutter_wall_pipe_hole_a",
+        "Position": "13.74561,0.00003051758,-0.00001525879",
+        "Rotation": "-0.0000009047542,0.7071065,-0.0000009047542,-0.707107",
+        "Scale": "7,7,5",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/sbox_props/gutters/gutter_wall_pipe_hole_a.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "Id": "9089345a-8d3a-40b1-b3c7-37972c19b645",
+        "Name": "scaffolding_ringlock_a",
+        "Position": "51.3988,0.00001525879,0",
+        "Scale": "1.500001,4.499999,4.5",
+        "Enabled": true,
+        "Components": [
+          {
+            "__type": "ModelRenderer",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Model": "models/sbox_props/scaffolding/scaffolding_ringlock_a.vmdl",
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ]
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": [
+    "facepunch.gutter_wall_pipe_hole_a",
+    "facepunch.scaffolding_ringlock_a"
+  ]
+}

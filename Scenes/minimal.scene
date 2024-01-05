@@ -49,17 +49,18 @@
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
           "MaterialOverride": "materials/dev/dev_metal_rough50.vmat",
           "Model": "models/dev/plane.vmdl",
-          "ShouldCastShadows": true,
+          "RenderType": "On",
           "Tint": "1,1,1,1"
         }
       ]
     },
     {
       "Id": "3c2490ef-54a0-49bb-8f13-490e40aa51d1",
-      "Name": "Cube",
-      "Position": "15.44442,82.48373,14.40159",
+      "Name": "small Cube",
+      "Position": "-121.0395,17.24531,173.7338",
       "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
       "Scale": "0.5632889,0.5632889,0.5632889",
       "Enabled": true,
@@ -68,22 +69,40 @@
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
           "MaterialOverride": "materials/dev/dev_metal_rough20.vmat",
           "Model": "models/dev/box.vmdl",
-          "ShouldCastShadows": true,
+          "RenderType": "On",
           "Tint": "1,1,1,1"
         },
         {
           "__type": "MyComponent",
-          "__enabled": true,
+          "__enabled": false,
           "StringProperty": null
+        },
+        {
+          "__type": "Rigidbody",
+          "__enabled": true,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {}
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
         }
       ]
     },
     {
       "Id": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
       "Name": "Camera",
-      "Position": "-116.9319,-243.2814,254.4213",
+      "Position": "-166.2546,-224.3839,250.7037",
       "Rotation": "-0.2056158,0.322752,0.4964002,0.7791919",
       "Enabled": true,
       "Components": [
@@ -93,25 +112,84 @@
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "FieldOfView": 60,
+          "IsMainCamera": true,
           "Orthographic": false,
           "OrthographicHeight": 1204,
+          "Priority": 1,
           "RenderExcludeTags": "",
           "RenderTags": "",
           "TargetEye": "None",
+          "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        }
+      ]
+    },
+    {
+      "Id": "4c5fc9cb-7965-4a47-8708-80cc6f95e4cf",
+      "Name": "Cube",
+      "Position": "-98.12619,20.30817,22.45166",
+      "Scale": "5.031061,3.464122,0.3023689",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "806e997c-5097-4eb4-9c2a-11999fabbf9d",
+      "Name": "Cube (1)",
+      "Position": "-98.12619,20.30817,74.77272",
+      "Scale": "1.98631,2.028337,0.8785587",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "0.21856,0.3414,0.90099,0.7"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null
         }
       ]
     }
   ],
   "SceneProperties": {
+    "FixedUpdateFrequency": 50,
     "Lerping": true,
-    "UseFixedUpdate": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
     "ThreadedAnimation": true,
     "TimeScale": 1,
-    "MaxFixedUpdates": 5,
-    "FixedUpdateFrequency": 50,
-    "NetworkFrequency": 60
+    "UseFixedUpdate": true
   },
   "Title": "minimal",
   "Description": "",
