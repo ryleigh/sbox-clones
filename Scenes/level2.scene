@@ -13,7 +13,7 @@
           "DeathHeight": -100,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Level 2: The Corridor",
-          "NextScene": null,
+          "NextScene": "scenes/level3.scene",
           "PrevScene": "scenes/level1.scene"
         }
       ]
@@ -829,26 +829,7 @@
           "MaterialOverride": null,
           "Model": "models/rust_props/industrial_fixtures/vent_c.vmdl",
           "RenderType": "On",
-          "Tint": "0.20792,0.20792,0.20792,1"
-        }
-      ]
-    },
-    {
-      "Id": "d7a237d8-43af-4d51-a5b1-f2b32066982b",
-      "Name": "modular_airduct_rectangular_01_vent1",
-      "Position": "30.97952,-1.922707,-23.55267",
-      "Rotation": "0,-0,-1,-0.000001116595",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/modular_airduct_01/modular_airduct_rectangular_01_vent1.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "0.07426,0.07426,0.07426,1"
         }
       ]
     },
@@ -1752,7 +1733,6 @@
     "facepunch.trim_metal_roof_ledge_cap",
     "facepunch.trim_metal_roof_ledge_corner",
     "japancitymodels.awning_06",
-    "polyhaven.modular_airduc_01_vent1",
     "polyhaven.planter_box_01",
     "reizer.wood_box_03a",
     "rust.pipeline_100x300",

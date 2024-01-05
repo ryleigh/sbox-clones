@@ -202,7 +202,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		Manager.RemoveClone( this );
 	}
 
-	public void OnTriggerEnter(Collider collider)
+	public void OnTriggerEnter( Collider collider )
 	{
 		//Log.Info( $"Enter: {collider.GameObject.Name}, {collider.GameObject.Tags}" );
 
@@ -212,11 +212,18 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			_touchingButtons.Add( button );
 			button.StartPressing( this );
 		}
-			
-		if ( collider.GameObject.Tags.Has( "door" ) )
+		else if ( collider.GameObject.Tags.Has( "door" ) )
 		{
 			var door = collider.GameObject.Components.Get<Door>();
 			door.StartTouching( this );
+		}
+		else if ( collider.GameObject.Tags.Has( "confuser" ) )
+		{
+			if(!IsConfused)
+			{
+				var confuser = collider.GameObject.Components.Get<Confuser>();
+				confuser.Consume( this );
+			}
 		}
 	}
 
@@ -230,8 +237,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 			button.StopPressing( this );
 		}
-
-		if ( collider.GameObject.Tags.Has( "door" ) )
+		else if ( collider.GameObject.Tags.Has( "door" ) )
 		{
 			var door = collider.GameObject.Components.Get<Door>();
 			door.StopTouching( this );
