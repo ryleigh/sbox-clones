@@ -2,7 +2,6 @@
   "RootObject": {
     "Id": "6dba6e1c-42a0-48c8-a2c3-487b8eadcf19",
     "Name": "spawner",
-    "Position": "140.9945,248.8759,245.0979",
     "Enabled": true,
     "Components": [
       {
@@ -13,7 +12,7 @@
     "Children": [
       {
         "Id": "d2ccda0b-6616-4c99-9769-71c07dd9614d",
-        "Name": "gutter_wall_pipe_hole_a",
+        "Name": "hole",
         "Position": "13.74561,0.00003051758,-0.00001525879",
         "Rotation": "-0.0000009047542,0.7071065,-0.0000009047542,-0.707107",
         "Scale": "7,7,5",
@@ -33,7 +32,7 @@
       },
       {
         "Id": "9089345a-8d3a-40b1-b3c7-37972c19b645",
-        "Name": "scaffolding_ringlock_a",
+        "Name": "ring",
         "Position": "51.3988,0.00001525879,0",
         "Scale": "1.500001,4.499999,4.5",
         "Enabled": true,
@@ -47,6 +46,33 @@
             "Model": "models/sbox_props/scaffolding/scaffolding_ringlock_a.vmdl",
             "RenderType": "On",
             "Tint": "1,1,1,1"
+          }
+        ]
+      },
+      {
+        "Id": "6d496880-f447-4bad-a786-fce07b05731b",
+        "Name": "bg_light",
+        "Position": "79.60281,0,0",
+        "Enabled": true,
+        "Children": [
+          {
+            "Id": "bc170adb-4402-48ed-82fa-b7afe10952ab",
+            "Name": "Sphere",
+            "Position": "0,0,15.70866",
+            "Scale": "0.06,0.06,0.06",
+            "Enabled": true,
+            "Components": [
+              {
+                "__type": "ModelRenderer",
+                "__enabled": true,
+                "BodyGroups": 18446744073709551615,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Model": "models/dev/sphere.vmdl",
+                "RenderType": "On",
+                "Tint": "0.20792,0.25545,1,1"
+              }
+            ]
           }
         ]
       }

@@ -1108,7 +1108,7 @@
     {
       "Id": "18b07467-ee04-420b-9484-44ce65927ece",
       "Name": "spawner",
-      "Position": "82.39859,249.0603,245.1541",
+      "Position": "43.47208,249.0603,245.1541",
       "Enabled": true,
       "__Prefab": "prefabs/spawner.prefab"
     },
