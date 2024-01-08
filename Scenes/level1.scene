@@ -1,4 +1,5 @@
 {
+  "Id": "4eee1cc4-9196-4ec5-9eaa-2867dfad6724",
   "GameObjects": [
     {
       "Id": "7d6f0dec-365e-4133-bf2a-289188767fbd",
@@ -96,7 +97,7 @@
           "Enabled": true,
           "Components": [
             {
-              "__type": "SpawnPoint",
+              "__type": "CloneSpawnPoint",
               "__enabled": true
             }
           ]
@@ -108,18 +109,7 @@
           "Enabled": true,
           "Components": [
             {
-              "__type": "SpawnPoint",
-              "__enabled": true
-            }
-          ]
-        },
-        {
-          "Id": "343338bf-46d5-470e-af2d-3124c73568dd",
-          "Name": "test",
-          "Position": "0,-86.96415,136.2112",
-          "Components": [
-            {
-              "__type": "SpawnPoint",
+              "__type": "CloneSpawnPoint",
               "__enabled": true
             }
           ]

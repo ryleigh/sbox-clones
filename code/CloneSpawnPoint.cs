@@ -1,6 +1,6 @@
 using Sandbox;
 
-public sealed class SpawnPoint : Component
+public sealed class CloneSpawnPoint : Component
 {
 	protected override void OnUpdate()
 	{

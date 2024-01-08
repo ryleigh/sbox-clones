@@ -1,4 +1,5 @@
 {
+  "Id": "b0844fe7-30f9-466b-8b7f-151877d86b89",
   "GameObjects": [
     {
       "Id": "7d6f0dec-365e-4133-bf2a-289188767fbd",
@@ -96,7 +97,7 @@
           "Enabled": true,
           "Components": [
             {
-              "__type": "SpawnPoint",
+              "__type": "CloneSpawnPoint",
               "__enabled": true
             }
           ]
@@ -108,7 +109,7 @@
           "Enabled": true,
           "Components": [
             {
-              "__type": "SpawnPoint",
+              "__type": "CloneSpawnPoint",
               "__enabled": true
             }
           ]
@@ -120,40 +121,7 @@
           "Enabled": true,
           "Components": [
             {
-              "__type": "SpawnPoint",
-              "__enabled": true
-            }
-          ]
-        },
-        {
-          "Id": "3d103423-42e3-4a34-ab69-bf1906c43593",
-          "Name": "test",
-          "Position": "0,-91.04161,70.23743",
-          "Components": [
-            {
-              "__type": "SpawnPoint",
-              "__enabled": true
-            }
-          ]
-        },
-        {
-          "Id": "7593cd04-52a2-4635-9b3a-74e39fdab2ec",
-          "Name": "test",
-          "Position": "0,-91.04161,108.9731",
-          "Components": [
-            {
-              "__type": "SpawnPoint",
-              "__enabled": true
-            }
-          ]
-        },
-        {
-          "Id": "98e9c80a-50d0-42a1-bd4a-6ace0f960d42",
-          "Name": "test",
-          "Position": "0,-91.04161,149.8261",
-          "Components": [
-            {
-              "__type": "SpawnPoint",
+              "__type": "CloneSpawnPoint",
               "__enabled": true
             }
           ]

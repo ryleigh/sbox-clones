@@ -27,7 +27,7 @@ public sealed class Manager : Component
 
 		SceneUtility.Instantiate( HudPrefab );
 
-		var spawnPoints = Scene.GetAllComponents<SpawnPoint>().ToList();
+		var spawnPoints = Scene.GetAllComponents<CloneSpawnPoint>().ToList();
 		foreach( var spawnPoint in spawnPoints )
 		{
 			SpawnClone( spawnPoint.Transform.Position );
