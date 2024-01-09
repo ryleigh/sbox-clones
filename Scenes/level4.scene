@@ -37,7 +37,7 @@
     {
       "Id": "00854b9e-9ce1-45a3-b1a6-a525f08e12e0",
       "Name": "Camera",
-      "Position": "-507.3935,42.23122,119.0326",
+      "Position": "-507.3935,123.7319,119.0326",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
@@ -117,7 +117,7 @@
         {
           "Id": "de78ac1d-973d-45ed-8388-2b481ed5732f",
           "Name": "3",
-          "Position": "0,265.3192,239.8568",
+          "Position": "0,369.8757,-16.33098",
           "Enabled": true,
           "Components": [
             {
@@ -175,8 +175,36 @@
     {
       "Id": "2982d86d-fac3-4eba-99ce-311fe963058c",
       "Name": "Cube - floor",
-      "Position": "0,39.7292,-53.76266",
-      "Scale": "1,12.17564,0.5478496",
+      "Position": "0,295.5247,-53.76266",
+      "Scale": "1,6.330988,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "fcd59e51-097e-40eb-bbe7-aae91597ae17",
+      "Name": "Cube - floor (1)",
+      "Position": "0,-44.05095,-53.76266",
+      "Scale": "1,6.731251,0.5478496",
       "Enabled": true,
       "Components": [
         {
@@ -203,36 +231,8 @@
     {
       "Id": "b25d96b9-b95a-4da8-b750-5f603dd072a3",
       "Name": "Cube - right wall",
-      "Position": "0,-210.2659,84.3608",
-      "Scale": "1,0.5037024,3.512195",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "13cfdfc0-8dcc-4af1-a396-0d8baadafeeb",
-      "Name": "Cube - right wall (1)",
-      "Position": "0,-250.4707,-26.78685",
-      "Scale": "1,0.5037024,1.269066",
+      "Position": "0,-210.2659,44.85279",
+      "Scale": "1,0.5037024,5.058189",
       "Enabled": true,
       "Components": [
         {
@@ -285,10 +285,38 @@
       ]
     },
     {
+      "Id": "8e4588dc-62fa-43eb-85aa-4ed5bded2efa",
+      "Name": "Cube (14)",
+      "Position": "0,466.0177,123.862",
+      "Scale": "1,0.5037024,7.768793",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
       "Id": "7d95c5c8-aca2-443a-a6e1-89b2a2714326",
       "Name": "Cube - left hook (4)",
-      "Position": "-0.2300673,158.08,-100.1842",
-      "Scale": "1,0.65,1.024823",
+      "Position": "0,131.571,-63.05014",
+      "Scale": "1,0.65,0.1656893",
       "Enabled": true,
       "Components": [
         {
@@ -341,10 +369,10 @@
       ]
     },
     {
-      "Id": "579e7713-3985-4d22-8a09-b49f015845e7",
-      "Name": "Cube (10)",
-      "Position": "0,292.3181,226.6077",
-      "Scale": "1,0.5037024,3.77274",
+      "Id": "a7c18c43-b488-4460-9eec-00024515400f",
+      "Name": "Cube (13)",
+      "Position": "0,95.5405,182.3264",
+      "Scale": "1,0.5037024,4.37303",
       "Enabled": true,
       "Components": [
         {
@@ -427,8 +455,36 @@
     {
       "Id": "ea461c4b-1904-4983-997b-ef5874aaf628",
       "Name": "Cube (6)",
-      "Position": "0,196.198,120.0807",
+      "Position": "0,270.1554,120.0807",
       "Scale": "1,0.4482805,0.9619154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "3c9fb512-ad2e-4417-b87a-42ba480cf35c",
+      "Name": "Cube (10)",
+      "Position": "0,354.9681,150.8501",
+      "Scale": "1,0.4482805,1.961301",
       "Enabled": true,
       "Components": [
         {
@@ -455,7 +511,7 @@
     {
       "Id": "c862f540-7359-4105-b648-2a54984d276c",
       "Name": "Cube (1)",
-      "Position": "0,122.4591,120.0807",
+      "Position": "0,197.7381,120.0807",
       "Scale": "1,0.4482805,0.9619154",
       "Enabled": true,
       "Components": [
@@ -483,7 +539,7 @@
     {
       "Id": "bed95350-5bff-4814-bae0-e231fab18f15",
       "Name": "Cube (2)",
-      "Position": "0,160.2819,139.46",
+      "Position": "0,235.5609,139.46",
       "Scale": "1,1.873576,0.4429711",
       "Enabled": true,
       "Components": [
@@ -511,7 +567,7 @@
     {
       "Id": "89041b55-ef3e-4aec-a57b-72d31a9558c7",
       "Name": "Cube (8)",
-      "Position": "0,178.4423,209.7998",
+      "Position": "0,256.7278,209.7998",
       "Scale": "1,4.419607,0.4429711",
       "Enabled": true,
       "Components": [
@@ -539,8 +595,64 @@
     {
       "Id": "f624d81f-fe31-4f69-9cc5-b7ca92f0db96",
       "Name": "Cube (9)",
-      "Position": "0,178.4423,264.5861",
-      "Scale": "1,4.419607,0.4429711",
+      "Position": "30.69743,202.4138,279.779",
+      "Scale": "1,3.940878,0.4429711",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "d8dfcbdf-c97c-4f1e-84f5-e2b6dc0e5892",
+      "Name": "Cube (11)",
+      "Position": "30.69743,314.0653,277.6437",
+      "Scale": "1,0.517022,0.99511",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "a3473f4d-6b1a-4347-906f-754d5f2ed467",
+      "Name": "Cube (12)",
+      "Position": "30.69743,401.0266,302.2532",
+      "Scale": "1,3.907963,0.4816904",
       "Enabled": true,
       "Components": [
         {
@@ -569,6 +681,34 @@
       "Name": "Cube - ceiling",
       "Position": "0,-38.05155,269.8855",
       "Scale": "1,3.041424,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "bf772ee8-89c6-44dc-90c5-ffa15ffc4cad",
+      "Name": "Cube - ceiling (7)",
+      "Position": "0,57.49498,144.2184",
+      "Scale": "1,1.465312,0.5478496",
       "Enabled": true,
       "Components": [
         {
@@ -651,8 +791,232 @@
     {
       "Id": "9015fcc6-e650-4b45-b831-74fa9cca4390",
       "Name": "Cube - ceiling (1)",
-      "Position": "0,253.5155,101.3602",
-      "Scale": "1,2.735416,0.5478496",
+      "Position": "0,312.5404,101.3602",
+      "Scale": "1,2.126137,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "47eaea04-796a-4f85-9275-b58837be38c6",
+      "Name": "Cube - ceiling (8)",
+      "Position": "0,449.4299,-7.585105",
+      "Scale": "1,0.4792684,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "1420dba9-568b-4d44-8ef4-45ddbe429d72",
+      "Name": "Cube - ceiling (9)",
+      "Position": "19.78594,392.7822,36.73211",
+      "Scale": "1,0.280415,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "484a315d-f09c-4e76-a832-87e942e3db8a",
+      "Name": "Cube - ceiling (10)",
+      "Position": "19.78594,449.5729,70.92159",
+      "Scale": "1,0.280415,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "eeec0336-6b0e-489a-97e3-7f4541ac8fe1",
+      "Name": "Cube - ceiling (11)",
+      "Position": "19.78594,452.7807,105.2134",
+      "Scale": "1,0.280415,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "10c1f3ce-5ea2-4083-be8c-05da3b5a8c60",
+      "Name": "Cube - ceiling (13)",
+      "Position": "19.78594,366.5272,157.5007",
+      "Scale": "1,0.280415,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "de2da5aa-17a3-4e69-a56a-a380ed6ef65b",
+      "Name": "Cube - ceiling (14)",
+      "Position": "19.78594,363.1227,189.1397",
+      "Scale": "1,0.280415,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "f7c04c44-59f8-4eb8-8aa4-24c06b0b161a",
+      "Name": "Cube - ceiling (16)",
+      "Position": "19.78594,414.7338,206.4472",
+      "Scale": "1,0.280415,0.3020376",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "a2661379-a3fc-405b-a07b-25656e3b831c",
+      "Name": "Cube - ceiling (12)",
+      "Position": "19.78594,456.0099,136.0984",
+      "Scale": "1,0.280415,0.3020376",
       "Enabled": true,
       "Components": [
         {
@@ -679,8 +1043,66 @@
     {
       "Id": "4cc0bb87-cc2c-4166-9de6-8a5cabb0cfb8",
       "Name": "Cube - ceiling (2)",
-      "Position": "0,101.3377,92.74184",
+      "Position": "0,176.6167,92.74184",
       "Scale": "1,1.303093,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "0f802b1c-98fe-461d-b86b-94882135d60f",
+      "Name": "Cube - ceiling (5)",
+      "Position": "0,149.188,92.74184",
+      "Rotation": "-0.2671922,0,0,0.9636433",
+      "Scale": "1,0.2874445,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "c14f63a2-48a9-4fb2-bba6-a5a97052685f",
+      "Name": "Cube - ceiling (6)",
+      "Position": "0,108.879,92.74184",
+      "Rotation": "0.2517378,0,0,0.9677961",
+      "Scale": "1,0.2874445,0.5478496",
       "Enabled": true,
       "Components": [
         {
@@ -707,14 +1129,14 @@
     {
       "Id": "18b07467-ee04-420b-9484-44ce65927ece",
       "Name": "spawner",
-      "Position": "43.47208,159.0426,100.963",
+      "Position": "43.47208,233,100.963",
       "Enabled": true,
       "__Prefab": "prefabs/spawner.prefab"
     },
     {
       "Id": "108fcea5-7021-436a-8d64-2b845cda671d",
       "Name": "door",
-      "Position": "22.20943,298.9312,-39.17777",
+      "Position": "22.20943,298.965,-39.17777",
       "Tags": "door,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/door.prefab"
@@ -722,7 +1144,7 @@
     {
       "Id": "a0656325-654b-4868-991b-42529e885aa6",
       "Name": "button",
-      "Position": "-10.05542,125.9491,-31.7463",
+      "Position": "-10.05542,101.2456,-31.7463",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
@@ -731,7 +1153,7 @@
     {
       "Id": "4428182f-94ee-4fe1-8652-a54e2296326b",
       "Name": "spike_block",
-      "Position": "-0.738945,302.8149,62.17751",
+      "Position": "0,95.40781,62.34437",
       "Scale": "0.6,0.5,0.5",
       "Tags": "spike_block",
       "Enabled": true,
@@ -823,8 +1245,8 @@
     {
       "Id": "00acbf0a-98bb-4345-9c46-bad69d2116f1",
       "Name": "push_block",
-      "Position": "0,119.6776,235.8741",
-      "Scale": "1,0.60377,0.5689742",
+      "Position": "0,160.5229,243.8033",
+      "Scale": "1,0.2306485,0.7898227",
       "Enabled": true,
       "__Prefab": "prefabs/push_block.prefab"
     }

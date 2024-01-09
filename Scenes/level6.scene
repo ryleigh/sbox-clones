@@ -14,8 +14,8 @@
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Level 6: The Roof",
-          "NextScene": null,
-          "PrevScene": "scenes/level4.scene"
+          "NextScene": "scenes/level7.scene",
+          "PrevScene": "scenes/level5.scene"
         }
       ]
     },
@@ -117,8 +117,30 @@
         {
           "Id": "7b4c74f9-da89-4826-92c4-a9d27ee6eb48",
           "Name": "3",
-          "Position": "0,255.0866,1.810103",
+          "Position": "0,197.6369,-40.81836",
           "Enabled": true,
+          "Components": [
+            {
+              "__type": "CloneSpawnPoint",
+              "__enabled": true
+            }
+          ]
+        },
+        {
+          "Id": "8e0f7072-ce0b-4917-83d6-d18bc9113a00",
+          "Name": "test",
+          "Position": "0,291.6201,161.6623",
+          "Components": [
+            {
+              "__type": "CloneSpawnPoint",
+              "__enabled": true
+            }
+          ]
+        },
+        {
+          "Id": "6d99b064-0524-4789-b4f3-17f9f984cdac",
+          "Name": "test",
+          "Position": "0,255.0866,128.2699",
           "Components": [
             {
               "__type": "CloneSpawnPoint",
@@ -343,8 +365,8 @@
     {
       "Id": "0fc46d00-dccc-478f-889f-1308b01c82b4",
       "Name": "Cube - floor (8)",
-      "Position": "0,-151.4525,88.77329",
-      "Scale": "1,1.497444,0.6414066",
+      "Position": "0,-149.3297,88.77329",
+      "Scale": "1,1.637164,0.6414066",
       "Enabled": true,
       "Components": [
         {
@@ -651,8 +673,8 @@
     {
       "Id": "5bb945ff-3686-470e-a693-7806eb6f022f",
       "Name": "Cube - ceiling (3)",
-      "Position": "0,-189.1617,199.7772",
-      "Scale": "1,1.340243,0.628269",
+      "Position": "0,-189.1617,193.8996",
+      "Scale": "1,1.340243,0.9551504",
       "Enabled": true,
       "Components": [
         {
@@ -681,34 +703,6 @@
       "Name": "Cube - ceiling (2)",
       "Position": "0,-156.6882,230.3956",
       "Scale": "1,1.340243,0.628269",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "b1d337c1-0c21-4064-8e2c-fbb8cfd60d31",
-      "Name": "Cube - ceiling (7)",
-      "Position": "0,45.8472,289.2802",
-      "Scale": "1,8.040932,0.614171",
       "Enabled": true,
       "Components": [
         {
@@ -763,8 +757,8 @@
     {
       "Id": "c07c0480-baef-4003-8e4f-fef9adc4feb2",
       "Name": "Cube - ceiling (5)",
-      "Position": "-0.00005730108,230.2608,240.6048",
-      "Scale": "1,0.6513967,2.165777",
+      "Position": "-0.00005730108,230.2608,257.0806",
+      "Scale": "1,0.6513967,2.867255",
       "Enabled": true,
       "Components": [
         {
@@ -791,8 +785,36 @@
     {
       "Id": "54b79a75-3761-4102-b1bd-50507f437b79",
       "Name": "Cube - ceiling (4)",
-      "Position": "-0.00005730108,-138.3624,255.7826",
-      "Scale": "1,0.6513967,0.9800305",
+      "Position": "-0.00005730108,-138.3624,276.8995",
+      "Scale": "1,0.6513967,1.715167",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "c829bbeb-44e5-4e60-9d2d-f7321857e839",
+      "Name": "Cube - ceiling (7)",
+      "Position": "-0.00005730108,41.35467,276.8995",
+      "Scale": "1,7.258957,0.07970186",
       "Enabled": true,
       "Components": [
         {
@@ -880,8 +902,8 @@
     {
       "Id": "4428182f-94ee-4fe1-8652-a54e2296326b",
       "Name": "spike_block",
-      "Position": "-0.738945,454.1933,-40.57288",
-      "Scale": "0.6,1.512458,0.5",
+      "Position": "-0.738945,372.2,8.450283",
+      "Scale": "0.6,0.5668155,0.5582093",
       "Tags": "spike_block",
       "Enabled": true,
       "Components": [
@@ -899,7 +921,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null
@@ -910,12 +932,12 @@
         },
         {
           "__type": "MoveBackForth",
-          "__enabled": false,
+          "__enabled": true,
           "Direction": "Horizontal",
-          "Increasing": true,
-          "Max": -34.8,
-          "Min": -309.287,
-          "Speed": 50
+          "Increasing": false,
+          "Max": 373,
+          "Min": 323,
+          "Speed": 30
         }
       ],
       "Children": [
@@ -962,9 +984,513 @@
       ]
     },
     {
+      "Id": "ac126442-8eec-483f-8f29-2643a71c99b2",
+      "Name": "spike_block (1)",
+      "Position": "-0.738945,140.5107,108.8657",
+      "Scale": "0.6,0.4,0.4",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Vertical",
+          "Increasing": false,
+          "Max": 264,
+          "Min": 81,
+          "Speed": 30
+        }
+      ],
+      "Children": [
+        {
+          "Id": "cbe177b9-fed1-40fd-a7e3-2abf97906048",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "a397df3f-53eb-4a1c-bec1-c9ad0d925b4c",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "2d4f67a8-3cfe-4455-a624-c7881b682232",
+      "Name": "spike_block (2)",
+      "Position": "-0.738945,179.6253,227.9985",
+      "Scale": "0.6,0.4,0.4",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Vertical",
+          "Increasing": false,
+          "Max": 264,
+          "Min": 81,
+          "Speed": 30
+        }
+      ],
+      "Children": [
+        {
+          "Id": "2c87b1fb-7223-4bb2-a0de-a91a714c49a2",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "c6e0a368-4f6d-48d9-8512-fe49be587807",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "c77a4879-0777-471f-b593-e267078be94d",
+      "Name": "spike_block (3)",
+      "Position": "-0.738945,82.03816,194.7048",
+      "Scale": "0.6,0.4,0.4",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Vertical",
+          "Increasing": true,
+          "Max": 264,
+          "Min": 81,
+          "Speed": 30
+        }
+      ],
+      "Children": [
+        {
+          "Id": "17de9a00-68f2-45cf-84d9-75327ceefa63",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "9ef4aa24-5286-4cfb-a51e-9face539e6fb",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "a6dbafd2-4f3f-47ec-b0c9-b370c14e3f2e",
+      "Name": "spike_block (4)",
+      "Position": "-0.738945,45.60665,98.3305",
+      "Scale": "0.6,0.4,0.4",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Vertical",
+          "Increasing": true,
+          "Max": 264,
+          "Min": 81,
+          "Speed": 30
+        }
+      ],
+      "Children": [
+        {
+          "Id": "df5ffdf0-1672-40c0-8467-2ec86a38fe8c",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "3c49597d-46c8-4310-8028-fd51cba284cf",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "64e3e3c8-539f-4c14-80f9-9de2ae14e225",
+      "Name": "spike_block (5)",
+      "Position": "-0.738945,-62.51805,153.2995",
+      "Scale": "0.6,0.4,0.4",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Vertical",
+          "Increasing": true,
+          "Max": 264,
+          "Min": 51,
+          "Speed": 30
+        }
+      ],
+      "Children": [
+        {
+          "Id": "c89ee4b1-9f38-4a61-9a08-dc4d87509cd2",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "52fa0350-b954-4d16-b909-e39085d062d7",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "adc1a9a0-3b5b-4eee-ade6-a11737ae76da",
+      "Name": "spike_block (6)",
+      "Position": "-0.738945,-93.90424,244.5128",
+      "Scale": "0.6,0.4,0.4",
+      "Tags": "spike_block",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0,0,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "50,40,40",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "SpikeBlock",
+          "__enabled": true
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Vertical",
+          "Increasing": true,
+          "Max": 264,
+          "Min": 81,
+          "Speed": 30
+        }
+      ],
+      "Children": [
+        {
+          "Id": "0694ca43-07dc-49a4-bc30-a5faf78b4df9",
+          "Name": "trap_spikes",
+          "Position": "0.9491729,0.05106767,3.721694",
+          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
+          "Scale": "0.5,0.5,0.4353294",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "e4280467-4915-4714-9164-be4bb75cf1c4",
+          "Name": "trap_spikes",
+          "Position": "2.149172,0.05106767,-3.978291",
+          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
+          "Scale": "0.5,0.5,0.435",
+          "Tags": "spike_block",
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "Id": "fd9aedaa-0cf3-47a9-beab-e232bd570eeb",
       "Name": "confuser",
-      "Position": "0,112.2074,147.0329",
+      "Position": "0,112.2074,23.46194",
       "Tags": "confuser,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/confuser.prefab"

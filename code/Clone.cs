@@ -212,11 +212,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			_touchingButtons.Add( button );
 			button.StartPressing( this );
 		}
-		else if ( collider.GameObject.Tags.Has( "door" ) )
-		{
-			var door = collider.GameObject.Components.Get<Door>();
-			door.StartTouching( this );
-		}
 		else if ( collider.GameObject.Tags.Has( "confuser" ) )
 		{
 			if(!IsConfused)
@@ -224,6 +219,10 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 				var confuser = collider.GameObject.Components.Get<Confuser>();
 				confuser.Consume( this );
 			}
+		}
+		else if ( collider.GameObject.Tags.Has( "spike_block" ) )
+		{
+			Die();
 		}
 	}
 
@@ -236,11 +235,6 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 				_touchingButtons.Remove( button );
 
 			button.StopPressing( this );
-		}
-		else if ( collider.GameObject.Tags.Has( "door" ) )
-		{
-			var door = collider.GameObject.Components.Get<Door>();
-			door.StopTouching( this );
 		}
 	}
 

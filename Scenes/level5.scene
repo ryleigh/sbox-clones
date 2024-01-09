@@ -14,7 +14,7 @@
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Level 5: The Incinerator",
-          "NextScene": null,
+          "NextScene": "scenes/level6.scene",
           "PrevScene": "scenes/level4.scene"
         }
       ]
@@ -822,6 +822,7 @@
               "__enabled": true,
               "Burst": 0,
               "Delay": 0,
+              "DestroyOnEnd": false,
               "Duration": 1,
               "Loop": true,
               "OnEdge": false,

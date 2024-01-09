@@ -13,9 +13,9 @@
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 7: The Catacombs",
+          "LevelName": "Final Level: The Catacombs",
           "NextScene": null,
-          "PrevScene": "scenes/level4.scene"
+          "PrevScene": "scenes/level6.scene"
         }
       ]
     },
@@ -1072,7 +1072,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null
@@ -1156,7 +1156,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null
@@ -1240,7 +1240,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null
@@ -1324,7 +1324,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null
@@ -1408,7 +1408,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null
@@ -1492,7 +1492,7 @@
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
-          "IsTrigger": false,
+          "IsTrigger": true,
           "Scale": "50,40,40",
           "Static": false,
           "Surface": null

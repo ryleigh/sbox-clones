@@ -3,7 +3,7 @@ using Sandbox.Utility;
 using System.Collections.Generic;
 using System.Linq;
 
-public sealed class Door : Component
+public sealed class Door : Component, Component.ITriggerListener
 {
 	public Manager Manager { get; private set; }
 
@@ -62,19 +62,9 @@ public sealed class Door : Component
 		}
 	}
 
-	public void StartTouching( Clone clone )
-	{
-		RefreshTouching();
-	}
-
-	public void StopTouching( Clone clone )
-	{
-		RefreshTouching();
-	}
-
 	public void SetOpen(bool open)
 	{
-		if ( _isCloneLeaving )
+		if ( IsOpen == open || _isCloneLeaving )
 			return;
 
 		_doorLeftTargetPos = _doorLeftStartPos + (open ? Vector3.Left * 20f : Vector3.Zero);
@@ -103,5 +93,18 @@ public sealed class Door : Component
 				_isCloneLeaving = true;
 			}
 		}
+	}
+
+	public void OnTriggerEnter( Collider collider )
+	{
+		if ( collider.GameObject.Tags.Has( "clone" ) )
+		{
+			RefreshTouching();
+		}
+	}
+
+	public void OnTriggerExit( Collider collider )
+	{
+
 	}
 }
