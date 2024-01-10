@@ -17,6 +17,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	[Property] public GameObject Body { get; set; }
 	[Property] public CitizenAnimationHelper AnimationHelper { get; set; }
+	[Property] public GameObject BloodParticles { get; set; }
 
 	public float Height { get; set; } = 0.5f;
 
@@ -242,6 +243,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	{
 		foreach ( var button in _touchingButtons )
 			button.StopPressing( this );
+
+		BloodParticles.Clone( Transform.Position );
 
 		Manager.CloneDied( this );
 		GameObject.Destroy();

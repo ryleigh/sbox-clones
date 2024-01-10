@@ -25,7 +25,7 @@ public sealed class Manager : Component
 	{
 		base.OnEnabled();
 
-		SceneUtility.Instantiate( HudPrefab );
+		HudPrefab.Clone();
 
 		var spawnPoints = Scene.GetAllComponents<CloneSpawnPoint>().ToList();
 		foreach( var spawnPoint in spawnPoints )
@@ -66,7 +66,7 @@ public sealed class Manager : Component
 
 	public void SpawnClone(Vector3 pos)
 	{
-		var cloneObj = SceneUtility.Instantiate( ClonePrefab, pos );
+		var cloneObj = ClonePrefab.Clone( pos );
 		var clone = cloneObj.Components.Get<Clone>();
 		clone.Manager = this;
 		Clones.Add( clone );

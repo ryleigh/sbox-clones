@@ -1,11 +1,12 @@
 {
   "RootObject": {
-    "Id": "37d98246-9183-4fb0-bb59-0c7aba28bbbb",
+    "Id": "b5caa346-d608-449f-bbdb-0ea3fd9bdd08",
     "Name": "clone",
     "Tags": "clone",
     "Enabled": true,
     "Components": [
       {
+        "__version": 0,
         "__type": "CharacterController",
         "__enabled": false,
         "Acceleration": 10,
@@ -16,6 +17,7 @@
         "StepHeight": 18
       },
       {
+        "__version": 0,
         "__type": "CitizenAnimationHelper",
         "__enabled": true,
         "BodyWeight": 1,
@@ -29,15 +31,18 @@
         "IkRightHand": null,
         "LookAt": null,
         "LookAtEnabled": false,
-        "Target": "b1dc871a-088d-4835-b351-14824219e574"
+        "Target": "4839bcc8-dee7-49fe-afdd-5878e157cb1d"
       },
       {
+        "__version": 0,
         "__type": "Clone",
         "__enabled": true,
-        "AnimationHelper": "37d98246-9183-4fb0-bb59-0c7aba28bbbb",
-        "Body": "b1dc871a-088d-4835-b351-14824219e574"
+        "AnimationHelper": "b5caa346-d608-449f-bbdb-0ea3fd9bdd08",
+        "BloodParticles": "prefabs/blood_particles.prefab",
+        "Body": "4839bcc8-dee7-49fe-afdd-5878e157cb1d"
       },
       {
+        "__version": 0,
         "__type": "BoxCollider",
         "__enabled": true,
         "Center": "0,0,14",
@@ -47,6 +52,7 @@
         "Surface": "surfaces/clone.surface"
       },
       {
+        "__version": 0,
         "__type": "Rigidbody",
         "__enabled": true,
         "AngularDamping": 9999999,
@@ -57,17 +63,20 @@
           "Pitch": true,
           "Yaw": true,
           "Roll": true
-        }
+        },
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
       }
     ],
     "Children": [
       {
-        "Id": "b1dc871a-088d-4835-b351-14824219e574",
+        "Id": "4839bcc8-dee7-49fe-afdd-5878e157cb1d",
         "Name": "Body",
         "Scale": "1.3,1.3,0.7",
         "Enabled": true,
         "Components": [
           {
+            "__version": 0,
             "__type": "SkinnedModelRenderer",
             "__enabled": true,
             "BodyGroups": 18446744073709551615,
