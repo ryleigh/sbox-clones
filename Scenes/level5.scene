@@ -181,7 +181,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -209,7 +209,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -265,7 +265,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -293,7 +293,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -321,7 +321,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -349,7 +349,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -377,7 +377,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -433,7 +433,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -461,7 +461,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -489,7 +489,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -857,6 +857,650 @@
       "Tags": "confuser,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/confuser.prefab"
+    },
+    {
+      "Id": "5a68853f-2f37-48b9-acc1-851fa2aeae98",
+      "Name": "untitled_106",
+      "Position": "-65.95744,363.868,170.1011",
+      "Rotation": "-0.0000002521796,0.7071069,0.7071066,-0.0000006525747",
+      "Scale": "0.2,1.5,0.45",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "model/27/untitled_106.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "f7a1aa87-d449-4803-b34f-fe858acf81e5",
+      "Name": "untitled_106 (1)",
+      "Position": "-65.95753,330.1433,-51.8922",
+      "Rotation": "-0.0000006395157,0.9999999,0.0008563022,-0.0000002836705",
+      "Scale": "0.2,0.45,0.6499999",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "model/27/untitled_106.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "a30e4fa3-0e88-43dc-ae60-c12e7ae203c5",
+      "Name": "brick",
+      "Position": "6.662556,268.3319,-32.24339",
+      "Rotation": "-0.5539135,0.4395236,0.4395235,0.5539124",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6029f8e6-b58a-4758-9195-a7cb6bd5e4d4",
+      "Name": "brick (1)",
+      "Position": "6.662556,228.0014,-23.8653",
+      "Rotation": "-0.08119269,-0.08119231,0.7024308,0.7024288",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6fbeb529-a1b1-4f81-ac15-0a877d6fe445",
+      "Name": "brick (8)",
+      "Position": "6.662556,-126.6745,-23.8653",
+      "Rotation": "-0.08119269,-0.08119231,0.7024308,0.7024288",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "afffcd6e-296e-4ec8-aaa8-80341b8d84cc",
+      "Name": "brick (4)",
+      "Position": "6.662556,75.75979,-23.8653",
+      "Rotation": "-0.08119269,-0.08119231,0.7024308,0.7024288",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "ce0057d3-d94f-4fc2-a6e7-0b51baddbe2f",
+      "Name": "brick (6)",
+      "Position": "6.662556,-25.53923,-23.8653",
+      "Rotation": "0.7020331,-0.7026231,0.08288149,-0.08125386",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "7d279949-ff32-46f4-a8ef-a9281c4b68f1",
+      "Name": "brick (2)",
+      "Position": "6.662556,177.0105,-23.8653",
+      "Rotation": "0.7020331,-0.7026231,0.08288149,-0.08125386",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "fac5831d-171e-49c0-846e-9693062ad2ea",
+      "Name": "brick (11)",
+      "Position": "6.662556,-278.8213,-23.8653",
+      "Rotation": "0.7020331,-0.7026231,0.08288149,-0.08125386",
+      "Scale": "3.182814,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b5dee767-3d60-4218-bb3b-da45f25a749d",
+      "Name": "brick (3)",
+      "Position": "6.662556,126.3427,-23.8653",
+      "Rotation": "-0.7026103,-0.7026088,-0.07963131,-0.07963115",
+      "Scale": "3.183,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "43f2646e-18e6-4829-b0f5-8fc47f0d7980",
+      "Name": "brick (10)",
+      "Position": "6.662556,-227.9181,-23.8653",
+      "Rotation": "-0.7026103,-0.7026088,-0.07963131,-0.07963115",
+      "Scale": "3.183,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "dcf6b826-fa33-4fb5-9cff-a3e08e0d2403",
+      "Name": "brick (7)",
+      "Position": "6.662556,-76.01942,-23.8653",
+      "Rotation": "-0.7026103,-0.7026088,-0.07963131,-0.07963115",
+      "Scale": "3.183,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "00900141-2d57-479f-9c84-3e84c3178d59",
+      "Name": "brick (5)",
+      "Position": "6.662556,24.83066,-23.8653",
+      "Rotation": "0.07414731,-0.07790206,-0.7036558,0.7023561",
+      "Scale": "3.183,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "c03dc4a1-6721-4974-9ded-c32d16b8ba58",
+      "Name": "brick (9)",
+      "Position": "6.662556,-177.4186,-23.8653",
+      "Rotation": "0.07414731,-0.07790206,-0.7036558,0.7023561",
+      "Scale": "3.183,2.82671,4.182154",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/brick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "f21d1617-1fa8-4ea6-a611-6fb251737eb5",
+      "Name": "lamp_post_pole_top",
+      "Position": "21.81778,-362.4791,78.4254",
+      "Rotation": "-0.707107,-0,0,0.7071065",
+      "Scale": "10.31468,7.800535,5.714482",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/lamp_post/lamp_post_pole_top.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "2f8b430d-de9e-4eed-92b8-4c89b613cb96",
+      "Name": "lamp_post_pole_top (1)",
+      "Position": "10.90993,-362.4791,175.9743",
+      "Rotation": "-0.707107,-0,0,0.7071065",
+      "Scale": "10.31468,7.800535,5.714482",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/lamp_post/lamp_post_pole_top.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "ee079586-c481-4f77-a2a8-b88696d7d3e4",
+      "Name": "roadsign_pole",
+      "Position": "-14.76148,-299,-33.44717",
+      "Scale": "15,15,17.70005",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/roadsign_pole.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "87379f2a-12e4-429d-bb74-49e287bb46a9",
+      "Name": "roadsign_pole (1)",
+      "Position": "-15.3584,-172.6961,219.2853",
+      "Scale": "10,10,4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/roadsign_pole.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "51abe2da-71ab-4aa7-b20f-0a37fde22f6f",
+      "Name": "roadsign_pole (2)",
+      "Position": "-14.76148,-157.9047,234.6303",
+      "Rotation": "0.707107,0,0,0.7071065",
+      "Scale": "10,10,11.30001",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/roadsign_pole.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "ea9eb81a-7278-4926-8a9d-ef769394111f",
+      "Name": "bomberbrick",
+      "Position": "-20.84048,354.9195,261.8105",
+      "Scale": "1,1.631679,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "f4d776fc-8330-48c2-bea4-d2773098e3b7",
+      "Name": "bomberbrick (3)",
+      "Position": "-20.84048,328.2188,288.9626",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b481e05e-1d76-4baf-8641-9c07a7c57676",
+      "Name": "bomberbrick (1)",
+      "Position": "-20.84048,286.6346,288.9626",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "1697c853-db63-4da0-8022-dd279aa4d131",
+      "Name": "bomberbrick (2)",
+      "Position": "-20.84048,266.2199,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "996caa81-e961-4c91-a10f-507a02317b28",
+      "Name": "bomberbrick (4)",
+      "Position": "-20.84048,218.5116,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "a2595bb9-1e79-4e61-872e-4ed14c3c59b4",
+      "Name": "bomberbrick (5)",
+      "Position": "-20.84048,170.8481,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e4320a7a-e1e5-4814-ac4d-f8e53c1c0919",
+      "Name": "bomberbrick (6)",
+      "Position": "-20.84048,121.3119,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "3632bff6-48ab-4188-92f9-25675cf316b1",
+      "Name": "bomberbrick (7)",
+      "Position": "-20.84048,75.49559,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "53c8ff7e-6c79-4189-8e77-bc0f0a13b183",
+      "Name": "bomberbrick (8)",
+      "Position": "-20.84048,25.58757,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6ad05a4e-18ca-4e30-ad59-487a7b8f3563",
+      "Name": "bomberbrick (9)",
+      "Position": "-20.84048,-22.47528,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "bb41c214-5543-423f-b4a6-d827b57f9f88",
+      "Name": "bomberbrick (10)",
+      "Position": "-20.84048,-72.8335,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "f5c4e04f-3214-42b2-a2fc-50727548540f",
+      "Name": "bomberbrick (12)",
+      "Position": "-20.84048,-120.7622,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "bdd260e1-7110-4974-bf46-69dfaa7433b0",
+      "Name": "bomberbrick (13)",
+      "Position": "-20.84048,-161.5142,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "cfa7d932-b7a7-4db8-9d22-5ffc74d064ab",
+      "Name": "bomberbrick (11)",
+      "Position": "-20.84048,-72.8335,263.5768",
+      "Scale": "1,1.681691,0.9085222",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/bomberbrick/bomberbrick.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -872,6 +1516,11 @@
   "Description": "",
   "__references": [
     "andiq.bricks073",
-    "degg.f_trap_spikes"
+    "baik.brickblock",
+    "baik.roadsignpole",
+    "degg.f_trap_spikes",
+    "facepunch.lamp_post_pole_top",
+    "raphmap.brick",
+    "tesssssssssst.untitled_106251320"
   ]
 }

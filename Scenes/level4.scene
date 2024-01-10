@@ -181,7 +181,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -209,7 +209,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -237,7 +237,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -265,7 +265,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -293,7 +293,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -321,7 +321,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -349,7 +349,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -372,12 +372,13 @@
       "Id": "a7c18c43-b488-4460-9eec-00024515400f",
       "Name": "Cube (13)",
       "Position": "0,95.5405,182.3264",
+      "Rotation": "-0.0002631248,-0.00000433331,0.00004618029,0.9999999",
       "Scale": "1,0.5037024,4.37303",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -427,13 +428,13 @@
     {
       "Id": "3c9fb512-ad2e-4417-b87a-42ba480cf35c",
       "Name": "Cube (10)",
-      "Position": "0,354.9681,150.8501",
+      "Position": "-0.329919,354.9681,150.8501",
       "Scale": "1,0.4482805,1.961301",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -489,7 +490,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -517,7 +518,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -657,7 +658,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -681,34 +682,6 @@
       "Name": "Cube - ceiling (3)",
       "Position": "0,-146.2445,159.5747",
       "Scale": "1,2.225699,0.5478496",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "182769d7-a0a1-4f4a-8102-349bf3e12370",
-      "Name": "Cube - ceiling (4)",
-      "Position": "0,-232.105,10.68837",
-      "Scale": "1,1.281203,0.5478496",
       "Enabled": true,
       "Components": [
         {
@@ -797,7 +770,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -826,7 +799,29 @@
             "Yaw": true,
             "Roll": true
           },
+          "RigidbodyFlags": 0,
           "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "Id": "cec9fa47-2bcd-41f1-b212-a04a8a3f8b55",
+          "Name": "box",
+          "Position": "-213.698,0,-23.40132",
+          "Scale": "2.113935,1.237274,3.088358",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/containers/box/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.27442,0.46791,1,1"
+            }
+          ]
         }
       ]
     },
@@ -867,7 +862,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -895,7 +890,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -923,7 +918,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -951,7 +946,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -979,7 +974,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1007,7 +1002,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1035,7 +1030,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1064,7 +1059,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1093,7 +1088,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1115,7 +1110,7 @@
     {
       "Id": "18b07467-ee04-420b-9484-44ce65927ece",
       "Name": "spawner",
-      "Position": "43.47208,-37.33163,230.797",
+      "Position": "43.47208,-37.33163,228.4147",
       "Enabled": true,
       "__Prefab": "prefabs/spawner.prefab"
     },
@@ -1130,7 +1125,7 @@
     {
       "Id": "a0656325-654b-4868-991b-42529e885aa6",
       "Name": "button",
-      "Position": "-10.05542,101.2456,-31.7463",
+      "Position": "-10.05542,98.74406,-31.7463",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
@@ -1411,7 +1406,822 @@
       "Position": "0,160.5229,243.8033",
       "Scale": "1,0.2306485,0.7898227",
       "Enabled": true,
-      "__Prefab": "prefabs/push_block.prefab"
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "0.25071,0.29684,0.4604,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        },
+        {
+          "__type": "Rigidbody",
+          "__enabled": true,
+          "AngularDamping": 999,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": true,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "Id": "46370ef4-c7f0-4b88-a29f-a78e9968bf56",
+          "Name": "untitled_3",
+          "Position": "0,-0.0007938723,-24.68578",
+          "Rotation": "-0.01916785,-0.00000001307094,0.9998163,-0.0000006396467",
+          "Scale": "1,1.81335,0.653731",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "assets/untitled_3.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "e05107cf-dff3-4165-ad66-5aac9c4e99eb",
+      "Name": "chimney_01",
+      "Position": "-156.735,466.0687,-40.0663",
+      "Rotation": "-0.000000003537878,0.0000000000000000233303,-0.05935574,0.9982368",
+      "Scale": "1,1,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "4c50d151-c27a-4202-ab79-02305db6a96e",
+      "Name": "chimney_01 (4)",
+      "Position": "-156.5961,330.4416,-40.0663",
+      "Scale": "1,0.8488867,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "1f0f3153-43bb-46d7-80cb-e4534b71dafa",
+      "Name": "chimney_01 (11)",
+      "Position": "-156.5961,156.6592,144.3452",
+      "Rotation": "-1,0,-0,-0.0000006397578",
+      "Scale": "1,0.8488867,0.9033417",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "74f58c0e-6595-490d-8498-f4811f2ebe1c",
+      "Name": "chimney_01 (15)",
+      "Position": "-5.097263,156.6593,179.5443",
+      "Scale": "1,0.8488867,0.5503",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "5e2240ed-d5b0-46b5-b2df-9da8f5c806fc",
+      "Name": "chimney_01 (12)",
+      "Position": "-156.5961,95.59206,145.3309",
+      "Rotation": "-1,0,-0,-0.0000006397578",
+      "Scale": "1,0.8488867,0.9708048",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9aab21ca-89fb-4eff-94f6-a80191fa06ae",
+      "Name": "chimney_01 (22)",
+      "Position": "13.37315,23.64831,145.3309",
+      "Rotation": "-1,0,-0,-0.0000006397578",
+      "Scale": "1,0.8488867,0.8853501",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e7d4963d-3f07-4811-bcd6-add3b6dfef99",
+      "Name": "chimney_01 (6)",
+      "Position": "0.3027386,355.224,87.02871",
+      "Rotation": "0.000000006691868,0.00000000000000004070399,0.1122709,0.9936777",
+      "Scale": "1,0.5898581,1.7874",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6e26e8b6-f2ca-4b5a-bf28-20e5b51aaf9c",
+      "Name": "chimney_01 (18)",
+      "Position": "-12.99999,314.3236,251.6468",
+      "Rotation": "0.000000006691868,0.00000000000000004070399,0.1122709,0.9936777",
+      "Scale": "1,0.75,0.7475851",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "1ce68844-c06f-45ce-a91f-682c2e7b58dc",
+      "Name": "chimney_01 (5)",
+      "Position": "-159.8969,367.0858,101.6942",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.8713693,1.445475",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "817b54a5-3282-46b2-8707-ad9b243592a8",
+      "Name": "chimney_01 (14)",
+      "Position": "-150.4793,286.3815,130.9979",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.9005838,1.891803",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "056de810-6e0d-420a-8c96-3fc81ff26aaf",
+      "Name": "chimney_01 (21)",
+      "Position": "-48.4381,109.2556,144.5006",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.9430122,1.33659",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "183eaafe-c045-4873-8142-fb7500e1fd9f",
+      "Name": "chimney_01 (23)",
+      "Position": "-50.55835,-83.46181,161.1646",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.971714,1.87",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "7c4ad84d-8d26-4bb2-98a4-5d202557a103",
+      "Name": "chimney_01 (24)",
+      "Position": "-23.951,-212.0731,-68.13805",
+      "Rotation": "-0.000000003616397,0.006788381,-0.00000008100141,0.9999769",
+      "Scale": "0.9903437,0.971714,3.302366",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e6664bf6-10a3-4bed-b91b-6dc1bc2bc170",
+      "Name": "chimney_01 (16)",
+      "Position": "-5.097263,366.7821,208.4982",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.9005838,2.97",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "bece439e-3703-44cf-95bb-7eb390ade5c7",
+      "Name": "chimney_01 (17)",
+      "Position": "-34.10924,522.2344,300.5482",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.9005838,2.97",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "f18c7e16-8098-4f22-876f-3660f2a911ac",
+      "Name": "chimney_01 (19)",
+      "Position": "4.790728,328.0344,282.4472",
+      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
+      "Scale": "0.9903437,0.9005838,3.27",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "ce7118ff-8bfa-473a-81ba-4acbfa66b24d",
+      "Name": "chimney_01 (20)",
+      "Position": "-3.944359,95.3954,137.6508",
+      "Rotation": "0.00000002392994,0.000000001554905,0.08117656,0.9966999",
+      "Scale": "0.8903437,0.8005838,2.070001",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "89369fbf-ef5d-4efb-abc3-6208b0311443",
+      "Name": "chimney_01 (7)",
+      "Position": "34.26542,479.1858,-54.24203",
+      "Rotation": "0.7053224,-0.05020702,0.05020698,0.7053218",
+      "Scale": "0.9903437,0.9457415,2.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9b28a4d5-9ff6-4fe8-9f90-2a175833e196",
+      "Name": "chimney_01 (8)",
+      "Position": "34.26542,303.826,-54.24213",
+      "Rotation": "-0.4525951,0.5432844,-0.5433042,-0.4525712",
+      "Scale": "0.9903437,1,2.22",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "3e1c9656-57c0-4d95-90d1-64f96c4391a6",
+      "Name": "chimney_01 (13)",
+      "Position": "27.87626,155.5916,-62.08261",
+      "Rotation": "-0.4525951,0.5432844,-0.5433042,-0.4525712",
+      "Scale": "0.2407426,0.5686835,0.7410904",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6fc97ff3-5d4d-44f6-88fa-8207eef86f30",
+      "Name": "chimney_01 (9)",
+      "Position": "34.26542,124.2821,-54.24224",
+      "Rotation": "0.05550324,0.7049249,-0.7049253,0.05550168",
+      "Scale": "0.9903437,0.9457415,2.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "476d7386-19a2-4434-868b-0947f5aeff67",
+      "Name": "chimney_01 (10)",
+      "Position": "34.26542,-216.686,-54.24205",
+      "Rotation": "-0.5376356,0.4592921,0.4592918,0.5376346",
+      "Scale": "0.9903437,0.9457415,2.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "c7586a65-6348-4645-bb59-47d2d2ff7517",
+      "Name": "chimney_01 (1)",
+      "Position": "-139.945,467.2322,62.72899",
+      "Rotation": "-0.000000004866766,0.00000000000000003499733,-0.0816508,0.9966612",
+      "Scale": "1,1,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "35539dde-a13a-4acf-856f-a4385a594cae",
+      "Name": "chimney_01 (2)",
+      "Position": "-128.6701,467.2322,128.4803",
+      "Rotation": "-0.000000004189942,0.0000000000000007025132,-0.07029552,0.9975262",
+      "Scale": "1,1,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "a81fcc18-79d5-4fa0-9036-26d3840da9f0",
+      "Name": "chimney_01 (3)",
+      "Position": "-108.8414,467.2321,344.3988",
+      "Rotation": "0.02519229,0.9996827,0.0000006395545,0.0000000434684",
+      "Scale": "1,1,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_01/chimney_01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "aed712b4-6d20-4391-ae87-91df0b0c8b3b",
+      "Name": "chimney",
+      "Position": "-167.9962,164,117.7728",
+      "Rotation": "0.6789264,0.6789265,-0.1976353,0.1976354",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/city_props/roofs/chimney/chimney.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "1c024ac6-6c48-4062-887d-c5a57e95f19c",
+      "Name": "chimney (1)",
+      "Position": "-167.9962,94.00002,118.8728",
+      "Rotation": "-0.9646513,-0.00000008982484,0.00000002453919,0.2635319",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/city_props/roofs/chimney/chimney.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "5bec73d7-398a-4cde-991d-aadb26d69e37",
+      "Name": "chimney_03",
+      "Position": "100.5431,-38.91035,268.8369",
+      "Scale": "0.5,0.5,0.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_03/chimney_03.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "8b5271b2-d249-4526-a4e5-4b551cc2c404",
+      "Name": "chimney_02",
+      "Position": "-144.3355,24.95311,156.6527",
+      "Rotation": "-0.00000003188783,0.0000003565819,-0.0764269,0.9970752",
+      "Scale": "1,1,1.280802",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_02/chimney_02.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9275b972-00d2-4a4c-acb5-b33151c244c2",
+      "Name": "chimney_02 (1)",
+      "Position": "-144.3355,-97.74683,144.9523",
+      "Rotation": "0.00000004238204,0.0000003557779,0.1015791,0.9948282",
+      "Scale": "1,1,1.4",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_02/chimney_02.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "7cc1f7c7-d0d1-4882-ba94-5eaaaa5ab63e",
+      "Name": "chimney_04",
+      "Position": "-105.3004,-37.19582,264.0558",
+      "Rotation": "-0.6469225,0.000000003446174,0.7625563,0.000000003446176",
+      "Scale": "0.8120143,1.539992,0.5727284",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/environments/rooftop/chimney_04/chimney_04.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/environments/rooftop/chimney_04/chimney_04.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "7727c4f7-959a-4994-af93-0154f04e8922",
+      "Name": "rock_quarry_small_a",
+      "Position": "-156.2497,447.058,-6.527015",
+      "Scale": "0.2,0.2,0.2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "adec2abb-5537-4883-90f9-a65b3e887a08",
+      "Name": "rock_quarry_small_a (1)",
+      "Position": "-156.2497,451.4552,70.5193",
+      "Scale": "0.2,0.2,0.2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "b8d7e33c-358a-4373-b636-66d439dfd929",
+      "Name": "rock_quarry_small_a (2)",
+      "Position": "-128.358,454.5102,105.5172",
+      "Scale": "0.2,0.2,0.2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "93cee83d-cbdc-4919-aecb-c83a95aa45f3",
+      "Name": "rock_quarry_small_a (3)",
+      "Position": "-128.358,455.9053,136.257",
+      "Scale": "0.2,0.2,0.2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "dcbf1622-d4e3-460a-8f80-a0268e0ed49b",
+      "Name": "rock_quarry_small_a (4)",
+      "Position": "-128.358,393.1317,36.66972",
+      "Scale": "0.2,0.2,0.2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9b6849f8-9021-4713-8e92-089103f45c63",
+      "Name": "rock_quarry_small_a (5)",
+      "Position": "4.610291,366.4847,157.1784",
+      "Rotation": "0.707107,-0,0,0.7071065",
+      "Scale": "0.2,0.1674162,0.1863251",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "cfc81814-13a2-4bd2-a266-5496e3ee8192",
+      "Name": "rock_quarry_small_a (6)",
+      "Position": "4.610291,363.5328,189.0032",
+      "Rotation": "0.707107,-0,0,0.7071065",
+      "Scale": "0.2,0.1674162,0.1863251",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1427,6 +2237,14 @@
   "Description": "",
   "__references": [
     "andiq.bricks073",
-    "degg.f_trap_spikes"
+    "degg.f_trap_spikes",
+    "eurorp.chimney_01",
+    "eurorp.chimney_02",
+    "eurorp.chimney_03",
+    "eurorp.chimney_04",
+    "fish.gt_box",
+    "polyrats.untitled_3",
+    "rust.rock_quarry_small_a",
+    "svin.chimney"
   ]
 }

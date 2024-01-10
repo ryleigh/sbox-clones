@@ -13,7 +13,7 @@
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 6: The Roof",
+          "LevelName": "Level 6: The Courtyard",
           "NextScene": "scenes/level7.scene",
           "PrevScene": "scenes/level5.scene"
         }
@@ -147,6 +147,17 @@
               "__enabled": true
             }
           ]
+        },
+        {
+          "Id": "11a11e10-de35-417c-88e7-1b0d74a36b20",
+          "Name": "test",
+          "Position": "0,74.69376,128.2699",
+          "Components": [
+            {
+              "__type": "CloneSpawnPoint",
+              "__enabled": true
+            }
+          ]
         }
       ]
     },
@@ -203,7 +214,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -231,7 +242,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -259,7 +270,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -287,7 +298,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -315,7 +326,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -343,7 +354,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -371,7 +382,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -399,7 +410,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -427,7 +438,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -455,7 +466,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -483,7 +494,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -511,7 +522,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -539,7 +550,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -567,7 +578,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -595,7 +606,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -623,7 +634,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -651,7 +662,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -673,13 +684,13 @@
     {
       "Id": "5bb945ff-3686-470e-a693-7806eb6f022f",
       "Name": "Cube - ceiling (3)",
-      "Position": "0,-189.1617,193.8996",
+      "Position": "0,-188.7798,193.8996",
       "Scale": "1,1.340243,0.9551504",
       "Enabled": true,
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -707,7 +718,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -735,7 +746,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -763,7 +774,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -791,7 +802,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -819,7 +830,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -847,7 +858,7 @@
       "Components": [
         {
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -884,7 +895,7 @@
     {
       "Id": "a0656325-654b-4868-991b-42529e885aa6",
       "Name": "button",
-      "Position": "-10.05542,109.2374,-46.6",
+      "Position": "-10.05542,109.2374,-50.27395",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
@@ -1410,6 +1421,466 @@
       "Tags": "confuser,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/confuser.prefab"
+    },
+    {
+      "Id": "01300230-cbb8-4b57-be29-b668826b5278",
+      "Name": "untitled_28",
+      "Position": "-1.098854,63.4009,-7.599273",
+      "Rotation": "0.000000005323619,-0.08931551,0.0000000000000000003961807,0.9960034",
+      "Scale": "0.6164628,0.8985336,0.8",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "model/model/untitled_28.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "94e3e962-2383-4b83-8725-e7a3ad335ab7",
+      "Name": "untitled_28 (1)",
+      "Position": "-8.600836,212.873,-73.67325",
+      "Rotation": "-0.7690861,0.00383752,0.6391352,0.001255458",
+      "Scale": "0.6164628,0.9869709,0.8",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "model/model/untitled_28.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "8ba049a7-75d1-458a-a4c9-2ab8740660c3",
+      "Name": "untitled_28 (2)",
+      "Position": "2.887332,72.86205,-44.4124",
+      "Rotation": "-0.4818867,-0.3739811,0.571861,0.5485424",
+      "Scale": "0.6164628,0.2299299,0.7188897",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "model/model/untitled_28.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "38fed2d7-ba5e-435f-a835-9d1127fefa70",
+      "Name": "8hu_kultiras_woodplank01",
+      "Position": "9.85072,121.5318,60.52245",
+      "Rotation": "0.549724,0.5497236,-0.444753,-0.4447529",
+      "Scale": "1.472427,0.9732056,3.201289",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "1de48b95-1360-4bdc-84cb-1ece15b815de",
+      "Name": "8hu_kultiras_woodplank01 (1)",
+      "Position": "-15.40775,-10.59639,84.10368",
+      "Rotation": "0.4565927,0.4565933,0.5399289,0.5399287",
+      "Scale": "0.4875188,1.025354,3.465063",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "d14546c6-fc1a-4231-81e6-64002bec3da1",
+      "Name": "8hu_kultiras_woodplank01 (6)",
+      "Position": "-15.40775,246.398,89.96952",
+      "Rotation": "0.4565927,0.4565933,0.5399289,0.5399287",
+      "Scale": "0.4875188,1.025354,3.465063",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "f9332a6b-0804-429d-b54d-1959e8414921",
+      "Name": "8hu_kultiras_woodplank01 (3)",
+      "Position": "-15.40775,-67.9483,21.42562",
+      "Rotation": "0.4565927,0.4565933,0.5399289,0.5399287",
+      "Scale": "0.4875188,1.025354,3.465063",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "bf7aa606-2366-4b91-9b49-2abc8c5989ae",
+      "Name": "8hu_kultiras_woodplank01 (4)",
+      "Position": "-15.40775,-115.7954,53.46575",
+      "Rotation": "0.4565927,0.4565933,0.5399289,0.5399287",
+      "Scale": "0.4875188,1.201662,3.465063",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "6594a678-48a7-4ad2-a50d-889aca418376",
+      "Name": "8hu_kultiras_woodplank01 (5)",
+      "Position": "-15.40775,-162.5462,85.00813",
+      "Rotation": "0.4565927,0.4565933,0.5399289,0.5399287",
+      "Scale": "0.666541,1.201662,3.451196",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "a5349ecf-b2c1-432b-9edf-438d9f43d105",
+      "Name": "8hu_kultiras_woodplank01 (2)",
+      "Position": "-6.627806,-30.81718,113.0922",
+      "Rotation": "0.4485044,-0.4454299,0.5506172,-0.5452156",
+      "Scale": "0.2273822,1.16273,3.466586",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "d54cf4d2-2468-4a4f-8072-90093577c02e",
+      "Name": "8hu_kultiras_woodplank01 (7)",
+      "Position": "-6.217085,223.882,72.03712",
+      "Rotation": "0.4485044,-0.4454299,0.5506172,-0.5452156",
+      "Scale": "0.1843391,1.464724,3.180278",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_woodplank01.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "ba5f19d5-65f6-41e2-9dc6-ae95aa364c57",
+      "Name": "low_wood_fence_beam_2",
+      "Position": "-10.90093,-204.8441,142.1615",
+      "Rotation": "-0.6832829,0.1819998,0.6832826,0.1819996",
+      "Scale": "1.609942,6,6",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "281066f2-e435-4bbf-bf44-68d7a2f99799",
+      "Name": "low_wood_fence_beam_2 (2)",
+      "Position": "-10.90093,-138.8118,287.2991",
+      "Rotation": "-0.6832829,0.1819998,0.6832826,0.1819996",
+      "Scale": "1.609942,6,6",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "498372cc-119a-40c4-aced-b4c9663b838f",
+      "Name": "low_wood_fence_beam_2 (3)",
+      "Position": "-2.978203,229.9376,256.6498",
+      "Rotation": "-0.1897843,0.681163,0.1897837,0.681163",
+      "Scale": "1.609942,6,6",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "9110203e-a1d1-4fc0-b837-48bb5d3e84c3",
+      "Name": "low_wood_fence_beam_2 (5)",
+      "Position": "-2.978203,356.6301,112.7218",
+      "Rotation": "-0.1897843,0.681163,0.1897837,0.681163",
+      "Scale": "1.943259,5.099501,5.680797",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "72fbcd92-ecab-44b5-9b4a-2d234e81a563",
+      "Name": "low_wood_fence_beam_2 (7)",
+      "Position": "-2.978203,292.1816,34.02135",
+      "Rotation": "-0.3375776,0.6213221,0.3375771,0.6213223",
+      "Scale": "2.532009,6.190706,5.963975",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "052523db-bf9e-4560-9a6b-734f312e7025",
+      "Name": "low_wood_fence_beam_2 (6)",
+      "Position": "-2.978203,357.5775,-53.59623",
+      "Rotation": "-0.1897843,0.681163,0.1897837,0.681163",
+      "Scale": "1.06488,5.099501,5.587403",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e7912d11-da1d-4d97-bcd1-f44cf31affd7",
+      "Name": "low_wood_fence_beam_2 (8)",
+      "Position": "-2.978203,399.2613,9.15287",
+      "Rotation": "-0.1897843,0.681163,0.1897837,0.681163",
+      "Scale": "0.35,5.099501,5.683603",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "45d41453-ab72-40e0-8d50-c4d0ba7f4dc9",
+      "Name": "low_wood_fence_beam_2 (9)",
+      "Position": "-2.978203,412.8029,35.54709",
+      "Rotation": "0.3474571,0.3474568,0.6158516,0.6158523",
+      "Scale": "0.96488,5.099501,5.687403",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "d485e244-1db6-4dbf-b064-ed71cdc243b7",
+      "Name": "low_wood_fence_beam_2 (10)",
+      "Position": "-2.978203,412.8029,-15.34853",
+      "Rotation": "0.1595278,0.1595271,0.688876,0.6888765",
+      "Scale": "0.96488,5.099501,5.687403",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e5d74d6d-3b7a-42f3-9145-361adad4dc93",
+      "Name": "low_wood_fence_beam_2 (4)",
+      "Position": "-10.90093,291.9521,198.8637",
+      "Rotation": "0.2155945,0.2140034,0.6743874,0.6729948",
+      "Scale": "1.73,6,6",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "a43e5e4e-9a3f-497f-a54f-faa20479e775",
+      "Name": "low_wood_fence_beam_2 (1)",
+      "Position": "-10.90093,-171.2616,206.0721",
+      "Rotation": "0.6781353,-0.1980807,0.6787324,0.2005462",
+      "Scale": "0.8,7.499999,6",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/low_wood_fence/low_wood_fence_beam_2.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "de57a545-6fe9-49b8-bbb8-21219adba260",
+      "Name": "street_lamp_pole",
+      "Position": "-13.43945,220.9626,276.4301",
+      "Rotation": "0.707107,0,0,0.7071065",
+      "Scale": "1,0.8936704,1.576655",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/sbox_props/street_lamp/street_lamp_pole.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -1425,6 +1896,10 @@
   "Description": "",
   "__references": [
     "andiq.bricks073",
-    "degg.f_trap_spikes"
+    "degg.f_trap_spikes",
+    "facepunch.low_wood_fence_beam_2",
+    "facepunch.street_lamp_pole",
+    "orus.8hu_kultiras_woodplank01",
+    "tesssssssssst.untitled_84185151"
   ]
 }
