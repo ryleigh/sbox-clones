@@ -8,12 +8,13 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Manager",
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 5: The Incinerator",
+          "LevelName": "Level 4: The Incinerator",
           "NextScene": "scenes/level6.scene",
           "PrevScene": "scenes/level4.scene"
         }
@@ -26,6 +27,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "DirectionalLight",
           "__enabled": true,
           "LightColor": "1,1,1,1",
@@ -42,6 +44,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "CameraComponent",
           "__enabled": true,
           "BackgroundColor": "0,0,0,1",
@@ -59,6 +62,7 @@
           "ZNear": 10
         },
         {
+          "__version": 0,
           "__type": "Vignette",
           "__enabled": true,
           "Center": "0.5,0.5",
@@ -68,17 +72,20 @@
           "Smoothness": 0.95
         },
         {
+          "__version": 0,
           "__type": "FilmGrain",
           "__enabled": true,
           "Intensity": 0.025,
           "Response": 0.5
         },
         {
+          "__version": 0,
           "__type": "Pixelate",
           "__enabled": false,
           "Scale": 0.0025
         },
         {
+          "__version": 0,
           "__type": "Sharpen",
           "__enabled": false,
           "Scale": 0.25
@@ -97,6 +104,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -109,6 +117,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -121,6 +130,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -140,6 +150,7 @@
           "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -159,6 +170,7 @@
           "Scale": "4.744845,1.154005,2.308312",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -180,6 +192,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -190,6 +203,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -208,6 +222,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -218,6 +233,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -236,6 +252,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -246,6 +263,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -264,6 +282,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -274,6 +293,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -292,6 +312,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -302,6 +323,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -320,6 +342,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -330,6 +353,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -348,6 +372,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -358,6 +383,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -376,6 +402,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -386,6 +413,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -404,6 +432,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -414,6 +443,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -432,6 +462,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -442,6 +473,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -460,6 +492,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -470,6 +503,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -488,6 +522,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -498,6 +533,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -550,8 +586,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -560,6 +597,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -569,10 +607,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": false,
           "Direction": "Horizontal",
@@ -584,40 +624,220 @@
       ],
       "Children": [
         {
-          "Id": "e13fbe89-332e-4bc8-ae5e-c9789d497dff",
-          "Name": "trap_spikes",
-          "Position": "0.9491729,0.05106767,3.721694",
-          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
-          "Scale": "0.5,0.5,0.4353294",
+          "Id": "819a768d-f463-49e1-958c-3ca36e584f38",
+          "Name": "spike_block (1)",
+          "Position": "1.231575,-0.1770573,-3.248642",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "1.309968,0.9777213,0.867176",
           "Tags": "spike_block",
+          "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ]
+        },
+        {
+          "Id": "0c709da6-f1e2-4a94-8205-fb5e4eb8a9fa",
+          "Name": "milk_pack",
+          "Position": "-7.77476,19.79029,7.630127",
+          "Rotation": "0.01302088,-0.03676374,-0.9992192,0.00634839",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
           ]
         },
         {
-          "Id": "a32e9a5f-5ecf-48bc-96f2-3cd922c9e9fb",
-          "Name": "trap_spikes",
-          "Position": "2.149172,0.05106767,-3.978291",
-          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
-          "Scale": "0.5,0.5,0.435",
+          "Id": "1f870fc7-9df0-408c-a5ab-9506cbd08838",
+          "Name": "milk_pack",
+          "Position": "-7.77476,14.54112,7.630127",
+          "Rotation": "0.02239751,-0.03192903,-0.9609627,0.273915",
+          "Scale": "1.309968,0.3853315,2.117493",
           "Tags": "spike_block",
+          "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "8e1b2b2d-035f-4d29-b43b-d962044f1918",
+          "Name": "milk_pack",
+          "Position": "-7.77476,9.266564,7.630127",
+          "Rotation": "-0.03893974,-0.002190839,0.2740672,-0.9609192",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "56336c31-e220-403a-b535-165ca2335b5a",
+          "Name": "milk_pack",
+          "Position": "-7.77476,4.005713,7.630127",
+          "Rotation": "-0.03574752,0.01559546,0.6777598,-0.7342477",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "475b9717-78a6-42ba-bd3b-14bc23a4173d",
+          "Name": "milk_pack",
+          "Position": "-7.77476,-1.42453,7.630127",
+          "Rotation": "-0.03851271,0.006154415,0.4724721,-0.8804826",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "fe93f802-9bce-4f08-b879-9b0bb20b7684",
+          "Name": "milk_pack",
+          "Position": "-7.77476,-6.470249,7.630127",
+          "Rotation": "-0.03604502,0.01489447,0.6632953,-0.747341",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "323ffc66-df69-4180-94a4-f41acb0fe260",
+          "Name": "milk_pack",
+          "Position": "-7.77476,-11.49985,7.630127",
+          "Rotation": "0.0113326,0.03731826,0.8080791,0.5877792",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "bbebb973-77c6-4515-82de-2fcccb47f2fd",
+          "Name": "milk_pack",
+          "Position": "-7.77476,-16.14662,7.630127",
+          "Rotation": "0.01442173,0.03623663,0.7559514,0.653465",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "2b99c087-3198-43d4-b0fb-c9bfe6156417",
+          "Name": "milk_pack",
+          "Position": "-7.77476,-20.42002,7.630127",
+          "Rotation": "0.01933193,0.0338727,0.6574878,0.7524595",
+          "Scale": "1.309968,0.3853315,2.117493",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "materials/metal/metal_5.vmat",
+              "Model": "models/milk_pack/milk_pack.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -657,10 +877,12 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Confuser",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -670,6 +892,7 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -688,6 +911,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ParticleEffect",
               "__enabled": true,
               "Alpha": {
@@ -799,6 +1023,7 @@
               "Tint": "0.47673,0,0.5297,1"
             },
             {
+              "__version": 0,
               "__type": "ParticleSpriteRenderer",
               "__enabled": true,
               "Additive": false,
@@ -818,6 +1043,7 @@
               "Texture": "materials/particle/base_sprite.vtex"
             },
             {
+              "__version": 0,
               "__type": "ParticleSphereEmitter",
               "__enabled": true,
               "Burst": 0,
@@ -867,6 +1093,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -887,6 +1114,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -907,6 +1135,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -927,6 +1156,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -947,6 +1177,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -967,6 +1198,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -987,6 +1219,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1007,6 +1240,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1027,6 +1261,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1047,6 +1282,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1067,6 +1303,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1087,6 +1324,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1107,6 +1345,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1127,6 +1366,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1147,6 +1387,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1167,6 +1408,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1181,11 +1423,12 @@
     {
       "Id": "ee079586-c481-4f77-a2a8-b88696d7d3e4",
       "Name": "roadsign_pole",
-      "Position": "-14.76148,-299,-33.44717",
-      "Scale": "15,15,17.70005",
+      "Position": "-14.76148,-299,-42.54669",
+      "Scale": "15,15,18.23265",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1205,6 +1448,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1225,6 +1469,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1240,10 +1485,12 @@
       "Id": "ea9eb81a-7278-4926-8a9d-ef769394111f",
       "Name": "bomberbrick",
       "Position": "-20.84048,354.9195,261.8105",
+      "Rotation": "-0.000000005827132,0.09776304,0.00000000000000002864123,0.9952098",
       "Scale": "1,1.631679,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1258,11 +1505,13 @@
     {
       "Id": "f4d776fc-8330-48c2-bea4-d2773098e3b7",
       "Name": "bomberbrick (3)",
-      "Position": "-20.84048,328.2188,288.9626",
+      "Position": "-20.84048,328.2188,291.2004",
+      "Rotation": "-0.0000000050351,0.08447496,0.0000000000000000001517802,0.9964259",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1277,11 +1526,13 @@
     {
       "Id": "b481e05e-1d76-4baf-8641-9c07a7c57676",
       "Name": "bomberbrick (1)",
-      "Position": "-20.84048,286.6346,288.9626",
+      "Position": "-20.84048,286.6346,291.2004",
+      "Rotation": "-0.0000000050351,0.08447496,0.0000000000000000001517802,0.9964259",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1296,11 +1547,13 @@
     {
       "Id": "1697c853-db63-4da0-8022-dd279aa4d131",
       "Name": "bomberbrick (2)",
-      "Position": "-20.84048,266.2199,263.5768",
+      "Position": "-20.84048,261.3425,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1316,10 +1569,12 @@
       "Id": "996caa81-e961-4c91-a10f-507a02317b28",
       "Name": "bomberbrick (4)",
       "Position": "-20.84048,218.5116,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1335,10 +1590,12 @@
       "Id": "a2595bb9-1e79-4e61-872e-4ed14c3c59b4",
       "Name": "bomberbrick (5)",
       "Position": "-20.84048,170.8481,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1354,10 +1611,12 @@
       "Id": "e4320a7a-e1e5-4814-ac4d-f8e53c1c0919",
       "Name": "bomberbrick (6)",
       "Position": "-20.84048,121.3119,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1373,10 +1632,12 @@
       "Id": "3632bff6-48ab-4188-92f9-25675cf316b1",
       "Name": "bomberbrick (7)",
       "Position": "-20.84048,75.49559,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1392,10 +1653,12 @@
       "Id": "53c8ff7e-6c79-4189-8e77-bc0f0a13b183",
       "Name": "bomberbrick (8)",
       "Position": "-20.84048,25.58757,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1411,10 +1674,12 @@
       "Id": "6ad05a4e-18ca-4e30-ad59-487a7b8f3563",
       "Name": "bomberbrick (9)",
       "Position": "-20.84048,-22.47528,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1430,10 +1695,12 @@
       "Id": "bb41c214-5543-423f-b4a6-d827b57f9f88",
       "Name": "bomberbrick (10)",
       "Position": "-20.84048,-72.8335,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1449,10 +1716,12 @@
       "Id": "f5c4e04f-3214-42b2-a2fc-50727548540f",
       "Name": "bomberbrick (12)",
       "Position": "-20.84048,-120.7622,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1468,10 +1737,12 @@
       "Id": "bdd260e1-7110-4974-bf46-69dfaa7433b0",
       "Name": "bomberbrick (13)",
       "Position": "-20.84048,-161.5142,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1487,10 +1758,12 @@
       "Id": "cfa7d932-b7a7-4db8-9d22-5ffc74d064ab",
       "Name": "bomberbrick (11)",
       "Position": "-20.84048,-72.8335,263.5768",
+      "Rotation": "-0.000000004526203,0.07593708,-0.00000000000000002659897,0.997113",
       "Scale": "1,1.681691,0.9085222",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1499,6 +1772,195 @@
           "Model": "models/bomberbrick/bomberbrick.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "7bc58534-13e6-4b0f-8191-e62061491675",
+      "Name": "Plane",
+      "Position": "154.6233,277.4779,166.0732",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "8f436fa3-83ce-4fa1-8f1c-018d13f01fb1",
+      "Name": "Plane (1)",
+      "Position": "154.6233,78.2338,166.0732",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "824ec87a-bce1-4493-b829-ed4b24c6195b",
+      "Name": "Plane (2)",
+      "Position": "154.6233,-102.7728,166.0732",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "ea2688c3-4949-4cfc-8d5f-004ab5b59ea3",
+      "Name": "Plane (3)",
+      "Position": "154.6233,-252.1144,122.5293",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "1fba7ccc-2bc1-4951-986d-9cd66ba27ea0",
+      "Name": "Plane (4)",
+      "Position": "154.6233,-252.1144,82.79689",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "3fb2aaa8-3f5c-446c-8057-61f588566669",
+      "Name": "Plane (5)",
+      "Position": "154.6233,-66.01616,82.79689",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "8b6b14ac-1a00-4155-befa-a845c73cb555",
+      "Name": "Plane (6)",
+      "Position": "154.6233,96.89662,82.79689",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "f60971d6-f270-4d3e-9917-f0d81aee412c",
+      "Name": "Plane (7)",
+      "Position": "154.6233,120.2862,82.79689",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
+        }
+      ]
+    },
+    {
+      "Id": "4a857cbc-ae65-44c9-9261-8ea1e4a675db",
+      "Name": "Plane (8)",
+      "Position": "154.6233,259.2841,82.79689",
+      "Rotation": "0.5000004,-0.499998,-0.4999996,0.500002",
+      "Scale": "2,2.587981,2.462326",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/dusty_wood_planks/dusty_wood_planks.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,0.42"
         }
       ]
     }
@@ -1518,9 +1980,12 @@
     "andiq.bricks073",
     "baik.brickblock",
     "baik.roadsignpole",
-    "degg.f_trap_spikes",
+    "blmndy.milk_pack_triangle",
+    "duccsoft.wood_planks",
     "facepunch.lamp_post_pole_top",
+    "niclude.metal_5",
     "raphmap.brick",
+    "sugmatextures.metalfloorcover",
     "tesssssssssst.untitled_106251320"
   ]
 }

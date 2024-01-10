@@ -8,14 +8,15 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Manager",
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 4: The Chimney",
+          "LevelName": "Level 3: The Attic",
           "NextScene": "scenes/level5.scene",
-          "PrevScene": "scenes/level3.scene"
+          "PrevScene": "scenes/level2.scene"
         }
       ]
     },
@@ -26,6 +27,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "DirectionalLight",
           "__enabled": true,
           "LightColor": "1,1,1,1",
@@ -42,6 +44,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "CameraComponent",
           "__enabled": true,
           "BackgroundColor": "0,0,0,1",
@@ -59,6 +62,7 @@
           "ZNear": 10
         },
         {
+          "__version": 0,
           "__type": "Vignette",
           "__enabled": true,
           "Center": "0.5,0.5",
@@ -68,17 +72,20 @@
           "Smoothness": 0.95
         },
         {
+          "__version": 0,
           "__type": "FilmGrain",
           "__enabled": true,
           "Intensity": 0.025,
           "Response": 0.5
         },
         {
+          "__version": 0,
           "__type": "Pixelate",
           "__enabled": false,
           "Scale": 0.0025
         },
         {
+          "__version": 0,
           "__type": "Sharpen",
           "__enabled": false,
           "Scale": 0.25
@@ -97,6 +104,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -109,6 +117,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -121,6 +130,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -140,6 +150,7 @@
           "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -159,6 +170,7 @@
           "Scale": "4.744845,1.154005,2.308312",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -180,6 +192,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -190,6 +203,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -208,6 +222,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -218,6 +233,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -236,6 +252,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -246,6 +263,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -264,6 +282,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -274,6 +293,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -292,6 +312,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -302,6 +323,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -320,6 +342,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -330,6 +353,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -348,6 +372,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -358,6 +383,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -377,6 +403,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -387,6 +414,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -405,6 +433,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -415,6 +444,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -433,6 +463,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -443,6 +474,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -461,6 +493,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -471,6 +504,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -489,6 +523,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -499,6 +534,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -517,6 +553,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -527,6 +564,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -545,8 +583,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -555,6 +594,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -573,6 +613,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -583,6 +624,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -601,6 +643,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -611,6 +654,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -629,6 +673,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -639,6 +684,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -657,6 +703,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -667,6 +714,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -685,6 +733,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -695,6 +744,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -713,6 +763,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -723,6 +774,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -741,6 +793,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -751,6 +804,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -769,6 +823,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -779,6 +834,7 @@
           "Tint": "0.33953,0.33953,0.33953,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -788,6 +844,7 @@
           "Surface": "surfaces/floor.surface"
         },
         {
+          "__version": 0,
           "__type": "Rigidbody",
           "__enabled": true,
           "AngularDamping": 999,
@@ -812,6 +869,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -833,6 +891,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -843,6 +902,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -861,6 +921,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -871,6 +932,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -889,6 +951,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -899,6 +962,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -917,6 +981,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -927,6 +992,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -945,6 +1011,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -955,6 +1022,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -973,6 +1041,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -983,6 +1052,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1001,6 +1071,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1011,6 +1082,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1029,6 +1101,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1039,6 +1112,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1058,6 +1132,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1068,6 +1143,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1087,6 +1163,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1097,6 +1174,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1134,14 +1212,16 @@
     {
       "Id": "4428182f-94ee-4fe1-8652-a54e2296326b",
       "Name": "spike_block",
-      "Position": "0,95.40781,62.34437",
+      "Position": "0,95.40781,60.65111",
+      "Rotation": "-0.0000000006072475,0.01018802,-0.000000000000001376132,0.9999486",
       "Scale": "0.6,0.5,0.5",
       "Tags": "spike_block",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1150,6 +1230,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1159,10 +1240,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": false,
           "Direction": "Horizontal",
@@ -1174,44 +1257,13 @@
       ],
       "Children": [
         {
-          "Id": "e13fbe89-332e-4bc8-ae5e-c9789d497dff",
-          "Name": "trap_spikes",
-          "Position": "0.9491729,0.05106767,3.721694",
-          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
-          "Scale": "0.5,0.5,0.4353294",
+          "Id": "656f9e1f-5663-408a-9745-694bd42a1e2a",
+          "Name": "spike_block (1)",
+          "Position": "0,0.1426697,4.426186",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
           "Tags": "spike_block",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "a32e9a5f-5ecf-48bc-96f2-3cd922c9e9fb",
-          "Name": "trap_spikes",
-          "Position": "2.149172,0.05106767,-3.978291",
-          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
-          "Scale": "0.5,0.5,0.435",
-          "Tags": "spike_block",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
+          "Enabled": true,
+          "__Prefab": "prefabs/spike_block.prefab"
         }
       ]
     },
@@ -1223,10 +1275,12 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Confuser",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1236,6 +1290,7 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -1254,6 +1309,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ParticleEffect",
               "__enabled": true,
               "Alpha": {
@@ -1365,6 +1421,7 @@
               "Tint": "0.47673,0,0.5297,1"
             },
             {
+              "__version": 0,
               "__type": "ParticleSpriteRenderer",
               "__enabled": true,
               "Additive": false,
@@ -1384,6 +1441,7 @@
               "Texture": "materials/particle/base_sprite.vtex"
             },
             {
+              "__version": 0,
               "__type": "ParticleSphereEmitter",
               "__enabled": true,
               "Burst": 0,
@@ -1408,6 +1466,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1418,6 +1477,7 @@
           "Tint": "0.25071,0.29684,0.4604,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1427,6 +1487,7 @@
           "Surface": "surfaces/floor.surface"
         },
         {
+          "__version": 0,
           "__type": "Rigidbody",
           "__enabled": true,
           "AngularDamping": 999,
@@ -1452,6 +1513,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1474,6 +1536,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1493,6 +1556,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1513,6 +1577,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1532,6 +1597,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1552,6 +1618,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1572,6 +1639,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1592,6 +1660,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1612,6 +1681,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1632,6 +1702,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1652,6 +1723,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1672,6 +1744,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1692,6 +1765,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1712,6 +1786,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1732,6 +1807,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1752,6 +1828,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1766,12 +1843,13 @@
     {
       "Id": "f18c7e16-8098-4f22-876f-3660f2a911ac",
       "Name": "chimney_01 (19)",
-      "Position": "4.790728,328.0344,282.4472",
-      "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
-      "Scale": "0.9903437,0.9005838,3.27",
+      "Position": "4.790728,328.0344,279.7441",
+      "Rotation": "0.7043737,-0.06210964,0.06210943,0.7043737",
+      "Scale": "0.9903437,0.7202095,3.287974",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1792,6 +1870,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1812,6 +1891,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1832,6 +1912,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1852,6 +1933,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1872,6 +1954,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1892,6 +1975,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1912,6 +1996,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1932,6 +2017,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1952,6 +2038,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1971,6 +2058,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1990,6 +2078,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2009,6 +2098,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2029,6 +2119,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2049,6 +2140,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2069,6 +2161,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2079,6 +2172,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "ModelCollider",
           "__enabled": true,
           "IsTrigger": false,
@@ -2096,6 +2190,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2115,6 +2210,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2134,6 +2230,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2153,6 +2250,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2172,6 +2270,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2192,6 +2291,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2212,6 +2312,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2220,6 +2321,623 @@
           "Model": "models/rust_nature/rocks/rock_quarry_small_a.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "2e8a2c1c-ca93-43fe-b88f-87a7ae776bdf",
+      "Name": "8hu_kultiras_cratestack02",
+      "Position": "192.8056,-150.7634,-58.13336",
+      "Rotation": "0.0000001979122,0.0000002673838,-0.6640832,0.7476587",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_cratestack02.vmdl",
+          "RenderType": "On",
+          "Tint": "0.10698,0.02886,0.02886,1"
+        }
+      ]
+    },
+    {
+      "Id": "9f8178fa-ae2d-4c0b-96a6-31b087d064d4",
+      "Name": "8hu_kultiras_cratestack02 (3)",
+      "Position": "1383.8,354.2853,206.1626",
+      "Rotation": "0.6012051,0.5340005,0.3947786,-0.4444616",
+      "Scale": "1.5,7.943722,1.568176",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_cratestack02.vmdl",
+          "RenderType": "On",
+          "Tint": "0.06977,0.02174,0.02174,1"
+        }
+      ]
+    },
+    {
+      "Id": "f7124e8b-54c0-4c72-abed-9b91c7d0bf3e",
+      "Name": "8hu_kultiras_cratestack02 (2)",
+      "Position": "1569.008,-45.94131,208.9563",
+      "Rotation": "-0.4373758,-0.4722494,-0.4896906,-0.5881208",
+      "Scale": "1.5,1.5,1.146814",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_cratestack02.vmdl",
+          "RenderType": "On",
+          "Tint": "0.02791,0.02791,0.02791,1"
+        }
+      ]
+    },
+    {
+      "Id": "32bb4aa2-87fb-43ca-a305-da77ddb303c0",
+      "Name": "8hu_kultiras_cratestack02 (1)",
+      "Position": "192.8056,275.3834,-58.13336",
+      "Rotation": "0.0000002843716,-0.0000001069995,-0.9541927,-0.2991929",
+      "Scale": "1.5,1.5,1.741153",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_cratestack02.vmdl",
+          "RenderType": "On",
+          "Tint": "0.04579,0.02886,0.10698,1"
+        }
+      ]
+    },
+    {
+      "Id": "747b227e-8c2f-4e1d-9840-b5e032710c88",
+      "Name": "static_crate_48",
+      "Position": "345.7083,-58.32676,-67.71011",
+      "Rotation": "0.007087226,-0.02979445,-0.2312995,0.9724002",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/props_crates/static_crate_48.vmdl",
+          "RenderType": "On",
+          "Tint": "0.13953,0.13759,0.13759,1"
+        }
+      ]
+    },
+    {
+      "Id": "355a7ba6-2eb5-468d-a171-cd725e993475",
+      "Name": "static_crate_48 (1)",
+      "Position": "345.7083,365.5035,-51.26952",
+      "Rotation": "-0.002458045,0.02686892,-0.7937502,-0.6076499",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/props_crates/static_crate_48.vmdl",
+          "RenderType": "On",
+          "Tint": "0.04651,0.04651,0.04651,1"
+        }
+      ]
+    },
+    {
+      "Id": "9575cf54-c5aa-4a9c-a7a2-0c477fe53bc1",
+      "Name": "8hu_kultiras_crate01",
+      "Position": "512.0154,18.35687,-58.0742",
+      "Rotation": "-0.01594529,-0.03796026,0.3869403,0.9211849",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_crate01.vmdl",
+          "RenderType": "On",
+          "Tint": "0.12093,0.12093,0.12093,1"
+        }
+      ]
+    },
+    {
+      "Id": "0c0cd43a-82b1-47fc-9c57-4e44a8d5df10",
+      "Name": "crate_stack1",
+      "Position": "409.6202,-74.51878,-3.129219",
+      "Rotation": "0.0000001407602,-0.0000003152247,-0.4723133,-0.8814315",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate_stack1.vmdl",
+          "RenderType": "On",
+          "Tint": "0.03721,0.01125,0.01125,1"
+        }
+      ]
+    },
+    {
+      "Id": "87c6a1e0-7bd7-49e2-8dba-2b5ed697ac12",
+      "Name": "crate_stack1 (1)",
+      "Position": "403.5839,434.6948,-49.91046",
+      "Rotation": "-0.0000002810628,0.0000001189238,0.9430913,0.3325338",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate_stack1.vmdl",
+          "RenderType": "On",
+          "Tint": "0.03721,0.01125,0.01125,1"
+        }
+      ]
+    },
+    {
+      "Id": "645d5803-7a26-449f-b35a-e71e0dacc679",
+      "Name": "crate_big_stack",
+      "Position": "201.1512,314.5186,98.60367",
+      "Rotation": "-0.00000006263307,0.0000003496406,0.2101615,0.9776667",
+      "Scale": "1.3,1.3,1.3",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate_big_stack.vmdl",
+          "RenderType": "On",
+          "Tint": "0.03721,0.03721,0.03721,1"
+        },
+        {
+          "__version": 0,
+          "__type": "ModelCollider",
+          "__enabled": true,
+          "IsTrigger": false,
+          "Model": "models/uf-rts/crate_big_stack.vmdl",
+          "Static": false,
+          "Surface": null
+        }
+      ]
+    },
+    {
+      "Id": "d0c68e6a-e5fa-4cc4-841e-47bb52d49901",
+      "Name": "crate_stack2",
+      "Position": "167.5584,56.7784,-44.77552",
+      "Scale": "0.8851905,1.176349,1.343073",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate_stack2.vmdl",
+          "RenderType": "On",
+          "Tint": "0.03721,0.03721,0.03721,1"
+        }
+      ]
+    },
+    {
+      "Id": "f7308c3c-9ff4-4d4a-aa1d-9e29685e3191",
+      "Name": "crate_stack2 (2)",
+      "Position": "1770.354,148.9517,202.6763",
+      "Rotation": "-0.187283,-0.9771419,0.06038302,-0.08045912",
+      "Scale": "0.8851905,1.176349,1.343073",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate_stack2.vmdl",
+          "RenderType": "On",
+          "Tint": "0.01856,0.02557,0.02791,1"
+        }
+      ]
+    },
+    {
+      "Id": "2e6995f8-48ae-48ec-ba61-ef8b3ba0610e",
+      "Name": "crate_stack2 (1)",
+      "Position": "763.5782,14.13052,-66.29758",
+      "Rotation": "-0.00000005875802,0.00000000000001253817,-0.9857959,-0.1679474",
+      "Scale": "0.8851905,1.176349,1.343073",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate_stack2.vmdl",
+          "RenderType": "On",
+          "Tint": "0.0186,0.0186,0.0186,1"
+        }
+      ]
+    },
+    {
+      "Id": "06bb65d8-2e8d-4a14-9011-163c372e0cdd",
+      "Name": "crate",
+      "Position": "163.9802,197.3722,-29.37685",
+      "Rotation": "0.4586855,0.5134737,-0.4000014,0.6049384",
+      "Scale": "2,2,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.12093,0.12093,0.12093,1"
+        }
+      ]
+    },
+    {
+      "Id": "01578f72-7f09-4d0e-96d7-9ad0aeac5068",
+      "Name": "crate (3)",
+      "Position": "867.9352,-32.66605,125.0581",
+      "Rotation": "0.3638253,0.6296877,-0.4878775,0.482804",
+      "Scale": "3.529296,3.223444,2.851171",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.05581,0.05581,0.05581,1"
+        }
+      ]
+    },
+    {
+      "Id": "399c9c41-f39e-452b-84b9-f0217d81a037",
+      "Name": "crate (9)",
+      "Position": "3818.278,254.1791,252.3284",
+      "Rotation": "0.5950444,0.793467,0.07029931,0.1067251",
+      "Scale": "3.724446,2.758853,1.785385",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.05656,0.027,0.06047,1"
+        }
+      ]
+    },
+    {
+      "Id": "e9b6d25e-9b7a-4e96-a3c4-43775cc24bae",
+      "Name": "crate (6)",
+      "Position": "867.9352,249.5709,157.1989",
+      "Rotation": "0.4340704,0.5485616,-0.4265867,0.5733117",
+      "Scale": "2.144806,3.162978,2.772529",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.12558,0.05198,0.12068,1"
+        }
+      ]
+    },
+    {
+      "Id": "3260aa9c-9fbf-4117-be4f-2c4b7c80fedf",
+      "Name": "crate (7)",
+      "Position": "903.1613,219.9601,157.1989",
+      "Rotation": "0.08702259,-0.6940941,-0.1099211,-0.7061037",
+      "Scale": "2.144806,3.162978,2.772529",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.05116,0.01666,0.04886,1"
+        }
+      ]
+    },
+    {
+      "Id": "0e968931-5efd-4a36-9c94-ff947ca25a2e",
+      "Name": "crate (4)",
+      "Position": "867.9352,-127.1579,106.2291",
+      "Rotation": "0.1028785,0.1444674,0.6523431,0.7368821",
+      "Scale": "3.529296,3.223444,2.851171",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.073,0.04725,0.11163,1"
+        }
+      ]
+    },
+    {
+      "Id": "fabdb0cd-d7c3-4318-84d5-40e5a412238d",
+      "Name": "crate (8)",
+      "Position": "1465.582,348.6656,258.7102",
+      "Rotation": "-0.6236027,-0.6993881,0.2173818,0.2733576",
+      "Scale": "3.529296,2.394793,2.332228",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.073,0.04725,0.11163,1"
+        }
+      ]
+    },
+    {
+      "Id": "79c988eb-6da2-45c1-865c-4a4d44927684",
+      "Name": "crate (2)",
+      "Position": "221.1718,115.7623,18.66884",
+      "Rotation": "0.3473375,0.5944786,-0.2716267,0.6724362",
+      "Scale": "2,1.539966,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.06512,0.06512,0.06512,1"
+        }
+      ]
+    },
+    {
+      "Id": "2e5fe50d-1458-465c-9459-203c8163f5ba",
+      "Name": "crate (1)",
+      "Position": "185.3057,110.889,-39.2378",
+      "Rotation": "0.7629743,-0.1123786,-0.6271372,-0.10931",
+      "Scale": "2,2.47726,2",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "materials/mushroom/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.07907,0.07907,0.07907,1"
+        }
+      ]
+    },
+    {
+      "Id": "68c15028-dc20-4e6b-8cca-5d67a55ef2fb",
+      "Name": "crate",
+      "Position": "1280.499,139.0497,169.6601",
+      "Rotation": "0.05547167,0.0000003570772,0.00000001983821,0.99846",
+      "Scale": "2,2.246081,2.699642",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.0186,0.009,0.01796,1"
+        }
+      ]
+    },
+    {
+      "Id": "d1b4fa6a-53c9-458c-9f05-2d1441961c97",
+      "Name": "crate (5)",
+      "Position": "1070.255,414.0299,47.61944",
+      "Rotation": "-0.08726705,0.000000356264,-0.00000003120917,0.9961854",
+      "Scale": "2,1.517219,3.462038",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/uf-rts/crate.vmdl",
+          "RenderType": "On",
+          "Tint": "0.01089,0.00796,0.03721,1"
+        }
+      ]
+    },
+    {
+      "Id": "8000901d-889e-4d3a-a2e1-d87ca803adef",
+      "Name": "8hu_kultiras_barrel01",
+      "Position": "472.7007,167.9796,2.80022",
+      "Rotation": "-0.02470609,-0.09312928,0.002311626,0.9953454",
+      "Scale": "1.906044,1.653513,1.772192",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_barrel01.vmdl",
+          "RenderType": "On",
+          "Tint": "0.04186,0.0292,0.0292,1"
+        }
+      ]
+    },
+    {
+      "Id": "064658ed-a3c5-4900-a54f-28f39a0a673a",
+      "Name": "8hu_kultiras_barrel01 (3)",
+      "Position": "472.7007,358.0566,21.79102",
+      "Rotation": "-0.02470609,-0.09312928,0.002311626,0.9953454",
+      "Scale": "1.906044,1.653513,1.63429",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_barrel01.vmdl",
+          "RenderType": "On",
+          "Tint": "0.02326,0.01092,0.01092,1"
+        }
+      ]
+    },
+    {
+      "Id": "5364f9c1-4cff-4517-b5f0-4e5f23365c95",
+      "Name": "8hu_kultiras_barrel01 (4)",
+      "Position": "1213.613,375.0183,80.99049",
+      "Rotation": "0.03669873,-0.09309452,-0.0034337,0.9949749",
+      "Scale": "1.906044,1.653513,1.63429",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_barrel01.vmdl",
+          "RenderType": "On",
+          "Tint": "0.03721,0.01281,0.01281,1"
+        }
+      ]
+    },
+    {
+      "Id": "23a022d8-b3c7-472c-80e2-e0d7a1b7f623",
+      "Name": "8hu_kultiras_barrel01 (1)",
+      "Position": "641.2108,220.8914,15.06988",
+      "Rotation": "0.0926625,-0.0927534,-0.008669922,0.9913303",
+      "Scale": "1.906044,1.653513,1.815452",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_barrel01.vmdl",
+          "RenderType": "On",
+          "Tint": "0.02326,0.01017,0.01017,1"
+        }
+      ]
+    },
+    {
+      "Id": "cad554ab-bcc0-4265-97da-2d282d1d212c",
+      "Name": "8hu_kultiras_barrel01 (2)",
+      "Position": "894.4668,254.8155,97.3168",
+      "Rotation": "0.7288183,-0.06346839,-0.0681914,0.6783403",
+      "Scale": "1.906044,1.653513,1.815452",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/8hu_kultiras_barrel01.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00999,0.0148,0.05116,1"
         }
       ]
     }
@@ -2237,14 +2955,22 @@
   "Description": "",
   "__references": [
     "andiq.bricks073",
-    "degg.f_trap_spikes",
+    "andiq.crate",
     "eurorp.chimney_01",
     "eurorp.chimney_02",
     "eurorp.chimney_03",
     "eurorp.chimney_04",
     "fish.gt_box",
+    "legendtech.dods_boomcrate",
+    "orus.8hu_kultiras_barrel01",
+    "orus.8hu_kultiras_crate01",
+    "orus.8hu_kultiras_cratestack02",
     "polyrats.untitled_3",
     "rust.rock_quarry_small_a",
-    "svin.chimney"
+    "svin.chimney",
+    "titanovsky.ufrts_crate",
+    "titanovsky.ufrts_cratebs",
+    "titanovsky.ufrts_crates1",
+    "titanovsky.ufrts_crates2"
   ]
 }

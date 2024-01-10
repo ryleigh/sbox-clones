@@ -8,13 +8,14 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Manager",
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 6: The Courtyard",
-          "NextScene": "scenes/level7.scene",
+          "LevelName": "Level 5: The Courtyard",
+          "NextScene": "scenes/level3.scene",
           "PrevScene": "scenes/level5.scene"
         }
       ]
@@ -26,6 +27,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "DirectionalLight",
           "__enabled": true,
           "LightColor": "1,1,1,1",
@@ -37,11 +39,12 @@
     {
       "Id": "00854b9e-9ce1-45a3-b1a6-a525f08e12e0",
       "Name": "Camera",
-      "Position": "-507.3935,43.5312,119.0326",
+      "Position": "-507.3935,96.00256,119.0326",
       "Tags": "maincamera",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "CameraComponent",
           "__enabled": true,
           "BackgroundColor": "0,0,0,1",
@@ -59,6 +62,7 @@
           "ZNear": 10
         },
         {
+          "__version": 0,
           "__type": "Vignette",
           "__enabled": true,
           "Center": "0.5,0.5",
@@ -68,17 +72,20 @@
           "Smoothness": 0.95
         },
         {
+          "__version": 0,
           "__type": "FilmGrain",
           "__enabled": true,
           "Intensity": 0.025,
           "Response": 0.5
         },
         {
+          "__version": 0,
           "__type": "Pixelate",
           "__enabled": false,
           "Scale": 0.0025
         },
         {
+          "__version": 0,
           "__type": "Sharpen",
           "__enabled": false,
           "Scale": 0.25
@@ -97,6 +104,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -109,6 +117,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -121,6 +130,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -132,6 +142,7 @@
           "Position": "0,291.6201,161.6623",
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -143,6 +154,7 @@
           "Position": "0,255.0866,128.2699",
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -154,6 +166,7 @@
           "Position": "0,74.69376,128.2699",
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -173,6 +186,7 @@
           "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -192,6 +206,7 @@
           "Scale": "4.744845,1.154005,2.308312",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -213,6 +228,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -223,6 +239,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -241,6 +258,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -251,6 +269,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -269,6 +288,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -279,6 +299,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -297,6 +318,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -307,6 +329,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -325,6 +348,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -335,6 +359,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -353,6 +378,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -363,6 +389,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -381,6 +408,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -391,6 +419,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -409,6 +438,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -419,6 +449,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -437,6 +468,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -447,6 +479,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -465,6 +498,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -475,6 +509,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -493,6 +528,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -503,6 +539,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -521,6 +558,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -531,6 +569,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -549,6 +588,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -559,6 +599,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -577,6 +618,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -587,6 +629,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -605,6 +648,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -615,6 +659,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -633,6 +678,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -643,6 +689,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -661,6 +708,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -671,6 +719,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -689,6 +738,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -699,6 +749,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -717,6 +768,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -727,6 +779,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -745,6 +798,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -755,6 +809,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -773,6 +828,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -783,6 +839,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -801,6 +858,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -811,6 +869,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -829,6 +888,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -839,6 +899,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -857,6 +918,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -867,6 +929,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -919,8 +982,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -929,6 +993,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -938,10 +1003,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -953,42 +1020,290 @@
       ],
       "Children": [
         {
-          "Id": "e13fbe89-332e-4bc8-ae5e-c9789d497dff",
-          "Name": "trap_spikes",
-          "Position": "0.9491729,0.05106767,3.721694",
-          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
-          "Scale": "0.5,0.5,0.4353294",
+          "Id": "1a2695c3-5da0-4b9b-9b24-facc9bd74942",
+          "Name": "spike_block (6)",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.7,0.7,0.7",
           "Tags": "spike_block",
+          "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
               "RenderType": "On",
-              "Tint": "1,1,1,1"
+              "Tint": "0.77209,0.77209,0.77209,1"
             }
-          ]
-        },
-        {
-          "Id": "a32e9a5f-5ecf-48bc-96f2-3cd922c9e9fb",
-          "Name": "trap_spikes",
-          "Position": "2.149172,0.05106767,-3.978291",
-          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
-          "Scale": "0.5,0.5,0.435",
-          "Tags": "spike_block",
-          "Components": [
+          ],
+          "Children": [
             {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
+              "Id": "78f36d46-947c-4e86-9247-e828f1442461",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "26c28ef6-6317-4b71-8488-3ff1036fd055",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "3fdb570b-2303-4a93-96b2-f262697db54c",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "3c394785-f759-4b3b-8628-3f87bd386e19",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d55e09d3-3243-4137-9aca-00136bea917c",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "08608a49-2ed0-4040-8c36-7c2ccc817bc6",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ffa0c91a-de3a-4658-b2b6-db72ef0bce4e",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "f18015d1-e94a-4ec7-945a-07776b01ec04",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "fbba7127-62fa-4afe-9315-b511fc683749",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ff2969c1-700d-47f8-b208-af9bc8ae2ffa",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8c70463f-2848-4212-b40e-a80e49d7fbb3",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ea62a1fc-d4d8-4c69-88df-0a7c77c3aed7",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1003,8 +1318,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1013,6 +1329,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1022,57 +1339,306 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Vertical",
           "Increasing": false,
           "Max": 264,
-          "Min": 81,
+          "Min": 85,
           "Speed": 45
         }
       ],
       "Children": [
         {
-          "Id": "cbe177b9-fed1-40fd-a7e3-2abf97906048",
-          "Name": "trap_spikes",
-          "Position": "0.9491729,0.05106767,3.721694",
-          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
-          "Scale": "0.5,0.5,0.4353294",
+          "Id": "b8fc315d-62a0-40c0-92f1-a33304155ceb",
+          "Name": "spike_block (6)",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
           "Tags": "spike_block",
+          "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
               "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
               "RenderType": "On",
-              "Tint": "1,1,1,1"
+              "Tint": "0.77209,0.77209,0.77209,1"
             }
-          ]
-        },
-        {
-          "Id": "a397df3f-53eb-4a1c-bec1-c9ad0d925b4c",
-          "Name": "trap_spikes",
-          "Position": "2.149172,0.05106767,-3.978291",
-          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
-          "Scale": "0.5,0.5,0.435",
-          "Tags": "spike_block",
-          "Components": [
+          ],
+          "Children": [
             {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
+              "Id": "c25e46c0-d004-47eb-99ac-103968ab524d",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "89189d82-27ae-4f28-bd9a-9fe6918ae4a9",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d7df3a8c-4be7-4b5d-870d-5bfe949ab888",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "87c4478d-e998-47c3-9eef-78cf9b5270cd",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "a083dfea-a1f7-437d-bc44-da7637443991",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "4a818258-583b-4b06-8638-d6aba9fd8775",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d943e49f-7bcc-4432-9ea3-7e5bca5a812a",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "b60d5441-dee9-49e5-ae82-e70769fb0884",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "98d56056-0b41-4ac6-bc1b-6a61edc318ac",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "55e35633-e1da-4132-bc6c-dc3aaff07d80",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "467f65b3-f08e-4c77-bf8a-df376edc8660",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "c646da98-9b99-4850-8a21-1421fc896895",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1087,8 +1653,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1097,6 +1664,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1106,16 +1674,18 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Vertical",
           "Increasing": false,
           "Max": 264,
-          "Min": 81,
+          "Min": 85,
           "Speed": 36
         }
       ],
@@ -1129,6 +1699,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1149,6 +1720,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1157,6 +1729,293 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "6a1180a5-82bc-42e4-a174-9ae6e7506eb0",
+          "Name": "spike_block (6)",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "12b4c0d6-8c93-415c-a3c6-d22d9a617add",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "4d1d4eb3-2dd9-4623-a162-7cf9c25602e6",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "01b3baa0-89d2-4780-ac09-6159e8f864cf",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "4a8432bf-fc85-4078-b520-7eefcc756de4",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "49d183a9-c3e6-48ee-be5a-0f869db465d0",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "df672ac9-1f10-4708-9ff4-506b2e926391",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "0ad2f081-9d3f-4af9-97d4-7b7f03f83ee0",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "60ed3e0a-383a-465c-b7b2-0a874e1c092d",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "1bc2fd39-e89f-42c4-94a6-c64d0ee57d43",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "36b1ceb9-06be-4c66-9361-cf4411ec29dc",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "e89b3bdd-fad7-4af8-9d27-f69557629101",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "aff5cff8-cea4-436a-a091-ba2a007c5a73",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1171,8 +2030,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1181,6 +2041,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1190,16 +2051,18 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Vertical",
           "Increasing": true,
           "Max": 264,
-          "Min": 81,
+          "Min": 85,
           "Speed": 40
         }
       ],
@@ -1213,6 +2076,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1233,6 +2097,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1243,20 +2108,308 @@
               "Tint": "1,1,1,1"
             }
           ]
+        },
+        {
+          "Id": "6550b763-4445-4110-a8cc-68d41621e1f5",
+          "Name": "spike_block (6)",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "967cf64c-483d-4e17-b1a9-29082f5a65f0",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "80f61631-f779-49ba-b7a2-41457e726de3",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d917b37e-8017-4115-9b1a-4a1e02e78a11",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "285fdb8a-89ee-4d70-a86e-e289ebd53ce4",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d03e9db5-c677-4f59-8425-f4e50bc2e1bb",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "30598a75-00d3-4452-9498-b90e66b5331a",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "96a485d2-2b18-4552-a6ac-d8b4934c6c1c",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d78e7542-4908-4686-9134-95f77e63dd38",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "41f4fc68-81dc-4981-9ca3-c73e3fe7e5d3",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "35ed5172-bc29-4f39-b220-47a07f685496",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8b309950-d9d9-496d-b055-2a9d86048cc3",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "57a12bea-36e4-4025-8509-85afc2e7e9ef",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "Id": "a6dbafd2-4f3f-47ec-b0c9-b370c14e3f2e",
       "Name": "spike_block (4)",
-      "Position": "-0.738945,45.60665,98.3305",
+      "Position": "-0.738945,45.60665,124.1908",
       "Scale": "0.6,0.4,0.4",
       "Tags": "spike_block",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1265,6 +2418,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1274,16 +2428,18 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Vertical",
           "Increasing": true,
           "Max": 264,
-          "Min": 81,
+          "Min": 85,
           "Speed": 36
         }
       ],
@@ -1297,6 +2453,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1317,6 +2474,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1327,20 +2485,308 @@
               "Tint": "1,1,1,1"
             }
           ]
+        },
+        {
+          "Id": "16fff499-22b7-4539-adb4-32fddfa55df7",
+          "Name": "spike_block (6)",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "ba90c5ad-9d16-4340-b229-5aaf01685683",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "53d49bb1-04e6-46bf-8733-51b9d3cd28b3",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8e0bbc31-3232-41f8-849e-123677ce849c",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "a5a63bc3-a259-447a-9bbd-2446867e5df7",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "c9fd89d9-7357-4593-8dba-80eba97a22b4",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d45f4936-d5e7-441f-a226-6328b34a487b",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "61fb3e33-8575-4aea-8856-779b349c5723",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "a96af223-9dcc-438e-8c9d-3e23b7c21761",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "a69d3a34-35c7-4934-98cd-3e6f42790880",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "635d139a-6d8b-4f3c-991d-8d1f068da639",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "e318f061-aad8-47c7-a0f8-7bdfda197250",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "954e1446-e4f5-4214-8861-b6b0fee2581d",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "Id": "64e3e3c8-539f-4c14-80f9-9de2ae14e225",
       "Name": "spike_block (5)",
-      "Position": "-0.738945,-62.51805,153.2995",
+      "Position": "-0.738945,-62.51805,161.9688",
       "Scale": "0.6,0.4,0.4",
       "Tags": "spike_block",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1349,6 +2795,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1358,16 +2805,18 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Vertical",
           "Increasing": true,
           "Max": 264,
-          "Min": 51,
+          "Min": 52,
           "Speed": 30
         }
       ],
@@ -1381,6 +2830,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1401,6 +2851,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1409,6 +2860,293 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "40526b3d-adc3-4b7c-b250-11fb1252eaba",
+          "Name": "spike_block (6)",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "bc0da5c8-6b90-4889-aafb-c082c843c9b7",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "fb5d5e17-bf7f-4b2e-80f4-99fa7bf96f86",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "076a2b84-95aa-44d6-95f7-423b3ebf956a",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "44ec23c4-d40f-4da8-abf1-355532453638",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "54529f9f-b3f1-484d-aabf-1bbd445d9cfc",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "2e8f457c-b2c3-4f93-b956-036e3bba8f99",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "0de13719-f3c4-41bf-b8c2-ef6c2d6806e5",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ded8fda7-256b-4f76-9770-9b9cfb25303e",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "96e2edbf-d750-4abd-93ce-ea88d8e4d870",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "522c1fd3-1749-4376-8dfd-7516a0a9f22d",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "6f545248-c582-4b46-bad1-89c5423bb825",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "4cfe1411-1878-4212-aba4-1a1456dccc73",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1431,6 +3169,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1451,6 +3190,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1471,6 +3211,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1491,6 +3232,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1511,6 +3253,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1525,12 +3268,13 @@
     {
       "Id": "d14546c6-fc1a-4231-81e6-64002bec3da1",
       "Name": "8hu_kultiras_woodplank01 (6)",
-      "Position": "-15.40775,246.398,89.96952",
+      "Position": "-17.40754,246.398,89.96952",
       "Rotation": "0.4565927,0.4565933,0.5399289,0.5399287",
-      "Scale": "0.4875188,1.025354,3.465063",
+      "Scale": "0.4875188,1.025354,2.002063",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1551,6 +3295,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1571,6 +3316,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1591,6 +3337,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1611,6 +3358,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1631,6 +3379,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1651,6 +3400,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1671,6 +3421,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1691,6 +3442,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1705,12 +3457,13 @@
     {
       "Id": "9110203e-a1d1-4fc0-b837-48bb5d3e84c3",
       "Name": "low_wood_fence_beam_2 (5)",
-      "Position": "-2.978203,356.6301,112.7218",
-      "Rotation": "-0.1897843,0.681163,0.1897837,0.681163",
+      "Position": "-2.978203,356.6301,112.7198",
+      "Rotation": "-0.1787175,0.7186916,0.2002401,0.6414426",
       "Scale": "1.943259,5.099501,5.680797",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1731,6 +3484,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1746,11 +3500,12 @@
       "Id": "052523db-bf9e-4560-9a6b-734f312e7025",
       "Name": "low_wood_fence_beam_2 (6)",
       "Position": "-2.978203,357.5775,-53.59623",
-      "Rotation": "-0.1897843,0.681163,0.1897837,0.681163",
+      "Rotation": "-0.2045133,0.6238344,0.1738109,0.7340276",
       "Scale": "1.06488,5.099501,5.587403",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1771,6 +3526,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1785,12 +3541,13 @@
     {
       "Id": "45d41453-ab72-40e0-8d50-c4d0ba7f4dc9",
       "Name": "low_wood_fence_beam_2 (9)",
-      "Position": "-2.978203,412.8029,35.54709",
+      "Position": "-2.978203,389.5497,35.54709",
       "Rotation": "0.3474571,0.3474568,0.6158516,0.6158523",
-      "Scale": "0.96488,5.099501,5.687403",
+      "Scale": "0.5219154,5.069414,5.687403",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1805,12 +3562,13 @@
     {
       "Id": "d485e244-1db6-4dbf-b064-ed71cdc243b7",
       "Name": "low_wood_fence_beam_2 (10)",
-      "Position": "-2.978203,412.8029,-15.34853",
+      "Position": "-2.978203,390.4928,-15.34853",
       "Rotation": "0.1595278,0.1595271,0.688876,0.6888765",
-      "Scale": "0.96488,5.099501,5.687403",
+      "Scale": "0.5054237,5.099501,5.687403",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1831,6 +3589,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1851,6 +3610,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1871,6 +3631,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1879,6 +3640,402 @@
           "Model": "models/sbox_props/street_lamp/street_lamp_pole.vmdl",
           "RenderType": "On",
           "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "e3f18d31-886c-4348-a918-e2b19d78b940",
+      "Name": "Plane",
+      "Position": "191.4087,229.5048,61.47333",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "2f6d4d18-92ad-4db0-9731-57dcd90865ed",
+      "Name": "Plane (1)",
+      "Position": "191.4087,229.5048,-8.159725",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "fb893a92-24ab-4958-9f89-afc24638edc4",
+      "Name": "Plane (2)",
+      "Position": "191.4087,130.1383,-8.159725",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "83b64cf2-0833-413a-8664-fd7a4cc5e086",
+      "Name": "Plane (3)",
+      "Position": "191.4087,22.79115,54.4356",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1,1.192181,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "081ace65-a4cc-4548-a335-1d8f8a2b8c32",
+      "Name": "Plane (4)",
+      "Position": "191.4087,-54.16682,73.72931",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1,0.9797823,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "50b93281-8894-4d83-a0c0-23779985fc94",
+      "Name": "Plane (5)",
+      "Position": "164.8192,-120.2906,128.5009",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.081819,1.540917,1.067146",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "c532fe48-bb48-41b3-bee8-abcb4caa4b12",
+      "Name": "Plane (6)",
+      "Position": "197.0049,-56.03798,202.8629",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.476637,1.389785,0.766637",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "a374bf7a-281d-490a-a136-471794ee9808",
+      "Name": "Plane (8)",
+      "Position": "197.0049,67.97932,202.8629",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.476637,1.389785,0.766637",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "51fe66e3-213c-475f-ab9c-d6fd8c1efe41",
+      "Name": "Plane (15)",
+      "Position": "252.2159,149.5307,268.8365",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.066866,1.389785,0.6502355",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/tree2.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00184,0.02326,0.01219,1"
+        }
+      ]
+    },
+    {
+      "Id": "c0a91878-cdff-4b65-84ea-77063ffc9a45",
+      "Name": "Plane (16)",
+      "Position": "268.4157,48.46787,270.8651",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.259508,1.389785,0.6502355",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/tree2.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00184,0.02326,0.01219,1"
+        }
+      ]
+    },
+    {
+      "Id": "34a92e6c-4031-4cf5-8054-e3dce3115ae8",
+      "Name": "Plane (17)",
+      "Position": "298.7893,-7.008484,270.8651",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.004409,1.389785,0.6502355",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/tree2.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00184,0.02326,0.01219,1"
+        }
+      ]
+    },
+    {
+      "Id": "0e57ca0a-0e27-47e4-865b-f1fd378cfaa0",
+      "Name": "Plane (18)",
+      "Position": "325.3201,-55.84015,259.7283",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.420034,1.389785,0.7244126",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/tree2.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00184,0.02326,0.01219,1"
+        }
+      ]
+    },
+    {
+      "Id": "4f81b198-1df6-4bde-8690-2947873ec411",
+      "Name": "Plane (9)",
+      "Position": "197.0049,147.5184,202.8629",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.476637,1.389785,0.766637",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "5f3e889c-508c-4b76-b234-3104e37fca89",
+      "Name": "Plane (10)",
+      "Position": "153.7507,147.5184,106.2271",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.172487,1.389785,0.5114567",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "2c245637-9bc8-45f6-b03b-1cb3f9c3ff3d",
+      "Name": "Plane (11)",
+      "Position": "153.7507,40.18423,106.2271",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.172487,1.389785,0.5114567",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "466de2ec-5e3d-4de0-b82b-e3f7031fbd42",
+      "Name": "Plane (12)",
+      "Position": "153.7507,276.0055,129.2798",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.172487,1.389785,0.5114567",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "aec7659a-6683-42a8-8361-546deef69183",
+      "Name": "Plane (13)",
+      "Position": "191.7001,287.9004,24.7831",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.089259,1.389785,0.0581939",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "ba790f72-277f-45e8-af28-e628acad7198",
+      "Name": "Plane (14)",
+      "Position": "191.7001,327.6064,10.69704",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "0.4766783,1.389785,0.0581939",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
+        }
+      ]
+    },
+    {
+      "Id": "074aacfd-160b-4a3d-b2b9-aa9cff8296cc",
+      "Name": "Plane (7)",
+      "Position": "220.638,-109.2372,184.0928",
+      "Rotation": "-0.706741,-0.0000004521431,0.7074724,-0.000000452611",
+      "Scale": "1.208361,1.389785,0.7040733",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/zombieworld/roof_wood_shingles01_pixel.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0.00182,0.05581,0.03422,1"
         }
       ]
     }
@@ -1896,10 +4053,14 @@
   "Description": "",
   "__references": [
     "andiq.bricks073",
+    "blmndy.milk_pack_triangle",
     "degg.f_trap_spikes",
     "facepunch.low_wood_fence_beam_2",
     "facepunch.street_lamp_pole",
+    "kvien.roof_wood_shingles01_pixel",
+    "niclude.metal_5",
     "orus.8hu_kultiras_woodplank01",
+    "sugmatextures.metalfloorcover",
     "tesssssssssst.untitled_84185151"
   ]
 }

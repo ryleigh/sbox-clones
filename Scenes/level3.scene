@@ -8,14 +8,15 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Manager",
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 3: The Lab",
-          "NextScene": "scenes/level4.scene",
-          "PrevScene": "scenes/level2.scene"
+          "LevelName": "Level 6: The Tank",
+          "NextScene": "scenes/level7.scene",
+          "PrevScene": "scenes/level6.scene"
         }
       ]
     },
@@ -26,6 +27,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "DirectionalLight",
           "__enabled": true,
           "LightColor": "1,1,1,1",
@@ -42,6 +44,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "CameraComponent",
           "__enabled": true,
           "BackgroundColor": "0,0,0,1",
@@ -59,6 +62,7 @@
           "ZNear": 10
         },
         {
+          "__version": 0,
           "__type": "Vignette",
           "__enabled": true,
           "Center": "0.5,0.5",
@@ -68,17 +72,20 @@
           "Smoothness": 0.95
         },
         {
+          "__version": 0,
           "__type": "FilmGrain",
           "__enabled": true,
           "Intensity": 0.025,
           "Response": 0.5
         },
         {
+          "__version": 0,
           "__type": "Pixelate",
           "__enabled": false,
           "Scale": 0.0025
         },
         {
+          "__version": 0,
           "__type": "Sharpen",
           "__enabled": false,
           "Scale": 0.25
@@ -97,6 +104,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -109,6 +117,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -121,6 +130,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -140,6 +150,7 @@
           "Rotation": "0.7071067,0.000001370907,-0.7071068,0.0000008940697",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -159,6 +170,7 @@
           "Scale": "4.744845,1.154005,2.308312",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -180,6 +192,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -190,6 +203,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -208,6 +222,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -218,6 +233,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -236,6 +252,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -246,6 +263,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -264,6 +282,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -274,6 +293,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -292,6 +312,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -302,6 +323,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -320,6 +342,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -330,6 +353,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -348,6 +372,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -358,6 +383,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -376,6 +402,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -386,6 +413,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -404,6 +432,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -414,6 +443,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -432,6 +462,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -442,6 +473,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -460,6 +492,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -470,6 +503,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -488,6 +522,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -498,6 +533,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -517,6 +553,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -527,6 +564,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -546,6 +584,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -556,6 +595,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -608,8 +648,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -618,6 +659,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -627,10 +669,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -650,6 +694,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -670,6 +715,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -678,6 +724,294 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "e7b9fece-b052-4197-a4c0-500a61ce8fe6",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.9,0.9,0.9",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "6ca2c860-88af-40fe-abed-e1e2ff55587b",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "12e32e69-294c-41ac-a668-281fb580f5d4",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "324a193f-e9ea-4372-8cb0-2ada86df0235",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "15bb9e28-e48f-4a79-bcce-ac4c209aa168",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ccf50252-a5fa-4209-b668-d2e61bd892f2",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ecf3167a-7a17-49f6-aca8-ed2386218d0f",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "58d22276-9334-42b1-a5f4-cafcdb71bdc8",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "2440491c-6287-42b0-a39c-5557d86d4fd9",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "befb9f5b-4df4-47db-8720-246a681e04b2",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "c8d2993c-4cdc-4e7a-ab60-253ff7eeeec7",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "1cb9f99a-774e-48bf-aed2-832d5fafdfea",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "0f7b12d6-c930-4d75-a613-79c3391a3829",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -692,8 +1026,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -702,6 +1037,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -711,6 +1047,7 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         }
@@ -725,6 +1062,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -745,6 +1083,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -753,6 +1092,95 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "88ab0038-a4dc-4c07-9464-9d7b987ab1d7",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.77209,0.77209,0.77209,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "f03e7b22-4d1e-4ceb-aff2-3096129e0192",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "cd96ec0e-765a-4827-87d6-4c279feb5227",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "5da2245c-ea4f-4a63-8afd-500b06ba4cdc",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -767,8 +1195,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -777,6 +1206,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -786,10 +1216,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveSequence",
           "__enabled": true,
           "DownLimit": -28.425,
@@ -810,6 +1242,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -830,6 +1263,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -838,6 +1272,294 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "07e3ba67-773c-43ae-9872-85c96f1f8c5f",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.9,0.9,0.9",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "6de1f992-d597-4041-87f5-f23af8682ad0",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ee68aff5-438e-448c-b75e-cd6e43ad35d2",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "73a4c7a4-b7bf-443a-b488-7b9a9e64675e",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "4dc772ec-5bc2-4dd8-ac26-2c7d384496c9",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "7557a9d8-8558-4b17-a319-220b2b2729d4",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "e00b964f-9d0e-4e32-8307-996aad5b341f",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "902fa776-7c37-4f4c-b0e1-000c2ca6b42d",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "2c0bdfc6-8608-4f1d-bf79-c5c0503a5b06",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "983eee48-659c-41a5-9076-a26c78d221f6",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ef39f8e4-0347-49e1-8469-03976a93d667",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "729ec79d-eeb0-4c7b-8d95-542b758256cb",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "e20a246f-a816-4bb7-b08a-696a7ece62f8",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -852,8 +1574,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -862,6 +1585,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -871,10 +1595,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveSequence",
           "__enabled": true,
           "DownLimit": -28.425,
@@ -895,6 +1621,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -915,6 +1642,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -923,6 +1651,294 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "7acbac7d-3fda-454c-a8ba-34c3e1763a88",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.9,0.9,0.9",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "0a9cf2f1-edc4-4895-86b9-95623044669f",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "f3ac631a-dcea-4b67-a509-cbecdad0fbb4",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "9561a6ee-a33e-4c03-ac85-a2a80faba7f7",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "5c3ef9f5-f42d-4294-a09b-c3182137545a",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "beb5fd3d-50c1-4410-838f-d04fe1bb3bb7",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "faa90b97-ce9d-4a07-9c0e-04ccc92fdc6f",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "eb4247f4-0c64-49a9-b661-b2bb20b7af4c",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "0f05e2b4-c88c-4771-80c8-d81c00609538",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "31c04bcf-fffc-4a5f-8082-9342c3d9226b",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "f00586f3-2cd3-4f1f-afb0-ba5382b12662",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "3770eafc-ad03-4b79-b005-68bef75f29b8",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "3dae0421-0333-4b4d-88ca-04fcab07cf27",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -937,8 +1953,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -947,6 +1964,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -956,10 +1974,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveSequence",
           "__enabled": true,
           "DownLimit": -28.425,
@@ -980,6 +2000,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1000,6 +2021,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1008,6 +2030,294 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "d526a3a5-7ae3-48a2-a767-8b226fe1d531",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.9,0.9,0.9",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "b5cf8245-6c0d-4752-8f8b-96817efe1d1e",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "484ec809-3a6c-4a66-b02c-64602b0cd1ca",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "b088a40e-ebf5-4a5a-b50b-f18918fcdbac",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "e6b032ad-2fda-402c-8bdf-7737da50f76d",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "b1fa4c7e-304b-4e3e-afda-91e3f63110e1",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "667f9628-4b2b-42f2-835d-17cd9ed145e2",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8abcac47-70e1-49f4-9866-c8e6991f2f79",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8c63175f-c20b-4d82-a2b3-2d915997d25b",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "0da17f12-5a2b-4856-be5e-390168cf1479",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d4c16bc4-a017-48e1-ab4f-3ec1b6921f1c",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "16570940-62f8-4922-8ac1-dad6d96b0802",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8bb6c909-4c1f-454c-936a-b9ae0ffe72c9",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1022,8 +2332,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1032,6 +2343,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1041,10 +2353,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveSequence",
           "__enabled": true,
           "DownLimit": -28.425,
@@ -1065,6 +2379,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1085,6 +2400,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1095,20 +2411,309 @@
               "Tint": "1,1,1,1"
             }
           ]
+        },
+        {
+          "Id": "ec39848a-6819-4108-8c76-6cdf300bf864",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.9,0.9,0.9",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "873484b9-3aea-42fb-89ec-4e1dd2bb1ad6",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "fdd81f9d-ff6c-44c4-9dba-471aee97736d",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "a31cec2f-b01f-47db-a8c2-c2a9ccb71900",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "1d53a1ed-823e-46c6-b945-cb5a7d8c23aa",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ad91c903-cc0e-41d0-8362-25532a50b83f",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "fe75c25b-7028-48ff-8f70-c071d8e1b6f0",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "f1b41b5f-3a5a-4846-9fa9-25e87e312032",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "953a94c7-22b4-4760-ad5a-d1fef84976fc",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "add47214-0b05-4127-a7a5-01b8493e6525",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "f9d9fc87-2e8f-4207-8386-5632b1264cb4",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "78bffea9-23ef-4402-8e6f-5318e34016d5",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "55b1b17f-f4be-4322-9de3-71f59f9a3493",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "Id": "af275d81-7bca-438f-b165-c39bb9f6db6c",
       "Name": "spike_block (1)",
-      "Position": "-0.738945,-140.8745,4.009877",
+      "Position": "-0.738945,-140.8745,6.055785",
       "Scale": "0.6,0.5,0.2282953",
       "Tags": "spike_block",
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1117,6 +2722,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1126,10 +2732,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -1149,6 +2757,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1169,6 +2778,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1177,6 +2787,293 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "69844830-fb13-404a-89da-dce3c6f80c05",
+          "Name": "spikes",
+          "Position": "0,0,0",
+          "Rotation": "-0.0005737878,-0.04221074,-0.009569183,0.999063",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "d33067ef-569a-4354-a03b-141dcb537706",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "fb2a9ec9-bfa0-4942-9918-aa192f3a88c6",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "a36808c4-cfbd-4553-997a-239a0479ecd0",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "250f3ed2-c5b7-41f3-b1c6-4809afc8752c",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "07272b41-d6ee-4321-9bc3-7e4255a6100f",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "01cf41bc-d50b-42e7-9ce9-2286222f563b",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "9ab02a93-d8af-44ea-b516-c492ffd01efc",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "8fb980df-36ae-4f0d-948f-5d616f614e3f",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "50a4d826-5815-4369-a194-c195fd72a30a",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "b7505e91-7935-4b26-b3da-3e2973775049",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "139a667a-5bc4-46ea-af08-6494cbe7dccd",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "1a82f35c-e7a7-4c67-b463-3a5096801e73",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1191,8 +3088,9 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1201,6 +3099,7 @@
           "Tint": "1,0,0,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1210,10 +3109,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -1233,6 +3134,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1253,6 +3155,7 @@
           "Tags": "spike_block",
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -1261,6 +3164,293 @@
               "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
               "RenderType": "On",
               "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "Id": "9b949446-ae60-4f1b-b106-c83a5d884e01",
+          "Name": "spikes",
+          "Position": "0,0,9.053902",
+          "Rotation": "-0.0004735333,-0.05266959,-0.009574627,0.9985667",
+          "Tags": "spike_block",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "ModelRenderer",
+              "__enabled": true,
+              "BodyGroups": 18446744073709551615,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/metalfloorcover.vmat",
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "Id": "ba15d760-0e2c-443c-810a-3d23c99e3f62",
+              "Name": "milk_pack",
+              "Position": "-7.849448,26.64964,-10.91169",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "69e9ec28-5524-4921-aa89-e4b6af1a0d23",
+              "Name": "milk_pack",
+              "Position": "-3.411398,19.49499,29.80563",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "07b16675-3e42-4252-a5da-b31080fa0567",
+              "Name": "milk_pack",
+              "Position": "-9.704496,12.05004,-30.30429",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "20fbd8f8-db83-46d0-b4bd-4629e987f4ba",
+              "Name": "milk_pack",
+              "Position": "-3.189112,3.793878,29.77494",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "f016e525-9555-49e9-af71-31a30a257115",
+              "Name": "milk_pack",
+              "Position": "-9.482211,-3.651067,-30.33498",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "ca77dbde-d68a-41b6-97d3-44e4826d5536",
+              "Name": "milk_pack",
+              "Position": "-2.958519,-12.49402,29.7431",
+              "Rotation": "0.03474379,-0.8355912,0.5447006,0.06230829",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "81fb1a3a-45b1-474b-8a38-056f62155fe0",
+              "Name": "milk_pack",
+              "Position": "-9.251618,-19.93897,-30.36682",
+              "Rotation": "-0.04668679,-0.5392229,-0.8388174,0.05868985",
+              "Scale": "1,1.566199,1.512495",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "d2fad326-44b9-4c06-b705-1b249c760b5b",
+              "Name": "milk_pack",
+              "Position": "-3.950209,-28.71753,18.24015",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "adca035e-1da5-42ab-bf89-b8724dc9b1f8",
+              "Name": "milk_pack",
+              "Position": "-4.734382,26.67251,18.34842",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "bd787afb-ddd8-476b-8838-31a839ba89b5",
+              "Name": "milk_pack",
+              "Position": "-5.453641,-28.72857,4.118277",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "3604ef84-51db-494f-8acf-b4c5de7bb2aa",
+              "Name": "milk_pack",
+              "Position": "-6.237813,26.66147,4.226548",
+              "Rotation": "-0.9353395,0.2637061,0.1075419,-0.2098455",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "Id": "aef9b74d-4d61-4759-85a3-25b5e5f9703a",
+              "Name": "milk_pack",
+              "Position": "-7.065276,-28.7404,-11.01996",
+              "Rotation": "-0.007580798,-0.9773299,-0.193421,0.08577219",
+              "Scale": "1,1.566199,1.332534",
+              "Tags": "spike_block",
+              "Enabled": true,
+              "Components": [
+                {
+                  "__version": 0,
+                  "__type": "ModelRenderer",
+                  "__enabled": true,
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialGroup": null,
+                  "MaterialOverride": "materials/metal/metal_5.vmat",
+                  "Model": "models/milk_pack/milk_pack.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
             }
           ]
         }
@@ -1274,6 +3464,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1284,6 +3475,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1302,6 +3494,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1312,6 +3505,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1331,6 +3525,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1341,6 +3536,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1360,6 +3556,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1370,6 +3567,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1388,6 +3586,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1398,6 +3597,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1416,6 +3616,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1426,6 +3627,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1444,6 +3646,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1454,6 +3657,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1472,6 +3676,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1482,6 +3687,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1500,6 +3706,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1510,6 +3717,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1528,6 +3736,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1538,6 +3747,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1565,6 +3775,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1585,6 +3796,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1605,6 +3817,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1625,6 +3838,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1645,6 +3859,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1665,6 +3880,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1685,6 +3901,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1705,6 +3922,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1725,6 +3943,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1745,6 +3964,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1765,6 +3985,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1785,6 +4006,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1805,6 +4027,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1825,6 +4048,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1845,6 +4069,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1865,6 +4090,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1885,6 +4111,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1904,6 +4131,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1924,6 +4152,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1944,6 +4173,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1964,6 +4194,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1983,6 +4214,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2003,6 +4235,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2023,6 +4256,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -2031,6 +4265,809 @@
           "Model": "models/props/pipe_a/pipe_a_tileset_128.vmdl",
           "RenderType": "On",
           "Tint": "0.00852,0.91628,0.17495,1"
+        }
+      ]
+    },
+    {
+      "Id": "6476b015-ec26-42ff-9166-75fca2792f7e",
+      "Name": "bg",
+      "Position": "287.2938,270.0961,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "0807f80e-3254-494d-bb59-9cf1b2a6cc9e",
+      "Name": "bg",
+      "Position": "287.2938,270.0961,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "6ccf1556-f37c-416b-8191-076819d9f589",
+      "Name": "bg",
+      "Position": "287.2938,270.0961,82.00677",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "f7121d7f-c286-4216-b1a7-f66c0ca24237",
+      "Name": "bg",
+      "Position": "287.2938,270.0961,-115.8842",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "1a934924-c0a4-4be1-8b57-30d1fa0557c7",
+      "Name": "bg",
+      "Position": "287.2938,72.00351,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "3236b48d-9b23-4447-956b-9ded75c47a98",
+      "Name": "bg",
+      "Position": "287.2938,72.00351,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "69a47dd9-e726-444e-b826-8d3445f8f739",
+      "Name": "bg",
+      "Position": "287.2938,72.00351,82.00677",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "7d79e671-5b6c-4840-b288-b9f9833a87f2",
+      "Name": "bg",
+      "Position": "287.2938,72.00351,-115.8842",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "728f03eb-4e63-45ee-a51b-5628e15aeaa9",
+      "Name": "bg",
+      "Position": "287.2938,-125.2883,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "1c025521-890f-459e-ab4d-b7c88a8e2f46",
+      "Name": "bg",
+      "Position": "287.2938,-125.2883,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "ea16dbdf-d3d8-4db9-86a8-049de6e8d8ca",
+      "Name": "bg",
+      "Position": "287.2938,-125.2883,82.00677",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "f7c1958f-a783-407c-ba84-5b5ce81cdd3e",
+      "Name": "bg",
+      "Position": "287.2938,-125.2883,-115.8842",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "af05cee5-67ea-49d5-b224-a408a5823307",
+      "Name": "bg",
+      "Position": "287.2938,171.329,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "a47c1e02-0a25-4743-87e7-109e8fa6b2f5",
+      "Name": "bg",
+      "Position": "287.2938,171.329,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "042eedea-8e6e-43a0-be3c-f6a62a6a4a21",
+      "Name": "bg",
+      "Position": "287.2938,171.329,82.00677",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "3af8e1b3-3156-4a95-82a3-c390962b693c",
+      "Name": "bg",
+      "Position": "287.2938,171.329,-115.8842",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "3400647d-c8d4-4916-94c1-5f614ec5f0ef",
+      "Name": "bg",
+      "Position": "287.2938,-26.7636,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "08a9004f-7a5e-488c-a162-8dc49f5b1be6",
+      "Name": "bg",
+      "Position": "287.2938,-26.7636,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "d1a38185-44bd-435c-a9df-36931f9af7e9",
+      "Name": "bg",
+      "Position": "287.2938,-26.7636,82.00677",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "ce3edfd5-5ea0-43b0-becf-20010a21860a",
+      "Name": "bg",
+      "Position": "287.2938,-26.7636,-115.8842",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "bcd2339e-04f1-44bc-82e6-2200ef649628",
+      "Name": "bg",
+      "Position": "287.2938,21.33565,279.4749",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "f0cdeab4-1930-4296-bd33-d3d6882d30bd",
+      "Name": "bg",
+      "Position": "287.2938,-224.0554,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "683e9faa-0edf-4e98-8ab5-ef65da756652",
+      "Name": "bg",
+      "Position": "287.2938,-224.0554,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "543c19c1-dbc6-4e14-816f-2750835908c1",
+      "Name": "bg",
+      "Position": "287.2938,-224.0554,81.41541",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "57469e86-df80-42bb-8d3a-feeb3ab7d148",
+      "Name": "bg",
+      "Position": "287.2938,-224.0554,-116.4756",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "c2de7c35-0c99-410c-881b-beb64235106b",
+      "Name": "bg",
+      "Position": "287.2938,-320,181.2576",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "69020ebc-5ec6-4226-b331-6603746b633b",
+      "Name": "bg",
+      "Position": "287.2938,-320,-16.63341",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "c1c0dd40-f8c1-492b-a33d-9fa101e4193e",
+      "Name": "bg",
+      "Position": "287.2938,-320,82.00677",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "e4fa49ac-7aab-49cd-985f-c183263ffa47",
+      "Name": "bg",
+      "Position": "287.2938,-320,-115.8842",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/corrugated_c/corrugated_c.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "b9201f5e-b42c-4157-8f5d-8ad71a61e061",
+      "Name": "bg_blocker",
+      "Position": "33,21.33565,323.0728",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "48f7132f-036f-421b-b8b5-84f32ab703bc",
+      "Name": "bg_blocker (1)",
+      "Position": "33,-399.6507,165.0829",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "0e673c20-23b4-40f2-bb5c-551e5d81d50a",
+      "Name": "bg_blocker (2)",
+      "Position": "33,-399.6507,102.8516",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "ee595a39-a5bd-49c2-9419-c234554257f0",
+      "Name": "bg_blocker (3)",
+      "Position": "33,-399.6507,34.44545",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "ae01f067-7ee1-4146-8246-a82e814aa4bf",
+      "Name": "bg_blocker (4)",
+      "Position": "33,-399.6507,-64.23494",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "0bc50dd3-a2c5-467a-9d30-56bb25edfbd4",
+      "Name": "bg_blocker (5)",
+      "Position": "33,-309.353,-103.1994",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "79e0e718-f4fb-49df-a0d8-74ec4bb9a386",
+      "Name": "bg_blocker (6)",
+      "Position": "33,-214.7239,-103.1994",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "88c006bc-82e0-4e65-bcfb-37117f148fe7",
+      "Name": "bg_blocker (7)",
+      "Position": "33,-147.755,-103.1994",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "824d6973-a223-463d-aba0-b041eb2698a1",
+      "Name": "bg_blocker (8)",
+      "Position": "33,-147.755,-103.1994",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Scale": "1,6.936862,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "4febddca-17f6-424b-bdee-ba31844fb6aa",
+      "Name": "bg_blocker (9)",
+      "Position": "33,-86.01006,-103.1994",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Scale": "1,2.457137,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
+        }
+      ]
+    },
+    {
+      "Id": "4733a00f-01f6-4bd9-b6a6-3b285f3b54ea",
+      "Name": "bg_blocker (10)",
+      "Position": "33,192.2151,-103.1994",
+      "Rotation": "0.707107,-0.0000007085716,-0.7071065,-0.0000007085727",
+      "Scale": "1,2.851929,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "0,0,0,1"
         }
       ]
     }
@@ -2048,9 +5085,13 @@
   "Description": "",
   "__references": [
     "andiq.bricks073",
+    "blmndy.milk_pack_triangle",
     "degg.f_trap_spikes",
     "facepunch.pipe_a_128",
     "facepunch.pipe_a_corner_32",
-    "facepunch.pipe_a_tileset_128"
+    "facepunch.pipe_a_tileset_128",
+    "niclude.metal_5",
+    "rustextended.corrugated_c",
+    "sugmatextures.metalfloorcover"
   ]
 }

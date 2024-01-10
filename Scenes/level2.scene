@@ -8,13 +8,14 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "Manager",
           "__enabled": true,
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -100,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Level 2: The Corridor",
-          "NextScene": "scenes/level3.scene",
+          "NextScene": "scenes/level4.scene",
           "PrevScene": "scenes/level1.scene"
         }
       ]
@@ -26,6 +27,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "DirectionalLight",
           "__enabled": true,
           "LightColor": "1,1,1,1",
@@ -42,6 +44,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "CameraComponent",
           "__enabled": true,
           "BackgroundColor": "0,0,0,1",
@@ -59,6 +62,7 @@
           "ZNear": 10
         },
         {
+          "__version": 0,
           "__type": "Vignette",
           "__enabled": true,
           "Center": "0.5,0.5",
@@ -68,17 +72,20 @@
           "Smoothness": 0.95
         },
         {
+          "__version": 0,
           "__type": "FilmGrain",
           "__enabled": true,
           "Intensity": 0.025,
           "Response": 0.5
         },
         {
+          "__version": 0,
           "__type": "Pixelate",
           "__enabled": false,
           "Scale": 0.0025
         },
         {
+          "__version": 0,
           "__type": "Sharpen",
           "__enabled": false,
           "Scale": 0.25
@@ -97,6 +104,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -109,6 +117,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -121,6 +130,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "CloneSpawnPoint",
               "__enabled": true
             }
@@ -141,6 +151,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -160,6 +171,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -179,6 +191,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -198,6 +211,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -217,6 +231,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -236,6 +251,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -255,6 +271,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -274,6 +291,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -293,6 +311,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -312,6 +331,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -331,6 +351,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -350,6 +371,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -369,6 +391,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -388,6 +411,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -407,6 +431,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -426,6 +451,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -445,6 +471,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -464,6 +491,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -483,6 +511,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -502,6 +531,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -521,6 +551,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -541,6 +572,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -561,6 +593,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -581,6 +614,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -601,6 +635,7 @@
               "Enabled": true,
               "Components": [
                 {
+                  "__version": 0,
                   "__type": "ModelRenderer",
                   "__enabled": false,
                   "BodyGroups": 18446744073709551615,
@@ -611,6 +646,7 @@
                   "Tint": "1,1,1,1"
                 },
                 {
+                  "__version": 0,
                   "__type": "BoxCollider",
                   "__enabled": true,
                   "Center": "0,0,0",
@@ -630,6 +666,7 @@
               "Enabled": true,
               "Components": [
                 {
+                  "__version": 0,
                   "__type": "ModelRenderer",
                   "__enabled": false,
                   "BodyGroups": 18446744073709551615,
@@ -640,6 +677,7 @@
                   "Tint": "1,1,1,1"
                 },
                 {
+                  "__version": 0,
                   "__type": "SphereCollider",
                   "__enabled": true,
                   "Center": "0,0,0",
@@ -661,6 +699,7 @@
           "Enabled": true,
           "Components": [
             {
+              "__version": 0,
               "__type": "ModelRenderer",
               "__enabled": true,
               "BodyGroups": 18446744073709551615,
@@ -681,6 +720,7 @@
               "Enabled": true,
               "Components": [
                 {
+                  "__version": 0,
                   "__type": "ModelRenderer",
                   "__enabled": true,
                   "BodyGroups": 18446744073709551615,
@@ -691,6 +731,7 @@
                   "Tint": "1,1,1,1"
                 },
                 {
+                  "__version": 0,
                   "__type": "SphereCollider",
                   "__enabled": true,
                   "Center": "0,0,0",
@@ -709,6 +750,7 @@
               "Scale": "2.857143,1.481829,1.902328",
               "Components": [
                 {
+                  "__version": 0,
                   "__type": "ModelRenderer",
                   "__enabled": true,
                   "BodyGroups": 18446744073709551615,
@@ -719,6 +761,7 @@
                   "Tint": "1,1,1,1"
                 },
                 {
+                  "__version": 0,
                   "__type": "BoxCollider",
                   "__enabled": true,
                   "Center": "0,0,0",
@@ -738,6 +781,7 @@
               "Enabled": true,
               "Components": [
                 {
+                  "__version": 0,
                   "__type": "ModelRenderer",
                   "__enabled": false,
                   "BodyGroups": 18446744073709551615,
@@ -748,6 +792,7 @@
                   "Tint": "1,1,1,1"
                 },
                 {
+                  "__version": 0,
                   "__type": "BoxCollider",
                   "__enabled": true,
                   "Center": "0,0,0",
@@ -767,6 +812,7 @@
               "Enabled": true,
               "Components": [
                 {
+                  "__version": 0,
                   "__type": "ModelRenderer",
                   "__enabled": true,
                   "BodyGroups": 18446744073709551615,
@@ -790,6 +836,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -809,6 +856,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -819,6 +867,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -837,6 +886,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -847,6 +897,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -865,6 +916,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -875,6 +927,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -893,6 +946,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -903,6 +957,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -921,6 +976,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -931,6 +987,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -950,6 +1007,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -960,6 +1018,7 @@
           "Tint": "0.28218,0.28218,0.28218,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -978,6 +1037,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -988,6 +1048,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1006,6 +1067,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1016,6 +1078,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1034,6 +1097,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1044,6 +1108,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1096,16 +1161,18 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
           "Model": "models/dev/box.vmdl",
           "RenderType": "On",
-          "Tint": "1,0,0,1"
+          "Tint": "0.02791,0.02791,0.02791,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1115,10 +1182,12 @@
           "Surface": null
         },
         {
+          "__version": 0,
           "__type": "SpikeBlock",
           "__enabled": true
         },
         {
+          "__version": 0,
           "__type": "MoveBackForth",
           "__enabled": true,
           "Direction": "Horizontal",
@@ -1130,44 +1199,14 @@
       ],
       "Children": [
         {
-          "Id": "e13fbe89-332e-4bc8-ae5e-c9789d497dff",
-          "Name": "trap_spikes",
-          "Position": "0.9491729,0.05106767,3.721694",
-          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
-          "Scale": "0.5,0.5,0.4353294",
+          "Id": "ea538bf4-b127-4234-9335-37b152191803",
+          "Name": "spike_block",
+          "Position": "0,0,0",
+          "Rotation": "-0.0002959308,-0.071177,-0.009581806,0.9974179",
+          "Scale": "0.785981,0.7,0.7",
           "Tags": "spike_block",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "a32e9a5f-5ecf-48bc-96f2-3cd922c9e9fb",
-          "Name": "trap_spikes",
-          "Position": "2.149172,0.05106767,-3.978291",
-          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
-          "Scale": "0.5,0.5,0.435",
-          "Tags": "spike_block",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
+          "Enabled": true,
+          "__Prefab": "prefabs/spike_block.prefab"
         }
       ]
     },
@@ -1180,6 +1219,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1200,6 +1240,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1220,6 +1261,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1239,6 +1281,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1249,6 +1292,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1268,6 +1312,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1288,6 +1333,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1308,6 +1354,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1328,6 +1375,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1348,6 +1396,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1367,6 +1416,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1377,6 +1427,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1396,6 +1447,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1415,6 +1467,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1425,6 +1478,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1444,6 +1498,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1463,6 +1518,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
@@ -1473,6 +1529,7 @@
           "Tint": "1,1,1,1"
         },
         {
+          "__version": 0,
           "__type": "BoxCollider",
           "__enabled": true,
           "Center": "0,0,0",
@@ -1492,6 +1549,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1512,6 +1570,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1532,6 +1591,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1551,6 +1611,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1570,6 +1631,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1589,6 +1651,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1609,6 +1672,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1629,6 +1693,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1649,6 +1714,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1669,6 +1735,7 @@
       "Enabled": true,
       "Components": [
         {
+          "__version": 0,
           "__type": "ModelRenderer",
           "__enabled": true,
           "BodyGroups": 18446744073709551615,
@@ -1695,7 +1762,6 @@
   "__references": [
     "andiq.bricks073",
     "baik.plastic_tube",
-    "degg.f_trap_spikes",
     "facepunch.gutter_roof_pipe_corner_a",
     "facepunch.trim_metal_roof_border_corner",
     "facepunch.trim_metal_roof_ledge_cap",
