@@ -13,7 +13,7 @@
           "ClonePrefab": "prefabs/clone.prefab",
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Level 4: The Closet",
+          "LevelName": "Level 4: The Chimney",
           "NextScene": "scenes/level5.scene",
           "PrevScene": "scenes/level3.scene"
         }
@@ -93,7 +93,7 @@
         {
           "Id": "eb96f6fc-d9b3-4a29-9ac9-703152a6db0f",
           "Name": "1",
-          "Position": "0,-6.171076,237.2946",
+          "Position": "0,-6.171076,212.3452",
           "Enabled": true,
           "Components": [
             {
@@ -105,7 +105,7 @@
         {
           "Id": "5fef6816-1cac-4bcc-9704-5be496fd3a18",
           "Name": "2",
-          "Position": "0,-68.04198,239.8568",
+          "Position": "0,-68.04198,214.9074",
           "Enabled": true,
           "Components": [
             {
@@ -397,66 +397,10 @@
       ]
     },
     {
-      "Id": "c6dde2c3-4892-4422-a7a1-f76228591746",
-      "Name": "Cube (4)",
-      "Position": "0,-37.51815,196.0884",
-      "Scale": "1,0.5037024,3.120702",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
       "Id": "d1d7197d-72fd-48a2-b83b-021e7415a78b",
       "Name": "Cube (7)",
       "Position": "0,-99.77462,205.7715",
       "Scale": "1,0.5037024,2.416743",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "ea461c4b-1904-4983-997b-ef5874aaf628",
-      "Name": "Cube (6)",
-      "Position": "0,270.1554,120.0807",
-      "Scale": "1,0.4482805,0.9619154",
       "Enabled": true,
       "Components": [
         {
@@ -511,8 +455,8 @@
     {
       "Id": "c862f540-7359-4105-b648-2a54984d276c",
       "Name": "Cube (1)",
-      "Position": "0,197.7381,120.0807",
-      "Scale": "1,0.4482805,0.9619154",
+      "Position": "0,157.6519,98.50285",
+      "Scale": "1,0.4482805,0.8400548",
       "Enabled": true,
       "Components": [
         {
@@ -537,10 +481,10 @@
       ]
     },
     {
-      "Id": "bed95350-5bff-4814-bae0-e231fab18f15",
+      "Id": "ea0154ec-fb2a-46b7-8be3-4cc3a4a3b72d",
       "Name": "Cube (2)",
-      "Position": "0,235.5609,139.46",
-      "Scale": "1,1.873576,0.4429711",
+      "Position": "0,157.6519,192.4035",
+      "Scale": "1,0.4482805,0.486243",
       "Enabled": true,
       "Components": [
         {
@@ -567,8 +511,8 @@
     {
       "Id": "89041b55-ef3e-4aec-a57b-72d31a9558c7",
       "Name": "Cube (8)",
-      "Position": "0,256.7278,209.7998",
-      "Scale": "1,4.419607,0.4429711",
+      "Position": "0,256.157,209.7998",
+      "Scale": "1,4.396762,0.4429711",
       "Enabled": true,
       "Components": [
         {
@@ -791,8 +735,106 @@
     {
       "Id": "9015fcc6-e650-4b45-b831-74fa9cca4390",
       "Name": "Cube - ceiling (1)",
-      "Position": "0,312.5404,101.3602",
-      "Scale": "1,2.126137,0.5478496",
+      "Position": "0,312.7218,101.3602",
+      "Scale": "1,2.123509,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "5a0d5959-9e2f-4d31-ba95-98a6bc84fd53",
+      "Name": "Cube - ceiling (15)",
+      "Position": "0,215.9685,130.1688",
+      "Scale": "1,2.798541,0.5478496",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        }
+      ]
+    },
+    {
+      "Id": "3c254a2e-c14d-4918-8e13-27bcaae3088b",
+      "Name": "push_block 2",
+      "Position": "0,257.2336,160.9848",
+      "Scale": "1,1.145593,0.5656049",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "0.33953,0.33953,0.33953,1"
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": "surfaces/floor.surface"
+        },
+        {
+          "__type": "Rigidbody",
+          "__enabled": true,
+          "AngularDamping": 999,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": true,
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "StartAsleep": false
+        }
+      ]
+    },
+    {
+      "Id": "9b57ef5e-4662-4051-a956-1fef1e00e6a8",
+      "Name": "Cube - ceiling (2)",
+      "Position": "0,272.8487,127.8799",
+      "Scale": "1,0.5320544,0.5478496",
       "Enabled": true,
       "Components": [
         {
@@ -985,66 +1027,10 @@
       ]
     },
     {
-      "Id": "f7c04c44-59f8-4eb8-8aa4-24c06b0b161a",
-      "Name": "Cube - ceiling (16)",
-      "Position": "19.78594,414.7338,206.4472",
-      "Scale": "1,0.280415,0.3020376",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
       "Id": "a2661379-a3fc-405b-a07b-25656e3b831c",
       "Name": "Cube - ceiling (12)",
       "Position": "19.78594,456.0099,136.0984",
       "Scale": "1,0.280415,0.3020376",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false,
-          "Surface": "surfaces/floor.surface"
-        }
-      ]
-    },
-    {
-      "Id": "4cc0bb87-cc2c-4166-9de6-8a5cabb0cfb8",
-      "Name": "Cube - ceiling (2)",
-      "Position": "0,176.6167,92.74184",
-      "Scale": "1,1.303093,0.5478496",
       "Enabled": true,
       "Components": [
         {
@@ -1129,7 +1115,7 @@
     {
       "Id": "18b07467-ee04-420b-9484-44ce65927ece",
       "Name": "spawner",
-      "Position": "43.47208,233,100.963",
+      "Position": "43.47208,-37.33163,230.797",
       "Enabled": true,
       "__Prefab": "prefabs/spawner.prefab"
     },
@@ -1237,10 +1223,187 @@
     {
       "Id": "fd9aedaa-0cf3-47a9-beab-e232bd570eeb",
       "Name": "confuser",
-      "Position": "0,-67.68137,154.1257",
+      "Position": "1.526012,-69.65303,171.6345",
       "Tags": "confuser,trigger",
       "Enabled": true,
-      "__Prefab": "prefabs/confuser.prefab"
+      "Components": [
+        {
+          "__type": "Confuser",
+          "__enabled": true
+        },
+        {
+          "__type": "BoxCollider",
+          "__enabled": true,
+          "Center": "0,0,0",
+          "IsTrigger": true,
+          "Scale": "10,10,10",
+          "Static": false,
+          "Surface": null
+        },
+        {
+          "__type": "MoveBackForth",
+          "__enabled": true,
+          "Direction": "Horizontal",
+          "Increasing": true,
+          "Max": 2,
+          "Min": -80,
+          "Speed": 20
+        }
+      ],
+      "Children": [
+        {
+          "Id": "ded4cf54-0e54-40a7-8fe9-d6a6e5058e83",
+          "Name": "smoke",
+          "Position": "0,0,0",
+          "Tags": "confuser,trigger",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "ParticleEffect",
+              "__enabled": true,
+              "Alpha": {
+                "Type": "Curve",
+                "CurveA": [
+                  {
+                    "in": -4.0000024,
+                    "out": 4.0000024
+                  },
+                  {
+                    "x": 0.20812808,
+                    "y": 0.475
+                  },
+                  {
+                    "x": 1
+                  }
+                ],
+                "Constants": "1,0,0,0"
+              },
+              "ApplyColor": true,
+              "ApplyRotation": true,
+              "ApplyShape": true,
+              "Bounce": {
+                "Constants": "1,0,0,0"
+              },
+              "Brightness": {
+                "Constants": "1,0,0,0"
+              },
+              "Bumpiness": {},
+              "Collision": false,
+              "CollisionIgnore": null,
+              "CollisionRadius": 1,
+              "Damping": {
+                "Constants": "7,0,0,0"
+              },
+              "DieOnCollisionChance": {},
+              "Force": true,
+              "ForceDirection": "0,0,500",
+              "ForceScale": {
+                "Constants": "1,0,0,0"
+              },
+              "Friction": {
+                "Constants": "1,0,0,0"
+              },
+              "Gradient": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "GradientA": {
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,1,1,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "GradientB": {
+                  "color": [
+                    {
+                      "t": 0.5,
+                      "c": "1,1,1,1"
+                    }
+                  ],
+                  "alpha": []
+                },
+                "ConstantA": "0.18317,0.18317,0.18317,1",
+                "ConstantB": "1,1,1,1"
+              },
+              "Lifetime": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "Constants": "0.5,0.8,0,0"
+              },
+              "MaxParticles": 500,
+              "PerParticleTimeScale": {
+                "Constants": "2,0.4,0,0"
+              },
+              "PreWarm": 0,
+              "PushStrength": {},
+              "Roll": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "Constants": "0,360,0,0"
+              },
+              "Scale": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "CurveA": [
+                  {}
+                ],
+                "Constants": "60,90,0,0"
+              },
+              "SequenceId": {},
+              "SequenceSpeed": {
+                "Constants": "0.5,0,0,0"
+              },
+              "SequenceTime": {
+                "Constants": "0.1,0,0,0"
+              },
+              "SheetSequence": true,
+              "Space": "World",
+              "StartVelocity": {
+                "Type": "Range",
+                "Evaluation": "Particle",
+                "Constants": "60,80,0,0"
+              },
+              "Stretch": {},
+              "TimeScale": 1,
+              "Tint": "0.47673,0,0.5297,1"
+            },
+            {
+              "__type": "ParticleSpriteRenderer",
+              "__enabled": true,
+              "Additive": false,
+              "BlurAmount": 0.5,
+              "BlurOpacity": 0.91,
+              "BlurSpacing": 0.73,
+              "DepthFeather": 0,
+              "FaceVelocity": false,
+              "FogStrength": 1,
+              "LeadingTrail": true,
+              "MotionBlur": false,
+              "Opaque": false,
+              "RotationOffset": 0,
+              "Scale": 0.22,
+              "Shadows": true,
+              "SortMode": "Unsorted",
+              "Texture": "materials/particle/base_sprite.vtex"
+            },
+            {
+              "__type": "ParticleSphereEmitter",
+              "__enabled": true,
+              "Burst": 0,
+              "Delay": 0,
+              "DestroyOnEnd": false,
+              "Duration": 1,
+              "Loop": true,
+              "OnEdge": false,
+              "Radius": 2,
+              "Rate": 100,
+              "Velocity": 0
+            }
+          ]
+        }
+      ]
     },
     {
       "Id": "00acbf0a-98bb-4345-9c46-bad69d2116f1",

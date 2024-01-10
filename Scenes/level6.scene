@@ -922,7 +922,7 @@
           "__enabled": true,
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "50,40,40",
+          "Scale": "50,34,34",
           "Static": false,
           "Surface": null
         },
@@ -1006,7 +1006,7 @@
           "__enabled": true,
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "50,40,40",
+          "Scale": "50,34,34",
           "Static": false,
           "Surface": null
         },
@@ -1021,7 +1021,7 @@
           "Increasing": false,
           "Max": 264,
           "Min": 81,
-          "Speed": 30
+          "Speed": 45
         }
       ],
       "Children": [
@@ -1090,7 +1090,7 @@
           "__enabled": true,
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "50,40,40",
+          "Scale": "50,34,34",
           "Static": false,
           "Surface": null
         },
@@ -1105,7 +1105,7 @@
           "Increasing": false,
           "Max": 264,
           "Min": 81,
-          "Speed": 30
+          "Speed": 36
         }
       ],
       "Children": [
@@ -1174,7 +1174,7 @@
           "__enabled": true,
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "50,40,40",
+          "Scale": "50,34,34",
           "Static": false,
           "Surface": null
         },
@@ -1189,7 +1189,7 @@
           "Increasing": true,
           "Max": 264,
           "Min": 81,
-          "Speed": 30
+          "Speed": 40
         }
       ],
       "Children": [
@@ -1258,7 +1258,7 @@
           "__enabled": true,
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "50,40,40",
+          "Scale": "50,34,34",
           "Static": false,
           "Surface": null
         },
@@ -1273,7 +1273,7 @@
           "Increasing": true,
           "Max": 264,
           "Min": 81,
-          "Speed": 30
+          "Speed": 36
         }
       ],
       "Children": [
@@ -1342,7 +1342,7 @@
           "__enabled": true,
           "Center": "0,0,0",
           "IsTrigger": true,
-          "Scale": "50,40,40",
+          "Scale": "50,34,34",
           "Static": false,
           "Surface": null
         },
@@ -1383,90 +1383,6 @@
         },
         {
           "Id": "52fa0350-b954-4d16-b909-e39085d062d7",
-          "Name": "trap_spikes",
-          "Position": "2.149172,0.05106767,-3.978291",
-          "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
-          "Scale": "0.5,0.5,0.435",
-          "Tags": "spike_block",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Id": "adc1a9a0-3b5b-4eee-ade6-a11737ae76da",
-      "Name": "spike_block (6)",
-      "Position": "-0.738945,-93.90424,244.5128",
-      "Scale": "0.6,0.4,0.4",
-      "Tags": "spike_block",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "ModelRenderer",
-          "__enabled": true,
-          "BodyGroups": 18446744073709551615,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,0,0,1"
-        },
-        {
-          "__type": "BoxCollider",
-          "__enabled": true,
-          "Center": "0,0,0",
-          "IsTrigger": true,
-          "Scale": "50,40,40",
-          "Static": false,
-          "Surface": null
-        },
-        {
-          "__type": "SpikeBlock",
-          "__enabled": true
-        },
-        {
-          "__type": "MoveBackForth",
-          "__enabled": true,
-          "Direction": "Vertical",
-          "Increasing": true,
-          "Max": 264,
-          "Min": 81,
-          "Speed": 30
-        }
-      ],
-      "Children": [
-        {
-          "Id": "0694ca43-07dc-49a4-bc30-a5faf78b4df9",
-          "Name": "trap_spikes",
-          "Position": "0.9491729,0.05106767,3.721694",
-          "Rotation": "-0.00000001937326,0.3250297,0.00000000000000214481,0.9457033",
-          "Scale": "0.5,0.5,0.4353294",
-          "Tags": "spike_block",
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__enabled": true,
-              "BodyGroups": 18446744073709551615,
-              "MaterialGroup": null,
-              "MaterialOverride": null,
-              "Model": "deggassets/models/fantasy/map/trap_spikes.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            }
-          ]
-        },
-        {
-          "Id": "e4280467-4915-4714-9164-be4bb75cf1c4",
           "Name": "trap_spikes",
           "Position": "2.149172,0.05106767,-3.978291",
           "Rotation": "0.000000009270508,0.9390236,-0.00000001655722,0.3438526",
