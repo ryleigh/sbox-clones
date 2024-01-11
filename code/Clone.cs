@@ -41,6 +41,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	public SkinnedModelRenderer Renderer { get; private set; }
 
+	private TimeSince _timeSinceGrounded;
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
@@ -57,6 +59,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		AnimationHelper.HeadWeight = 100f;
 		AnimationHelper.MoveStyle = CitizenAnimationHelper.MoveStyles.Walk;
 		AnimationHelper.Height = Height;
+
+		_timeSinceGrounded = 0f;
 	}
 
 	protected override void OnUpdate()
@@ -160,12 +164,25 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		//	Log.Info( $"{r.Body.GetGameObject().Name}" );
 
 		IsGrounded = r.Hit;
+
+		if ( IsGrounded )
+		{
+			if(_timeSinceGrounded > 0.4f)
+			{
+				var thudSfx = Sound.Play( "thud", Transform.Position );
+				thudSfx.Volume = Utils.Map( _timeSinceGrounded, 0.4f, 0f, 1f, 0.75f );
+			}
+
+			_timeSinceGrounded = 0f;
+		}
 	}
 
 	public void SetConfused(bool confused)
 	{
 		IsConfused = confused;
 		Renderer.Tint = IsConfused ? new Color(0.3f, 0.1f, 0.9f) : Color.White;
+
+		Sound.Play( "curse", Transform.Position );
 	}
 
 	public void BuildWishVelocity(float speed)
@@ -201,6 +218,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		AnimationHelper.WithVelocity( Vector2.Right * 40f * 100f );
 		AnimationHelper.MoveStyle = CitizenAnimationHelper.MoveStyles.Run;
 		Manager.RemoveClone( this );
+
+		Sound.Play( "footsteps", Transform.Position );
 	}
 
 	public void OnTriggerEnter( Collider collider )
@@ -245,6 +264,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			button.StopPressing( this );
 
 		BloodParticles.Clone( Transform.Position );
+
+		Sound.Play( "squish", Transform.Position );
 
 		Manager.CloneDied( this );
 		GameObject.Destroy();

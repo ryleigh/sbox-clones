@@ -21,6 +21,8 @@ public sealed class Manager : Component
 
 	public bool IsCloneLeavingLevel { get; private set; }
 
+	public MusicPlayer MusicPlayer { get; private set; }
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
@@ -45,6 +47,8 @@ public sealed class Manager : Component
 		//}
 
 		Scene.PhysicsWorld.SubSteps = 4;
+
+		StartMusic();
 	}
 
 	protected override void OnUpdate()
@@ -55,6 +59,8 @@ public sealed class Manager : Component
 			_timeSinceSpawnClone = 0f;
 			_numClonesToSpawn--;
 		}
+
+		//Log.Info( $"{MusicPlayer.OnFinished} {MusicPlayer.PlaybackTime} / {MusicPlayer.PlaybackTime}" );
 	}
 
 	protected override void OnFixedUpdate()
@@ -147,5 +153,28 @@ public sealed class Manager : Component
 
 		GameManager.ActiveScene.Clear();
 		GameManager.ActiveScene.Load( NextScene );
+	}
+
+	protected override void OnDestroy()
+	{
+		base.OnDestroy();
+
+		MusicPlayer?.Stop();
+		MusicPlayer?.Dispose();
+	}
+
+	public void OnMusicFinished()
+	{
+		StartMusic();
+	}
+
+	void StartMusic()
+	{
+		MusicPlayer?.Dispose();
+
+		MusicPlayer = MusicPlayer.Play( FileSystem.Mounted, $"music/music{Game.Random.Int(1, 3)}.mp3" );
+		MusicPlayer.ListenLocal = true;
+		MusicPlayer.Volume = 0.3f;
+		MusicPlayer.OnFinished += OnMusicFinished;
 	}
 }

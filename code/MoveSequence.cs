@@ -26,6 +26,7 @@ public sealed class MoveSequence : Component
 			{
 				Transform.Position = Transform.Position.WithZ( UpLimit );
 				MoveState = MoveState.Left;
+				PlaySfx();
 			}
 		}
 		else if ( MoveState == MoveState.Left )
@@ -35,6 +36,7 @@ public sealed class MoveSequence : Component
 			{
 				Transform.Position = Transform.Position.WithY( LeftLimit);
 				MoveState = MoveState.Down;
+				PlaySfx();
 			}
 		}
 		else if ( MoveState == MoveState.Down )
@@ -44,6 +46,7 @@ public sealed class MoveSequence : Component
 			{
 				Transform.Position = Transform.Position.WithZ( DownLimit );
 				MoveState = MoveState.Right;
+				PlaySfx();
 			}
 		}
 		else if ( MoveState == MoveState.Right )
@@ -53,7 +56,13 @@ public sealed class MoveSequence : Component
 			{
 				Transform.Position = Transform.Position.WithY( RightLimit );
 				MoveState = MoveState.Up;
+				PlaySfx();
 			}
 		}
+	}
+
+	void PlaySfx()
+	{
+		Sound.Play( "spike_hit", Transform.Position );
 	}
 }

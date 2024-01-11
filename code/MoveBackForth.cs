@@ -9,6 +9,7 @@ public sealed class MoveBackForth : Component
 	[Property] float Max { get; set; }
 	[Property] float Speed { get; set; } = 100f;
 	[Property] bool Increasing { get; set; }
+	[Property] bool ShouldPlaySfx { get; set; } = true;
 
 	protected override void OnEnabled()
 	{
@@ -24,12 +25,14 @@ public sealed class MoveBackForth : Component
 			if(Transform.Position.y > Max)
 			{
 				Transform.Position = Transform.Position.WithY( Max );
-				Increasing = !Increasing; 
+				Increasing = !Increasing;
+				PlaySfx();
 			}
 			else if ( Transform.Position.y < Min )
 			{
 				Transform.Position = Transform.Position.WithY( Min );
 				Increasing = !Increasing;
+				PlaySfx();
 			}
 		}
 		else
@@ -39,12 +42,22 @@ public sealed class MoveBackForth : Component
 			{
 				Transform.Position = Transform.Position.WithZ( Max );
 				Increasing = !Increasing;
+				PlaySfx();
 			}
 			else if ( Transform.Position.z < Min )
 			{
 				Transform.Position = Transform.Position.WithZ( Min );
 				Increasing = !Increasing;
+				PlaySfx();
 			}
 		}
+	}
+
+	void PlaySfx()
+	{
+		if ( !ShouldPlaySfx )
+			return;
+
+		Sound.Play( "spike_hit", Transform.Position );
 	}
 }

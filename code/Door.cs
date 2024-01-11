@@ -75,6 +75,8 @@ public sealed class Door : Component, Component.ITriggerListener
 
 		IsOpen = open;
 
+		Sound.Play( open ? "door_open" : "door_close", Transform.Position );
+
 		RefreshTouching();
 	}
 

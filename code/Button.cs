@@ -50,7 +50,12 @@ public sealed class Button : Component
 
 	void RefreshPressing()
 	{
+		bool wasPressed = IsPressed;
+
 		IsPressed = _clonesPressing.Count > 0;
 		_modelTargetZPos = _modelZPosUnpressed + (IsPressed ? -1.5f : 0f);
+
+		if(wasPressed != IsPressed)
+			Sound.Play( IsPressed ? "click_down" : "click_up", Transform.Position );
 	}
 }
