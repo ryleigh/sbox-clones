@@ -495,7 +495,7 @@
         {
           "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -765,7 +765,7 @@
         {
           "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -795,7 +795,7 @@
         {
           "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -864,7 +864,7 @@
         {
           "Id": "cec9fa47-2bcd-41f1-b212-a04a8a3f8b55",
           "Name": "box",
-          "Position": "-213.698,0,-23.40132",
+          "Position": "-40.92027,0,-23.40132",
           "Scale": "2.113935,1.237274,3.088358",
           "Enabled": true,
           "Components": [
@@ -877,7 +877,7 @@
               "MaterialOverride": null,
               "Model": "models/containers/box/box.vmdl",
               "RenderType": "On",
-              "Tint": "0.27442,0.46791,1,1"
+              "Tint": "0.84806,1,0.08837,1"
             }
           ]
         }
@@ -893,7 +893,7 @@
         {
           "__version": 0,
           "__type": "ModelRenderer",
-          "__enabled": true,
+          "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "MaterialGroup": null,
           "MaterialOverride": null,
@@ -1503,13 +1503,18 @@
           },
           "RigidbodyFlags": 0,
           "StartAsleep": false
+        },
+        {
+          "__version": 0,
+          "__type": "MetalBox",
+          "__enabled": true
         }
       ],
       "Children": [
         {
           "Id": "46370ef4-c7f0-4b88-a29f-a78e9968bf56",
           "Name": "untitled_3",
-          "Position": "0,-0.0007938723,-24.68578",
+          "Position": "0,-0.0007938723,-26.53985",
           "Rotation": "-0.01916785,-0.00000001307094,0.9998163,-0.0000006396467",
           "Scale": "1,1.81335,0.653731",
           "Enabled": true,
@@ -1553,7 +1558,7 @@
     {
       "Id": "4c50d151-c27a-4202-ab79-02305db6a96e",
       "Name": "chimney_01 (4)",
-      "Position": "-156.5961,330.4416,-40.0663",
+      "Position": "-8.096176,330.4416,-40.0663",
       "Scale": "1,0.8488867,2",
       "Enabled": true,
       "Components": [
@@ -1573,7 +1578,7 @@
     {
       "Id": "1f0f3153-43bb-46d7-80cb-e4534b71dafa",
       "Name": "chimney_01 (11)",
-      "Position": "-156.5961,156.6592,144.3452",
+      "Position": "-8.096176,156.6592,144.3452",
       "Rotation": "-1,0,-0,-0.0000006397578",
       "Scale": "1,0.8488867,0.9033417",
       "Enabled": true,
@@ -1698,7 +1703,7 @@
     {
       "Id": "1ce68844-c06f-45ce-a91f-682c2e7b58dc",
       "Name": "chimney_01 (5)",
-      "Position": "-159.8969,367.0858,101.6942",
+      "Position": "-11.39697,367.0858,101.6942",
       "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
       "Scale": "0.9903437,0.8713693,1.445475",
       "Enabled": true,
@@ -1719,7 +1724,7 @@
     {
       "Id": "817b54a5-3282-46b2-8707-ad9b243592a8",
       "Name": "chimney_01 (14)",
-      "Position": "-150.4793,286.3815,130.9979",
+      "Position": "-1.97937,286.3815,130.9979",
       "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
       "Scale": "0.9903437,0.9005838,1.891803",
       "Enabled": true,
@@ -1805,7 +1810,7 @@
       "Name": "chimney_01 (16)",
       "Position": "-5.097263,366.7821,208.4982",
       "Rotation": "0.7056918,-0.04471401,0.04471396,0.7056913",
-      "Scale": "0.9903437,0.9005838,2.97",
+      "Scale": "0.9903437,0.7346457,2.980892",
       "Enabled": true,
       "Components": [
         {
@@ -2940,6 +2945,29 @@
           "Model": "models/8hu_kultiras_barrel01.vmdl",
           "RenderType": "On",
           "Tint": "0.00999,0.0148,0.05116,1"
+        }
+      ]
+    },
+    {
+      "Id": "0b053351-3fae-40b2-ab27-1bf1a38127e7",
+      "Name": "World",
+      "Position": "81.64804,255.6749,157.1758",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "WorldPanel",
+          "__enabled": true,
+          "HorizontalAlign": "Center",
+          "LookAtCamera": true,
+          "PanelSize": "1300,1300",
+          "RenderScale": 1,
+          "VerticalAlign": "Center"
+        },
+        {
+          "__version": 0,
+          "__type": "WorldMessage",
+          "__enabled": true
         }
       ]
     }

@@ -18,6 +18,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	[Property] public GameObject Body { get; set; }
 	[Property] public CitizenAnimationHelper AnimationHelper { get; set; }
 	[Property] public GameObject BloodParticles { get; set; }
+	//[Property] public GameObject BloodParticlesCone { get; set; }
 
 	public float Height { get; set; } = 0.5f;
 
@@ -35,6 +36,9 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	private List<Button> _touchingButtons = new();
 
+	public bool IsSpawning { get; private set; }
+	private float _spawnTimer;
+	private float _spawnAngleStart;
 	public bool IsEnteringDoor { get; private set; }
 	public Door DoorEntering { get; private set; }
 	private float _enterDoorTimer;
@@ -65,7 +69,28 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	protected override void OnUpdate()
 	{
-		if ( IsEnteringDoor )
+		if(IsSpawning)
+		{
+			_spawnTimer += Time.Delta;
+			float SPAWN_TIME = 0.3f;
+			if ( _spawnTimer > SPAWN_TIME )
+			{
+				Transform.Scale = Vector3.One;
+				Renderer.Tint = Renderer.Tint.WithAlpha( 1f );
+				Body.Transform.LocalRotation = Rotation.FromYaw( -90f );
+				IsSpawning = false;
+			}
+			else
+			{
+				float progress = Utils.Map( _spawnTimer, 0f, SPAWN_TIME, 0f, 1f );
+				Transform.Scale = Vector3.One * Utils.Map( progress, 0f, 1f, 0.3f, 1f, EasingType.QuadOut );
+				Renderer.Tint = Renderer.Tint.WithAlpha( Utils.Map( progress, 0f, 1f, 0f, 1f, EasingType.QuadOut ) );
+				Body.Transform.LocalRotation = Rotation.FromYaw( Utils.Map( _spawnTimer, 0f, SPAWN_TIME, _spawnAngleStart, -90f) );
+			}
+
+			return;
+		}
+		else if ( IsEnteringDoor )
 		{
 			_enterDoorTimer += Time.Delta;
 			float ENTER_TIME = 1.5f;
@@ -126,7 +151,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 
 	protected override void OnFixedUpdate()
 	{
-		if ( IsEnteringDoor || !Rigidbody.Enabled )
+		if ( IsEnteringDoor || !Rigidbody.Enabled || (IsSpawning && _spawnTimer < 0.15f) )
 			return;
 
 		CheckGrounded();
@@ -242,7 +267,7 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		}
 		else if ( collider.GameObject.Tags.Has( "spike_block" ) )
 		{
-			Die();
+			TouchSpikeBlock( collider.GameObject, Transform.Position + (collider.Transform.Position - Transform.Position) * 0.5f );
 		}
 	}
 
@@ -271,11 +296,19 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 		GameObject.Destroy();
 	}
 
+	void TouchSpikeBlock(GameObject spikeBlockObj, Vector3 hitPos)
+	{
+		Die();
+
+		//var bloodCone = BloodParticlesCone.Clone( hitPos );
+		//bloodCone.Transform.Rotation = Rotation.LookAt( (hitPos - spikeBlockObj.Transform.Position).Normal );
+	}
+
 	public void OnCollisionStart( Collision collision )
 	{
 		if ( collision.Other.GameObject.Tags.Has( "spike_block" ) )
 		{
-			Die();
+			TouchSpikeBlock(collision.Other.GameObject, collision.Contact.Point);
 		}
 	}
 
@@ -287,5 +320,12 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 	public void OnCollisionStop( CollisionStop collision )
 	{
 
+	}
+
+	public void StartSpawning()
+	{
+		_spawnTimer = 0f;
+		IsSpawning = true;
+		_spawnAngleStart = Game.Random.Float( -300f, -600f);
 	}
 }

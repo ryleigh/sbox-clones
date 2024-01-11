@@ -543,7 +543,7 @@
     {
       "Id": "9a111d5a-41b4-439f-8471-ebaf0b329cd3",
       "Name": "Cube (4)",
-      "Position": "0,402.1133,315.5084",
+      "Position": "0,402.1133,335.693",
       "Scale": "1,0.9827435,0.5402251",
       "Enabled": true,
       "Components": [
@@ -1083,7 +1083,7 @@
     {
       "Id": "18b07467-ee04-420b-9484-44ce65927ece",
       "Name": "spawner",
-      "Position": "43.47208,402.2075,274.6116",
+      "Position": "43.47208,402.2075,296.5699",
       "Enabled": true,
       "__Prefab": "prefabs/spawner.prefab"
     },
@@ -1164,6 +1164,7 @@
           "Increasing": true,
           "Max": -34.8,
           "Min": -309.287,
+          "ShouldPlaySfx": true,
           "Speed": 50
         }
       ],
@@ -1518,6 +1519,7 @@
           "Increasing": true,
           "Max": -34.8,
           "Min": -309.287,
+          "ShouldPlaySfx": true,
           "Speed": 50
         }
       ],
@@ -1698,6 +1700,7 @@
           "Increasing": true,
           "Max": -34.8,
           "Min": -309.287,
+          "ShouldPlaySfx": true,
           "Speed": 50
         }
       ],
@@ -1878,6 +1881,7 @@
           "Increasing": true,
           "Max": -34.8,
           "Min": -309.287,
+          "ShouldPlaySfx": true,
           "Speed": 50
         }
       ],
@@ -2079,6 +2083,7 @@
           "Increasing": true,
           "Max": 409,
           "Min": -122.015,
+          "ShouldPlaySfx": true,
           "Speed": 55
         }
       ],
@@ -2457,6 +2462,7 @@
           "Increasing": true,
           "Max": 330,
           "Min": -24,
+          "ShouldPlaySfx": true,
           "Speed": 55
         }
       ],
@@ -3287,8 +3293,29 @@
     {
       "Id": "c74539e1-b5a8-4e50-b335-7516847e9417",
       "Name": "wall_125x600 (7)",
-      "Position": "0,348.2443,332.8377",
+      "Position": "0,348.2443,355.9469",
       "Rotation": "0.7063789,-0.7063794,-0.03207429,0.03207431",
+      "Scale": "0.4430234,2.978987,0.7127975",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ModelRenderer",
+          "__enabled": true,
+          "BodyGroups": 18446744073709551615,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/rust_structures/fences_walls/wall_125x600.vmdl",
+          "RenderType": "On",
+          "Tint": "0.25614,0.3065,0.86047,1"
+        }
+      ]
+    },
+    {
+      "Id": "aadd636d-1330-4fad-95e5-29592b79c89a",
+      "Name": "wall_125x600 (9)",
+      "Position": "781.1424,346.0758,363.9156",
+      "Rotation": "-0.4892814,-0.5104948,-0.4892812,0.5104954",
       "Scale": "0.4430234,2.978987,0.7127975",
       "Enabled": true,
       "Components": [

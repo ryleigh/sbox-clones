@@ -39,6 +39,7 @@
         "__enabled": true,
         "AnimationHelper": "b5caa346-d608-449f-bbdb-0ea3fd9bdd08",
         "BloodParticles": "prefabs/blood_particles.prefab",
+        "BloodParticlesCone": "prefabs/blood_particles_cone.prefab",
         "Body": "4839bcc8-dee7-49fe-afdd-5878e157cb1d"
       },
       {

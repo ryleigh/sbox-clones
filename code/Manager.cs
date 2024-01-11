@@ -55,7 +55,10 @@ public sealed class Manager : Component
 	{
 		if(_numClonesToSpawn > 0 && _timeSinceSpawnClone > 0.2f && Spawner != null )
 		{
-			SpawnClone( Spawner.Transform.Position.WithX( 0f ) );
+			var clone = SpawnClone( Spawner.Transform.Position.WithX( 0f ) + Vector3.Down * 10f ) ;
+			clone.StartSpawning();
+			clone.Renderer.Tint = clone.Renderer.Tint.WithAlpha( 0f );
+
 			_timeSinceSpawnClone = 0f;
 			_numClonesToSpawn--;
 		}
@@ -70,12 +73,13 @@ public sealed class Manager : Component
 		//Scene.PhysicsWorld.Gravity = Vector3.Down * (Input.Down( "Jump" ) ? 700f : 850f);
 	}
 
-	public void SpawnClone(Vector3 pos)
+	public Clone SpawnClone(Vector3 pos)
 	{
 		var cloneObj = ClonePrefab.Clone( pos );
 		var clone = cloneObj.Components.Get<Clone>();
 		clone.Manager = this;
 		Clones.Add( clone );
+		return clone;
 	}
 
 	public void CloneDied(Clone clone)

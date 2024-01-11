@@ -1194,6 +1194,7 @@
           "Increasing": true,
           "Max": 198.005,
           "Min": -256.278,
+          "ShouldPlaySfx": true,
           "Speed": 75
         }
       ],
