@@ -19,7 +19,7 @@ Hud {
 
 	.button_container {
 		//bottom: 16px;
-		top: 16px;
+		top: 8px;
 		width: 60%;
 		height: 100%;
 		//background-color: #0000ff11;
@@ -38,6 +38,7 @@ Hud {
 		color: #ffffff77;
 		pointer-events: all;
 		border-radius: 1px;
+		font-size: 1.3vw;
 
 		&:hover {
 			color: #ffffffee;

@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime;
 
+public class SavedProgressData
+{
+	public int NumLevelsCompleted { get; set; }
+}
+
 public sealed class Manager : Component
 {
 	[Property] public string LevelName { get; set; }
+	[Property] public int LevelNum { get; set; }
 	[Property] public SceneFile PrevScene { get; set; }
 	[Property] public SceneFile NextScene { get; set; }
 	[Property] public GameObject ClonePrefab { get; set; }
@@ -22,6 +28,8 @@ public sealed class Manager : Component
 	public bool IsCloneLeavingLevel { get; private set; }
 
 	public MusicPlayer MusicPlayer { get; private set; }
+
+	public int NumLevelsCompleted { get; private set; }
 
 	protected override void OnEnabled()
 	{
@@ -45,6 +53,11 @@ public sealed class Manager : Component
 		//{
 		//	SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
 		//}
+
+		var levelData = FileSystem.Data.ReadJson<SavedProgressData>( "clones_saved_progress.json" );
+		NumLevelsCompleted = levelData?.NumLevelsCompleted ?? 0;
+
+		Log.Info( $"NumLevelsCompleted: {NumLevelsCompleted}" );
 
 		Scene.PhysicsWorld.SubSteps = 4;
 
@@ -132,6 +145,14 @@ public sealed class Manager : Component
 
 	public void FinishLevel()
 	{
+		if((LevelNum + 1) > NumLevelsCompleted)
+		{
+			var newSaveData = new SavedProgressData() { NumLevelsCompleted = LevelNum + 1 };
+			FileSystem.Data.WriteJson<SavedProgressData>( "clones_saved_progress.json", newSaveData );
+
+			Log.Info( $"saving # levels completed: {LevelNum + 1}" );
+		}
+
 		LoadNextLevel();
 	}
 

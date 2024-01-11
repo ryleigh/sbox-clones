@@ -15,6 +15,7 @@
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Level 5: The Courtyard",
+          "LevelNum": 4,
           "NextScene": "scenes/level3.scene",
           "PrevScene": "scenes/level5.scene"
         }
@@ -1015,6 +1016,7 @@
           "Increasing": false,
           "Max": 373,
           "Min": 323,
+          "ShouldPlaySfx": true,
           "Speed": 30
         }
       ],
@@ -1351,6 +1353,7 @@
           "Increasing": false,
           "Max": 264,
           "Min": 85,
+          "ShouldPlaySfx": true,
           "Speed": 45
         }
       ],
@@ -1686,6 +1689,7 @@
           "Increasing": false,
           "Max": 264,
           "Min": 85,
+          "ShouldPlaySfx": true,
           "Speed": 36
         }
       ],
@@ -2063,6 +2067,7 @@
           "Increasing": true,
           "Max": 264,
           "Min": 85,
+          "ShouldPlaySfx": true,
           "Speed": 40
         }
       ],
@@ -2440,6 +2445,7 @@
           "Increasing": true,
           "Max": 264,
           "Min": 85,
+          "ShouldPlaySfx": true,
           "Speed": 36
         }
       ],
@@ -2817,6 +2823,7 @@
           "Increasing": true,
           "Max": 264,
           "Min": 52,
+          "ShouldPlaySfx": true,
           "Speed": 30
         }
       ],

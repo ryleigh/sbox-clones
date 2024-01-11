@@ -15,6 +15,7 @@
           "DeathHeight": -100,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Level 2: The Corridor",
+          "LevelNum": 1,
           "NextScene": "scenes/level4.scene",
           "PrevScene": "scenes/level1.scene"
         }

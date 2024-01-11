@@ -15,8 +15,9 @@
           "DeathHeight": -200,
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Final Level: The Catacombs",
+          "LevelNum": 6,
           "NextScene": null,
-          "PrevScene": "scenes/level6.scene"
+          "PrevScene": "scenes/level3.scene"
         }
       ]
     },
@@ -513,7 +514,7 @@
     {
       "Id": "3f6ebe96-a57f-45ec-9b9c-d6253ecd1cd2",
       "Name": "Cube (2)",
-      "Position": "0,438.1263,109.4816",
+      "Position": "0,441.8172,109.4816",
       "Scale": "1,0.5037024,8.704597",
       "Enabled": true,
       "Components": [
@@ -544,7 +545,7 @@
       "Id": "9a111d5a-41b4-439f-8471-ebaf0b329cd3",
       "Name": "Cube (4)",
       "Position": "0,402.1133,335.693",
-      "Scale": "1,0.9827435,0.5402251",
+      "Scale": "1,0.9827435,0.4469223",
       "Enabled": true,
       "Components": [
         {
@@ -754,7 +755,7 @@
       "Id": "b1d337c1-0c21-4064-8e2c-fbb8cfd60d31",
       "Name": "Cube - ceiling (7)",
       "Position": "0,343.7554,274.8108",
-      "Scale": "1,1.444913,0.614171",
+      "Scale": "1,1.347322,0.614171",
       "Enabled": true,
       "Components": [
         {

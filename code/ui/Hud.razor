@@ -1,4 +1,4 @@
-@using Sandbox;
+﻿@using Sandbox;
 @using Sandbox.UI;
 @using System.Collections.Generic;
 @using System.Linq;
@@ -7,9 +7,25 @@
 
 <root>
 	<div class="button_container">
-		<div class="button" style="opacity:@(Manager.PrevScene == null ? 0.2f : 1f);" onclick="@( () => PrevLevelClicked() )">@("<")</div>
+		@if(Manager.PrevScene != null)
+		{
+			<div class="button" onclick="@( () => PrevLevelClicked() )">@("<")</div>
+		}
+		
 		<div class="level_name">@(Manager.LevelName)</div>
-		<div class="button" style="opacity:@(Manager.NextScene == null ? 0.2f : 1f);" onclick="@( () => NextLevelClicked() )">@(">")</div>
+
+		@if(Manager.NextScene != null)
+		{
+			<div class="button" style="
+				opacity:@(Manager.NumLevelsCompleted > Manager.LevelNum ? 1f : 0.5f); 
+				background-color:@(Manager.NumLevelsCompleted > Manager.LevelNum ? new Color(0f, 0f, 1f, 0.08f).Rgba : new Color(0.1f, 0.1f, 0.7f, 0.09f).Rgba);
+				padding-bottom: @(Manager.NumLevelsCompleted > Manager.LevelNum ? 0f : 5f)px;
+			"
+				 onclick="@( () => NextLevelClicked() )">
+				@(Manager.NumLevelsCompleted > Manager.LevelNum ? ">" : "🔒")
+			</div>
+		}
+		
 	</div>
 
 	<div class="pointer"></div>
@@ -33,7 +49,10 @@
 
 	void NextLevelClicked()
 	{
-		Manager.LoadNextLevel();
+		if (Manager.NumLevelsCompleted > Manager.LevelNum)
+			Manager.LoadNextLevel();
+		else
+			Sound.Play("lock_rattle");
 	}
 
 	/// <summary>
