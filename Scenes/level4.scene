@@ -136,6 +136,18 @@
               "__enabled": true
             }
           ]
+        },
+        {
+          "Id": "1a070cbc-f901-440a-85a0-3a18f6528ae2",
+          "Name": "test",
+          "Position": "0,202.7057,155.0715",
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "CloneSpawnPoint",
+              "__enabled": true
+            }
+          ]
         }
       ]
     },
@@ -859,6 +871,11 @@
           },
           "RigidbodyFlags": 0,
           "StartAsleep": false
+        },
+        {
+          "__version": 0,
+          "__type": "WoodenBox",
+          "__enabled": true
         }
       ],
       "Children": [

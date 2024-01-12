@@ -1966,6 +1966,161 @@
           "Tint": "0,0,0,0.42"
         }
       ]
+    },
+    {
+      "Id": "ccd5c366-8a13-4369-880c-e5a39aa49932",
+      "Name": "Smoke",
+      "Position": "-5.241985,324.7271,-35.96329",
+      "Rotation": "-0.000000000671276,-0.0000000000000000008671534,-0.01126214,0.9999365",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ParticleEffect",
+          "__enabled": true,
+          "Alpha": {
+            "Type": "Curve",
+            "CurveA": [
+              {
+                "in": -4.0000024,
+                "out": 4.0000024
+              },
+              {
+                "x": 0.20812808,
+                "y": 0.475
+              },
+              {
+                "x": 1
+              }
+            ],
+            "Constants": "1,0,0,0"
+          },
+          "ApplyColor": true,
+          "ApplyRotation": true,
+          "ApplyShape": true,
+          "Bounce": {
+            "Constants": "1,0,0,0"
+          },
+          "Brightness": {
+            "Constants": "3,0,0,0"
+          },
+          "Bumpiness": {},
+          "Collision": false,
+          "CollisionIgnore": null,
+          "CollisionRadius": 1,
+          "Damping": {
+            "Constants": "5,0,0,0"
+          },
+          "DieOnCollisionChance": {},
+          "Force": true,
+          "ForceDirection": "0,0,100",
+          "ForceScale": {
+            "Constants": "1,0,0,0"
+          },
+          "Friction": {
+            "Constants": "1,0,0,0"
+          },
+          "Gradient": {
+            "Type": "Range",
+            "Evaluation": "Particle",
+            "GradientA": {
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "GradientB": {
+              "color": [
+                {
+                  "t": 0.5,
+                  "c": "1,1,1,1"
+                }
+              ],
+              "alpha": []
+            },
+            "ConstantA": "1,0.02326,0.02326,1",
+            "ConstantB": "0.83333,1,0,1"
+          },
+          "Lifetime": {
+            "Type": "Range",
+            "Evaluation": "Particle",
+            "Constants": "1,2,0,0"
+          },
+          "MaxParticles": 5000,
+          "PerParticleTimeScale": {
+            "Constants": "1,0.4,0,0"
+          },
+          "PreWarm": 0,
+          "PushStrength": {},
+          "Roll": {
+            "Type": "Range",
+            "Evaluation": "Particle"
+          },
+          "Scale": {
+            "Type": "Range",
+            "Evaluation": "Particle",
+            "CurveA": [
+              {}
+            ],
+            "Constants": "20,60,0,0"
+          },
+          "SequenceId": {},
+          "SequenceSpeed": {
+            "Constants": "0.5,0,0,0"
+          },
+          "SequenceTime": {
+            "Constants": "1,0,0,0"
+          },
+          "SheetSequence": true,
+          "Space": "World",
+          "StartVelocity": {
+            "Type": "Range",
+            "Evaluation": "Particle",
+            "Constants": "50,120,0,0"
+          },
+          "Stretch": {
+            "Constants": "0.5,0,0,0"
+          },
+          "TimeScale": 10,
+          "Tint": "1,0.13333,0,1"
+        },
+        {
+          "__version": 0,
+          "__type": "ParticleSpriteRenderer",
+          "__enabled": true,
+          "Additive": false,
+          "BlurAmount": 0.5,
+          "BlurOpacity": 0.91,
+          "BlurSpacing": 0.73,
+          "DepthFeather": 0,
+          "FaceVelocity": false,
+          "FogStrength": 1,
+          "LeadingTrail": false,
+          "MotionBlur": true,
+          "Opaque": false,
+          "RotationOffset": 0,
+          "Scale": 0.2,
+          "Shadows": true,
+          "SortMode": "Unsorted",
+          "Texture": "materials/particles/light_flare/light_glow_01.vtex"
+        },
+        {
+          "__version": 0,
+          "__type": "ParticleBoxEmitter",
+          "__enabled": true,
+          "Burst": 100,
+          "Delay": 0,
+          "DestroyOnEnd": false,
+          "Duration": 10,
+          "Loop": true,
+          "OnEdge": false,
+          "Rate": 50,
+          "Size": "9.800035,50.70017,25.90007"
+        }
+      ]
     }
   ],
   "SceneProperties": {

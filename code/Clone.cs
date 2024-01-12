@@ -130,7 +130,8 @@ public sealed class Clone : Component, Component.ICollisionListener, Component.I
 			Body.Transform.LocalRotation = Rotation.FromYaw( yaw );
 		}
 
-		if ( Input.Pressed( "Jump" ) && IsGrounded && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.3f && !Manager.IsCloneLeavingLevel )
+		//if ( Input.Pressed( "Jump" ) && IsGrounded && MathF.Abs( Rigidbody.PhysicsBody.Velocity.z ) < 0.3f && !Manager.IsCloneLeavingLevel )
+		if ( Input.Pressed( "Jump" ) && _timeSinceGrounded < 0.075f && Rigidbody.PhysicsBody.Velocity.z < 0.3f && !Manager.IsCloneLeavingLevel )
 		{
 			Rigidbody.PhysicsBody.Velocity += Vector3.Up * 300f;
 			OnJump();
