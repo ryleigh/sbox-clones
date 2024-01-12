@@ -1,0 +1,140 @@
+{
+  "Id": "495d0c53-8e57-42c8-897c-c677872a424a",
+  "GameObjects": [
+    {
+      "Id": "7d6f0dec-365e-4133-bf2a-289188767fbd",
+      "Name": "Manager",
+      "Position": "-619.007,-486.2662,556.2214",
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "Manager",
+          "__enabled": true,
+          "ClonePrefab": "prefabs/clone.prefab",
+          "DeathHeight": -200,
+          "HudPrefab": "prefabs/hud.prefab",
+          "LevelName": "Final Level: The Catacombs",
+          "LevelNum": 6,
+          "NextScene": null,
+          "PrevScene": "scenes/level3.scene"
+        }
+      ]
+    },
+    {
+      "Id": "02752b33-84e6-4298-9538-2a63df65307f",
+      "Name": "Sun",
+      "Position": "-30.34852,14.1777,233.7865",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "DirectionalLight",
+          "__enabled": true,
+          "LightColor": "1,1,1,1",
+          "Shadows": true,
+          "SkyColor": "0.20389,0.20792,0.1791,1"
+        }
+      ]
+    },
+    {
+      "Id": "00854b9e-9ce1-45a3-b1a6-a525f08e12e0",
+      "Name": "Camera",
+      "Position": "-430.553,103.636,119.0326",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0,0,0,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": true,
+          "OrthographicHeight": 400,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__version": 0,
+          "__type": "Vignette",
+          "__enabled": true,
+          "Center": "0.5,0.5",
+          "Color": "0,0,0,1",
+          "Intensity": 0.86,
+          "Roundness": -0.30000007,
+          "Smoothness": 0.95
+        },
+        {
+          "__version": 0,
+          "__type": "FilmGrain",
+          "__enabled": true,
+          "Intensity": 0.025,
+          "Response": 0.5
+        },
+        {
+          "__version": 0,
+          "__type": "Pixelate",
+          "__enabled": false,
+          "Scale": 0.0025
+        },
+        {
+          "__version": 0,
+          "__type": "Sharpen",
+          "__enabled": false,
+          "Scale": 0.25
+        }
+      ]
+    },
+    {
+      "Id": "ac0f40aa-be13-4c8f-a65d-3fe6cab6c1e1",
+      "Name": "Screen",
+      "Position": "-130.553,103.636,119.0326",
+      "Enabled": true,
+      "Components": [
+        {
+          "__version": 0,
+          "__type": "ScreenPanel",
+          "__enabled": true,
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        }
+      ],
+      "Children": [
+        {
+          "Id": "091633f2-e56f-46f4-9313-08acf4e4239d",
+          "Name": "VictoryHud",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "Components": [
+            {
+              "__version": 0,
+              "__type": "VictoryHud",
+              "__enabled": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true
+  },
+  "Title": "main",
+  "Description": "",
+  "__references": []
+}

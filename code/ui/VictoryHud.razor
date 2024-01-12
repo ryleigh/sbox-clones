@@ -1,0 +1,79 @@
+@using Sandbox;
+@using Sandbox.UI;
+@using System;
+@using System.Collections.Generic;
+@inherits PanelComponent
+
+<root>
+	@{
+		var x0 = Screen.Width * Panel.ScaleFromScreen * 0.35f + Utils.FastSin(Time.Now * 2.25f) * 12f;
+		var y0 = Screen.Height * Panel.ScaleFromScreen * 0.2f + Utils.FastSin(Time.Now * 2.45f) * 12f;
+		var x1 = Screen.Width * Panel.ScaleFromScreen * 0.35f + Utils.FastSin(Time.Now * 2.15f) * 12f;
+		var y1 = Screen.Height * Panel.ScaleFromScreen * 0.2f + Utils.FastSin(Time.Now * 2.35f) * 12f;
+		float size1 = 80f + Utils.FastSin(Time.Now * 1.25f) * 6f;
+		float size2 = 80f + Utils.FastSin(15f + Time.Now * 1.35f) * 6f;
+	}
+	<div class="title" style="left: @(x0)px; top: @(y0)px; font-size:@(size1)px;">@("YOU ESCAPED")</div>
+	<div class="title" style="left: @(x0 + 60f)px; top: @(y0 + 60f)px; font-size:@(size2)px;">@("CLONE ZONE")</div>
+
+
+	@for(int i = 0; i < _clonePositions.Count; i++)
+	{
+		//var sinVal = MathF.Abs(Utils.FastSin(_cloneHeightFactors[i] + Time.Now * _cloneHeightSpeed[i]) * 160f);
+		var sinVal = MathF.Abs(Utils.FastSin(Time.Now * 4f) * 160f);
+		var height = 150f + sinVal;
+		var w = 400f;// * Utils.Map(sinVal, 0f, 160f, 1.05f, 0.95f);
+		var h = 400f;// * Utils.Map(sinVal, 0f, 160f, 0.95f, 1.05f);
+		var scale = Utils.Map(sinVal, 0f, 160f, 1f, 1.1f, EasingType.ExpoOut);
+		<div class="clone" style="left:@(_clonePositions[i])px; bottom:@(height); width:@(w)px; height:@(h)px; transform: scale(@(scale));"></div>
+	}
+</root>
+
+@code
+{
+	private List<float> _clonePositions = new();
+	// private List<float> _cloneHeightFactors = new();
+	// private List<float> _cloneHeightSpeed = new();
+	private float _xMin;
+	private float _xMax;
+
+	protected override void OnEnabled()
+	{
+		base.OnEnabled();
+
+		_xMin = 0f - Screen.Width * Panel.ScaleFromScreen * 0.3f;
+		_xMax = Screen.Width * Panel.ScaleFromScreen + Screen.Width * Panel.ScaleFromScreen * 0.7f;
+
+		int NUM_CLONES = 7;
+		for(int i = 0; i < NUM_CLONES; i++)
+		{
+			_clonePositions.Add(Utils.Map(i, 0, NUM_CLONES, _xMin, _xMax));
+			// _cloneHeightFactors.Add(Game.Random.Float(0f, 20f));
+			// _cloneHeightSpeed.Add(Game.Random.Float(2f, 5f));
+		}
+	}
+
+	protected override void OnUpdate()
+	{
+		base.OnUpdate();
+
+		float SPEED = 200f;
+
+		for(int i = 0; i < _clonePositions.Count; i++)
+		{
+			_clonePositions[i] = _clonePositions[i] + SPEED * Time.Delta;
+
+			if(_clonePositions[i] > _xMax)
+			{
+				_clonePositions[i] = _xMin + (_clonePositions[i] - _xMax);
+				// _cloneHeightFactors[i] = Game.Random.Float(0f, 20f);
+				// _cloneHeightSpeed[i] = Game.Random.Float(2f, 5f);
+			}
+		}
+	}
+
+	/// <summary>
+	/// the hash determines if the system should be rebuilt. If it changes, it will be rebuilt
+	/// </summary>
+	protected override int BuildHash() => System.HashCode.Combine( Time.Now );
+}

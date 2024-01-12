@@ -6,6 +6,7 @@ using System.Runtime;
 public class SavedProgressData
 {
 	public int NumLevelsCompleted { get; set; }
+	public int NumCloneDeaths { get; set; }
 }
 
 public sealed class Manager : Component
@@ -30,6 +31,7 @@ public sealed class Manager : Component
 	public MusicPlayer MusicPlayer { get; private set; }
 
 	public int NumLevelsCompleted { get; private set; }
+	public int NumCloneDeaths { get; private set; }
 
 	public CameraShake CameraShake { get; private set; }
 
