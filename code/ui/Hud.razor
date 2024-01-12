@@ -22,7 +22,7 @@
 				padding-bottom: @(Manager.NumLevelsCompleted > Manager.LevelNum ? 0f : 5f)px;
 			"
 				 onclick="@( () => NextLevelClicked() )">
-				@(Manager.NumLevelsCompleted > Manager.LevelNum ? ">" : "🔒")
+				@(Manager.NumLevelsCompleted > Manager.LevelNum ? (Manager.LevelNum == 6 ? "🏆" : ">") : "🔒")
 			</div>
 		}
 		

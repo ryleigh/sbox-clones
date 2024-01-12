@@ -90,6 +90,11 @@
           "__type": "Sharpen",
           "__enabled": false,
           "Scale": 0.25
+        },
+        {
+          "__version": 0,
+          "__type": "CameraShake",
+          "__enabled": true
         }
       ]
     },

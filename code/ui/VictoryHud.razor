@@ -2,6 +2,8 @@
 @using Sandbox.UI;
 @using System;
 @using System.Collections.Generic;
+@using System.Linq;
+
 @inherits PanelComponent
 
 <root>
@@ -16,7 +18,6 @@
 	<div class="title" style="left: @(x0)px; top: @(y0)px; font-size:@(size1)px;">@("YOU ESCAPED")</div>
 	<div class="title" style="left: @(x0 + 60f)px; top: @(y0 + 60f)px; font-size:@(size2)px;">@("CLONE ZONE")</div>
 
-
 	@for(int i = 0; i < _clonePositions.Count; i++)
 	{
 		//var sinVal = MathF.Abs(Utils.FastSin(_cloneHeightFactors[i] + Time.Now * _cloneHeightSpeed[i]) * 160f);
@@ -27,24 +28,46 @@
 		var scale = Utils.Map(sinVal, 0f, 160f, 1f, 1.1f, EasingType.ExpoOut);
 		<div class="clone" style="left:@(_clonePositions[i])px; bottom:@(height); width:@(w)px; height:@(h)px; transform: scale(@(scale));"></div>
 	}
+
+	<!-- @if(NumCloneDeaths > 0)
+	{
+		var x = Screen.Width * Panel.ScaleFromScreen * 0.35f + Utils.FastSin(Time.Now * 2.25f) * 12f;
+		var y = Screen.Height * Panel.ScaleFromScreen * 0.9f + Utils.FastSin(Time.Now * 2.45f) * 12f;
+		float size = 70f + Utils.FastSin(Time.Now * 0.85f) * 6f;
+		<div class="title" style="left: @(x)px; top: @(y)px; font-size:@(size)px">@($"DEATHS: {NumCloneDeaths}")</div>
+	} -->
+
+	<div class="button" style="background-color:@(new Color(0f, 0f, 1f, 0.08f).Rgba);" onclick="@( () => RestartClicked() )">
+		Restart
+	</div>
 </root>
 
 @code
 {
+	public VictoryManager VictoryManager { get; set; }
+
 	private List<float> _clonePositions = new();
 	// private List<float> _cloneHeightFactors = new();
 	// private List<float> _cloneHeightSpeed = new();
 	private float _xMin;
 	private float _xMax;
 
+	public int NumCloneDeaths { get; private set; }
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
 
-		_xMin = 0f - Screen.Width * Panel.ScaleFromScreen * 0.3f;
+		VictoryManager = Scene.GetAllComponents<VictoryManager>().FirstOrDefault();
+
+		var cloneDeathData = FileSystem.Data.ReadJson<CloneDeathData>("num_clone_deaths.json");
+		NumCloneDeaths = cloneDeathData?.NumCloneDeaths ?? 0;
+		Log.Info($"cloneDeathData: {cloneDeathData} NumCloneDeaths: {NumCloneDeaths}");
+
+		_xMin = 0f - Screen.Width * Panel.ScaleFromScreen * 0.6f;
 		_xMax = Screen.Width * Panel.ScaleFromScreen + Screen.Width * Panel.ScaleFromScreen * 0.7f;
 
-		int NUM_CLONES = 7;
+		int NUM_CLONES = 9;
 		for(int i = 0; i < NUM_CLONES; i++)
 		{
 			_clonePositions.Add(Utils.Map(i, 0, NUM_CLONES, _xMin, _xMax));
@@ -70,6 +93,11 @@
 				// _cloneHeightSpeed[i] = Game.Random.Float(2f, 5f);
 			}
 		}
+	}
+
+	void RestartClicked()
+	{
+		VictoryManager.Restart();
 	}
 
 	/// <summary>

@@ -6,6 +6,10 @@ using System.Runtime;
 public class SavedProgressData
 {
 	public int NumLevelsCompleted { get; set; }
+}
+
+public class CloneDeathData
+{
 	public int NumCloneDeaths { get; set; }
 }
 
@@ -62,6 +66,9 @@ public sealed class Manager : Component
 		var levelData = FileSystem.Data.ReadJson<SavedProgressData>( "clones_saved_progress.json" );
 		NumLevelsCompleted = levelData?.NumLevelsCompleted ?? 0;
 
+		var cloneDeathData = FileSystem.Data.ReadJson<CloneDeathData>( "num_clone_deaths.json" );
+		NumCloneDeaths = cloneDeathData?.NumCloneDeaths ?? 0;
+
 		Scene.PhysicsWorld.SubSteps = 4;
 
 		StartMusic();
@@ -105,9 +112,12 @@ public sealed class Manager : Component
 	{
 		RemoveClone( clone );
 
-		CameraShake.Shake( Game.Random.Float(2.5f, 4f) );
+		CameraShake?.Shake( Game.Random.Float(2.5f, 4f) );
 
 		_numClonesToSpawn++;
+
+		NumCloneDeaths++;
+		//Log.Info( $"NumCloneDeaths: {NumCloneDeaths}" );
 	}
 
 	public void RemoveClone(Clone clone)
@@ -158,7 +168,7 @@ public sealed class Manager : Component
 			var newSaveData = new SavedProgressData() { NumLevelsCompleted = LevelNum + 1 };
 			FileSystem.Data.WriteJson<SavedProgressData>( "clones_saved_progress.json", newSaveData );
 
-			Log.Info( $"saving # levels completed: {LevelNum + 1}" );
+			//Log.Info( $"saving # levels completed: {LevelNum + 1}" );
 		}
 
 		LoadNextLevel();
@@ -172,6 +182,9 @@ public sealed class Manager : Component
 			return;
 		}
 
+		var newCloneDeathData = new CloneDeathData() { NumCloneDeaths = NumCloneDeaths };
+		FileSystem.Data.WriteJson<CloneDeathData>( "num_clone_deaths.json", newCloneDeathData );
+
 		GameManager.ActiveScene.Clear();
 		GameManager.ActiveScene.Load( PrevScene );
 	}
@@ -184,6 +197,9 @@ public sealed class Manager : Component
 			return;
 		}
 
+		var newCloneDeathData = new CloneDeathData() { NumCloneDeaths = NumCloneDeaths };
+		FileSystem.Data.WriteJson<CloneDeathData>( "num_clone_deaths.json", newCloneDeathData );
+
 		GameManager.ActiveScene.Clear();
 		GameManager.ActiveScene.Load( NextScene );
 	}
@@ -194,6 +210,9 @@ public sealed class Manager : Component
 
 		MusicPlayer?.Stop();
 		MusicPlayer?.Dispose();
+
+		var newCloneDeathData = new CloneDeathData() { NumCloneDeaths = NumCloneDeaths };
+		FileSystem.Data.WriteJson<CloneDeathData>( "num_clone_deaths.json", newCloneDeathData );
 	}
 
 	public void OnMusicFinished()

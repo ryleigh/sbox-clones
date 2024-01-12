@@ -16,7 +16,7 @@
           "HudPrefab": "prefabs/hud.prefab",
           "LevelName": "Final Level: The Catacombs",
           "LevelNum": 6,
-          "NextScene": null,
+          "NextScene": "scenes/victory.scene",
           "PrevScene": "scenes/level3.scene"
         }
       ]

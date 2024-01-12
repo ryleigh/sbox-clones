@@ -3,20 +3,15 @@
   "GameObjects": [
     {
       "Id": "7d6f0dec-365e-4133-bf2a-289188767fbd",
-      "Name": "Manager",
+      "Name": "VictoryManager",
       "Position": "-619.007,-486.2662,556.2214",
+      "Enabled": true,
       "Components": [
         {
           "__version": 0,
-          "__type": "Manager",
+          "__type": "VictoryManager",
           "__enabled": true,
-          "ClonePrefab": "prefabs/clone.prefab",
-          "DeathHeight": -200,
-          "HudPrefab": "prefabs/hud.prefab",
-          "LevelName": "Final Level: The Catacombs",
-          "LevelNum": 6,
-          "NextScene": null,
-          "PrevScene": "scenes/level3.scene"
+          "FirstScene": "scenes/level1.scene"
         }
       ]
     },

@@ -4,8 +4,8 @@ VictoryHud {
 	//left: 0;
 	//right: 0;
 	//bottom: 0;
-	//justify-content: center;
-	//align-items: center;
+	justify-content: center;
+	align-items: center;
 	//border-radius: 20px;
 	width: 100%;
 	height: 100%;
@@ -28,5 +28,41 @@ VictoryHud {
 		background-size: cover;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.deaths {
+		position: absolute;
+		font-size: 64px;
+		font-family: Poppins;
+		color: #ffffff;
+		white-space: pre;
+		text-stroke: 16px black;
+		font-weight: bold;
+	}
+
+	.button {
+		width: 100px;
+		height: 50px;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #333333;
+		background-color: #0000ff11;
+		color: #ffffff77;
+		pointer-events: all;
+		border-radius: 1px;
+		font-size: 1.1vw;
+		position: absolute;
+		bottom: 40px;
+		font-weight: bold;
+
+		&:hover {
+			color: #ffffffee;
+			background-color: #0000ff22;
+		}
+
+		&:active {
+			color: #ffffffff;
+			background-color: #0000ff33;
+		}
 	}
 }
