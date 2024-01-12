@@ -1091,7 +1091,7 @@
     {
       "Id": "108fcea5-7021-436a-8d64-2b845cda671d",
       "Name": "door",
-      "Position": "12.70931,-199.2757,-18.84303",
+      "Position": "12.70931,-199.2757,-21.60715",
       "Tags": "door,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/door.prefab"
