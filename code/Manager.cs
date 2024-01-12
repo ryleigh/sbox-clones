@@ -31,6 +31,8 @@ public sealed class Manager : Component
 
 	public int NumLevelsCompleted { get; private set; }
 
+	public CameraShake CameraShake { get; private set; }
+
 	protected override void OnEnabled()
 	{
 		base.OnEnabled();
@@ -46,6 +48,7 @@ public sealed class Manager : Component
 		Buttons = Scene.GetAllComponents<Button>().ToList();
 		Door = Scene.GetAllComponents<Door>().FirstOrDefault();
 		Spawner = Scene.GetAllComponents<Spawner>().FirstOrDefault();
+		CameraShake = Scene.GetAllComponents<CameraShake>().FirstOrDefault();
 
 		_timeSinceSpawnClone = 0f;
 
@@ -57,8 +60,6 @@ public sealed class Manager : Component
 		var levelData = FileSystem.Data.ReadJson<SavedProgressData>( "clones_saved_progress.json" );
 		NumLevelsCompleted = levelData?.NumLevelsCompleted ?? 0;
 
-		Log.Info( $"NumLevelsCompleted: {NumLevelsCompleted}" );
-
 		Scene.PhysicsWorld.SubSteps = 4;
 
 		StartMusic();
@@ -66,6 +67,9 @@ public sealed class Manager : Component
 
 	protected override void OnUpdate()
 	{
+		if ( IsCloneLeavingLevel )
+			return;
+
 		if(_numClonesToSpawn > 0 && _timeSinceSpawnClone > 0.2f && Spawner != null )
 		{
 			var clone = SpawnClone( Spawner.Transform.Position.WithX( 0f ) + Vector3.Down * 10f ) ;
@@ -98,6 +102,8 @@ public sealed class Manager : Component
 	public void CloneDied(Clone clone)
 	{
 		RemoveClone( clone );
+
+		CameraShake.Shake( Game.Random.Float(2.5f, 4f) );
 
 		_numClonesToSpawn++;
 	}
