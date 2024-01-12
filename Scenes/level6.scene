@@ -3162,7 +3162,7 @@
     {
       "Id": "fd9aedaa-0cf3-47a9-beab-e232bd570eeb",
       "Name": "confuser",
-      "Position": "0,112.2074,23.46194",
+      "Position": "0,144.0071,23.46194",
       "Tags": "confuser,trigger",
       "Enabled": true,
       "__Prefab": "prefabs/confuser.prefab"
@@ -3549,7 +3549,7 @@
       "Id": "45d41453-ab72-40e0-8d50-c4d0ba7f4dc9",
       "Name": "low_wood_fence_beam_2 (9)",
       "Position": "-2.978203,389.5497,35.54709",
-      "Rotation": "0.3474571,0.3474568,0.6158516,0.6158523",
+      "Rotation": "0.3068776,0.3068773,0.6370445,0.6370452",
       "Scale": "0.5219154,5.069414,5.687403",
       "Enabled": true,
       "Components": [
@@ -3569,8 +3569,8 @@
     {
       "Id": "d485e244-1db6-4dbf-b064-ed71cdc243b7",
       "Name": "low_wood_fence_beam_2 (10)",
-      "Position": "-2.978203,390.4928,-15.34853",
-      "Rotation": "0.1595278,0.1595271,0.688876,0.6888765",
+      "Position": "-2.978203,390.4928,-17.29798",
+      "Rotation": "0.227009,0.2270084,0.6696757,0.6696764",
       "Scale": "0.5054237,5.099501,5.687403",
       "Enabled": true,
       "Components": [

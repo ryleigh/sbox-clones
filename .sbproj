@@ -1,7 +1,7 @@
 {
-  "Title": "Clones",
+  "Title": "Clone Zone",
   "Type": "game",
-  "Org": "local",
+  "Org": "ryleigh",
   "Ident": "clones",
   "Tags": null,
   "Schema": 1,
@@ -27,6 +27,8 @@
     "LeaderboardType": "None",
     "CsProjName": "",
     "StartupScene": "scenes/minimal.scene",
-    "ProjectTemplate": null
+    "ProjectTemplate": null,
+    "MapStartupScene": "scenes/level1.scene",
+    "LaunchMode": "Normal"
   }
 }

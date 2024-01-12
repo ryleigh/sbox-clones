@@ -63,7 +63,7 @@ public sealed class Manager : Component
 		//	SpawnClone( new Vector3( 0f, -100f + 30f * i, 200f ) );
 		//}
 
-		var levelData = FileSystem.Data.ReadJson<SavedProgressData>( "clones_saved_progress.json" );
+		var levelData = FileSystem.Data.ReadJson<SavedProgressData>( "levels_completed.json" );
 		NumLevelsCompleted = levelData?.NumLevelsCompleted ?? 0;
 
 		var cloneDeathData = FileSystem.Data.ReadJson<CloneDeathData>( "num_clone_deaths.json" );
@@ -166,7 +166,7 @@ public sealed class Manager : Component
 		if((LevelNum + 1) > NumLevelsCompleted)
 		{
 			var newSaveData = new SavedProgressData() { NumLevelsCompleted = LevelNum + 1 };
-			FileSystem.Data.WriteJson<SavedProgressData>( "clones_saved_progress.json", newSaveData );
+			FileSystem.Data.WriteJson<SavedProgressData>( "levels_completed.json", newSaveData );
 
 			//Log.Info( $"saving # levels completed: {LevelNum + 1}" );
 		}
