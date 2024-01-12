@@ -563,7 +563,7 @@
     {
       "Id": "a0656325-654b-4868-991b-42529e885aa6",
       "Name": "button",
-      "Position": "-10.05542,-168.3433,93.68973",
+      "Position": "19.7057,-168.3433,91.66705",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
@@ -572,7 +572,7 @@
     {
       "Id": "8c84aab8-3675-413d-b073-88f83c81e334",
       "Name": "button (1)",
-      "Position": "-10.05542,-168.3433,191.9968",
+      "Position": "8.041307,-168.3433,188.6144",
       "Scale": "4,4,4",
       "Tags": "button,trigger",
       "Enabled": true,
